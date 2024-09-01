@@ -3,62 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99310890-639B-4632-8154-596E7679B1A0}|..\\TestingUnitConsoleApp\\TestingUnitConsoleApp.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\testingunitconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clientaccountdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clscountriesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\controls\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:controls\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\controls\\userdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:controls\\userdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\controls\\userdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:controls\\userdatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\controls\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:controls\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clsusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\usersmanagement\\editaddnewuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:usersmanagement\\editaddnewuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clsusersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\controls\\persondatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:controls\\persondatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CEA250A-8445-4815-872D-6B9ED4E4CB02}|..\\BusinessTier\\BusinessTier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\businesstier\\clsusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\controls\\persondatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:controls\\persondatareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CEA250A-8445-4815-872D-6B9ED4E4CB02}|..\\BusinessTier\\BusinessTier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\businesstier\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clscountriesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\usersmanagement\\editaddnewuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:usersmanagement\\editaddnewuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CEA250A-8445-4815-872D-6B9ED4E4CB02}|..\\BusinessTier\\BusinessTier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\businesstier\\clspermessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|BankSystem_Presentation_Tier.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,197 +30,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 625,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAswHMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T03:07:10.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "clsPerson.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsPerson.cs",
-              "RelativeDocumentMoniker": "..\\BusinessTier\\clsPerson.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsPerson.cs",
-              "RelativeToolTip": "..\\BusinessTier\\clsPerson.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAqwEsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:46:59.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EditAddnEwUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\EditAddnEwUserForm.cs",
-              "RelativeDocumentMoniker": "UsersManagement\\EditAddnEwUserForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\EditAddnEwUserForm.cs",
-              "RelativeToolTip": "UsersManagement\\EditAddnEwUserForm.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAD4AAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T03:27:12.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserDataReader.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserDataReader.cs",
-              "RelativeDocumentMoniker": "Controls\\UserDataReader.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserDataReader.cs [Design]",
-              "RelativeToolTip": "Controls\\UserDataReader.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T17:57:24.268Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserDataReader.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserDataReader.cs",
-              "RelativeDocumentMoniker": "Controls\\UserDataReader.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserDataReader.cs",
-              "RelativeToolTip": "Controls\\UserDataReader.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAA1wD8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T00:27:46.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\TestingUnitConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "..\\TestingUnitConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\TestingUnitConsoleApp\\Program.cs",
-              "RelativeToolTip": "..\\TestingUnitConsoleApp\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:58:18.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserCard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserCard.cs",
-              "RelativeDocumentMoniker": "Controls\\UserCard.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserCard.cs [Design]",
-              "RelativeToolTip": "Controls\\UserCard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T03:02:06.634Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserCard.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserCard.cs",
-              "RelativeDocumentMoniker": "Controls\\UserCard.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\UserCard.cs",
-              "RelativeToolTip": "Controls\\UserCard.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAuwGMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T03:02:10.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsUsersData.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsUsersData.cs",
-              "RelativeDocumentMoniker": "..\\DataAccesstier\\clsUsersData.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsUsersData.cs",
-              "RelativeToolTip": "..\\DataAccesstier\\clsUsersData.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAGMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:09:26.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "clsUsers.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsUsers.cs",
-              "RelativeDocumentMoniker": "..\\BusinessTier\\clsUsers.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsUsers.cs",
-              "RelativeToolTip": "..\\BusinessTier\\clsUsers.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:11:19.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PersonDataReader.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\PersonDataReader.cs",
-              "RelativeDocumentMoniker": "Controls\\PersonDataReader.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\PersonDataReader.cs",
-              "RelativeToolTip": "Controls\\PersonDataReader.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAkwCIAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T20:50:09.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PersonDataReader.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\PersonDataReader.cs",
-              "RelativeDocumentMoniker": "Controls\\PersonDataReader.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\PersonDataReader.cs [Design]",
-              "RelativeToolTip": "Controls\\PersonDataReader.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T03:48:40.151Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "clsCountriesData.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsCountriesData.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsCountriesData.cs",
               "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsCountriesData.cs",
               "RelativeToolTip": "..\\DataAccesstier\\clsCountriesData.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAADMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T04:05:39.389Z",
+              "WhenOpened": "2024-09-01T05:06:24.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EditAddnEwUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\EditAddnEwUserForm.cs",
-              "RelativeDocumentMoniker": "UsersManagement\\EditAddnEwUserForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\EditAddnEwUserForm.cs [Design]",
-              "RelativeToolTip": "UsersManagement\\EditAddnEwUserForm.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "clsUsersData.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsUsersData.cs",
+              "RelativeDocumentMoniker": "..\\DataAccesstier\\clsUsersData.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsUsersData.cs",
+              "RelativeToolTip": "..\\DataAccesstier\\clsUsersData.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T03:27:09.618Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-01T05:06:21.149Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "clsPermessions.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsPermessions.cs",
-              "RelativeDocumentMoniker": "..\\BusinessTier\\clsPermessions.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsPermessions.cs",
-              "RelativeToolTip": "..\\BusinessTier\\clsPermessions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "DocumentIndex": 2,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\DataAccesstier\\clsDataAccessSettings.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\DataAccesstier\\clsDataAccessSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T04:21:58.637Z"
+              "WhenOpened": "2024-09-01T04:47:15.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientAccountData.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\ClientAccountData.cs",
+              "RelativeDocumentMoniker": "..\\DataAccesstier\\ClientAccountData.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\ClientAccountData.cs",
+              "RelativeToolTip": "..\\DataAccesstier\\ClientAccountData.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAwwD0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T04:43:25.336Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -287,7 +111,7 @@
         "X": 35,
         "Y": 34,
         "Width": 1846,
-        "Height": 218,
+        "Height": 995,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -297,7 +121,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAiwLsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T04:37:22.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",

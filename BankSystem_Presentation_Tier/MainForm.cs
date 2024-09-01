@@ -1,5 +1,6 @@
 ﻿using BankSystem_Presentation_Tier.Controls;
 using BankSystem_Presentation_Tier.Global;
+using BankSystem_Presentation_Tier.LogIn;
 using BankSystem_Presentation_Tier.UsersManagement;
 using BusinessTier;
 using System;
@@ -176,6 +177,15 @@ namespace BankSystem_Presentation_Tier
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Global.clsGlobal.CurrentUser = null;
+            this.Hide();
+
+            LogInForm LogIn = new LogInForm();
+            LogIn.ShowDialog();
         }
     }
 }
