@@ -80,10 +80,11 @@
             this.ScreenStatsPage = new System.Windows.Forms.Panel();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
-            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -175,11 +176,11 @@
             this.CurrentUserPermessionLevel.AutoSize = true;
             this.CurrentUserPermessionLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentUserPermessionLevel.ForeColor = System.Drawing.Color.Gold;
-            this.CurrentUserPermessionLevel.Location = new System.Drawing.Point(79, 167);
+            this.CurrentUserPermessionLevel.Location = new System.Drawing.Point(165, 167);
             this.CurrentUserPermessionLevel.Name = "CurrentUserPermessionLevel";
-            this.CurrentUserPermessionLevel.Size = new System.Drawing.Size(133, 20);
+            this.CurrentUserPermessionLevel.Size = new System.Drawing.Size(27, 20);
             this.CurrentUserPermessionLevel.TabIndex = 3;
-            this.CurrentUserPermessionLevel.Text = "Permession Level";
+            this.CurrentUserPermessionLevel.Text = "22";
             // 
             // CurrentUserLabel
             // 
@@ -212,6 +213,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.CurrentUserPermessionLevel);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.CurrentUserLabel);
@@ -725,14 +727,6 @@
             this.MainMenuPanel.Size = new System.Drawing.Size(1794, 875);
             this.MainMenuPanel.TabIndex = 8;
             // 
-            // dashBorad1
-            // 
-            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
-            this.dashBorad1.Name = "dashBorad1";
-            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
-            this.dashBorad1.TabIndex = 16;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -768,6 +762,25 @@
             this.label11.Size = new System.Drawing.Size(49, 17);
             this.label11.TabIndex = 13;
             this.label11.Text = "V1.0.1";
+            // 
+            // dashBorad1
+            // 
+            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
+            this.dashBorad1.Name = "dashBorad1";
+            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
+            this.dashBorad1.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.GreenYellow;
+            this.label9.Location = new System.Drawing.Point(14, 167);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(145, 20);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Permession Level : ";
             // 
             // MainForm
             // 
@@ -869,6 +882,7 @@
         private Controls.DashBorad dashBorad1;
         protected System.Windows.Forms.Label LB_UserID;
         protected System.Windows.Forms.Label label14;
+        protected System.Windows.Forms.Label label9;
     }
 }
 
