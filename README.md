@@ -4,6 +4,15 @@
 
 The **Bank System Application** is a comprehensive desktop application designed to manage various banking operations efficiently. It features user management, client management, transaction handling, and more, making it suitable for small to medium-sized banks or financial institutions.
 
+## Screenshots
+
+### Login Page
+![Manage Users](BankSystemScreens/Screenshot-2024-09-01-062915.png)
+
+### Manage Users Page
+![Login Page](BankSystemScreens/Screenshot-2024-09-01-063037.png)
+
+
 ## Features
 
 - **Login System**: Secure login interface for users with different permission levels.
@@ -13,14 +22,6 @@ The **Bank System Application** is a comprehensive desktop application designed 
 - **Statistics Page**: View detailed statistics and reports about the bank's operations.
 - **ATM Service**: Interface for managing ATM-related operations.
 - **Loan Management**: Manage loan applications, approvals, and repayments.
-
-## Screenshots
-
-### Login Page
-![Login Page](BankSystemScreens/Screenshot-2024-09-01-063037.png)
-
-### Manage Users Page
-![Manage Users](BankSystemScreens/Screenshot-2024-09-01-062915.png)
 
 ## Installation
 
