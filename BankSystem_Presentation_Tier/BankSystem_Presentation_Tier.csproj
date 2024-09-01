@@ -46,14 +46,123 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BankDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashBorad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DashBorad.Designer.cs">
+      <DependentUpon>DashBorad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PersonDataReader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PersonDataReader.Designer.cs">
+      <DependentUpon>PersonDataReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserCard.Designer.cs">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PersonInfo.Designer.cs">
+      <DependentUpon>PersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserDataReader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserDataReader.Designer.cs">
+      <DependentUpon>UserDataReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserDetailsinfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserDetailsinfoControl.Designer.cs">
+      <DependentUpon>UserDetailsinfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserInfoMiniCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserInfoMiniCard.Designer.cs">
+      <DependentUpon>UserInfoMiniCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\clsGlobal.cs" />
+    <Compile Include="LogIn\clsLogin.cs" />
+    <Compile Include="LogIn\LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn\LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen\SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen\SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersManagement\clsFindUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersManagement\clsFindUserForm.Designer.cs">
+      <DependentUpon>clsFindUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersManagement\EditAddnEwUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersManagement\EditAddnEwUserForm.Designer.cs">
+      <DependentUpon>EditAddnEwUserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\DashBorad.resx">
+      <DependentUpon>DashBorad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PersonDataReader.resx">
+      <DependentUpon>PersonDataReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserCard.resx">
+      <DependentUpon>UserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PersonInfo.resx">
+      <DependentUpon>PersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserDataReader.resx">
+      <DependentUpon>UserDataReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserDetailsinfoControl.resx">
+      <DependentUpon>UserDetailsinfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserInfoMiniCard.resx">
+      <DependentUpon>UserInfoMiniCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn\LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +171,28 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SplashScreen\SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersManagement\clsFindUserForm.resx">
+      <DependentUpon>clsFindUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersManagement\EditAddnEwUserForm.resx">
+      <DependentUpon>EditAddnEwUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BankDBDataSet.xsc">
+      <DependentUpon>BankDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankDBDataSet.xss">
+      <DependentUpon>BankDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,5 +212,165 @@
       <Name>BusinessTier</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-07-24 044534.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-07-24 042632.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-end-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-account1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-bank-account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-end-user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-filter-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-gears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-padlock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-multiply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-time-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-transaction-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-symbols.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-atm-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-bank1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148544460-f498bb8d-fe7e-41ad-aa8d-66541661eb7a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c-sharp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-padlock2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-bar-graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-loan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BankWp.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

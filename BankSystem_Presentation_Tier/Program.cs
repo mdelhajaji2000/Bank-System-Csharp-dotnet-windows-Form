@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankSystem_Presentation_Tier.SplashScreen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,14 @@ namespace BankSystem_Presentation_Tier
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            using (SplashScreenForm spalsh = new SplashScreenForm())
+            {
+                spalsh.StartPosition = FormStartPosition.CenterScreen;
+                spalsh.ShowDialog();
+            }
+
+            Application.Run(new LogIn.LogInForm());
         }
     }
 }

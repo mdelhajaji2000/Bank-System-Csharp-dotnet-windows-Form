@@ -1,0 +1,10 @@
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\bin\Debug\TestingUnitConsoleApp.exe.config
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\bin\Debug\TestingUnitConsoleApp.exe
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\bin\Debug\TestingUnitConsoleApp.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\obj\Debug\TestingUnitConsoleApp.csproj.AssemblyReference.cache
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\obj\Debug\TestingUnitConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\obj\Debug\TestingUnitConsoleApp.exe
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\obj\Debug\TestingUnitConsoleApp.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\bin\Debug\DataAccesstier.dll
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\bin\Debug\DataAccesstier.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\TestingUnitConsoleApp\obj\Debug\TestingU.8DD205E7.Up2Date

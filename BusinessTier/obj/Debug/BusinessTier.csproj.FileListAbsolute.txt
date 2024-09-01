@@ -1,0 +1,9 @@
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\bin\Debug\BusinessTier.dll
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\bin\Debug\BusinessTier.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\bin\Debug\DataAccesstier.dll
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\bin\Debug\DataAccesstier.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\BusinessTier.csproj.AssemblyReference.cache
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\BusinessTier.csproj.CoreCompileInputs.cache
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\Business.CF829E41.Up2Date
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\BusinessTier.dll
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\BusinessTier.pdb
