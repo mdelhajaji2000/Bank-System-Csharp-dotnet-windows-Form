@@ -24,5 +24,13 @@ namespace DataAccesstier
 
             return false;
         }
+
+        public static byte boolToByte(bool value)
+        {
+            if (value)
+                return 1;
+            else
+                return 0;
+        }
     }
 }
