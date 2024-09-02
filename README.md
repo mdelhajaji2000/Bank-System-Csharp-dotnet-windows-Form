@@ -22,7 +22,7 @@ The **Bank System Application** is a comprehensive desktop application designed 
 - **Statistics Page**: View detailed statistics and reports about the bank's operations.
 - **ATM Service**: Interface for managing ATM-related operations.
 - **Loan Management**: Manage loan applications, approvals, and repayments.
-
+<!-- Installation Will Be Ready Whene The project Were Completed and Finished 
 ## Installation
 
 1. **Clone the repository**:
@@ -60,3 +60,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries or support, please contact [Your Name] at [your.email@example.com].
+-->
