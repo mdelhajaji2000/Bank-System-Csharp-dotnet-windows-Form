@@ -1,5 +1,10 @@
 # Bank System Application
 
+### Progress
+<div align="Center">
+🔵🔵⚪⚪⚪⚪⚪⚪ 25%  [Not Completed...]
+</div>
+
 ## Overview
 
 The **Bank System Application** is a comprehensive desktop application designed to manage various banking operations efficiently. It features user management, client management, transaction handling, and more, making it suitable for small to medium-sized banks or financial institutions.
