@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Runtime.Remoting;
 
 namespace DataAccesstier
 {
@@ -358,6 +360,41 @@ namespace DataAccesstier
             }
 
             return AffectedRows > 0;
+        }
+
+        public static bool GetPersonIdFromAccount(int AccountNumber, ref int PersonID)
+        {
+            bool ISExist = false;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "Select PersonID from Accounts Where AccountNumber = @AccountNumber";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+
+            try
+            {
+                connection.Open();
+
+                object result = command.ExecuteScalar();
+
+                if (result != null && int.TryParse(result.ToString(), out int intresult))
+                {
+                    PersonID = intresult;
+                    ISExist = PersonID != -1;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return ISExist;
         }
     }
 }

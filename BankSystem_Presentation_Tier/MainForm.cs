@@ -187,5 +187,10 @@ namespace BankSystem_Presentation_Tier
             LogInForm LogIn = new LogInForm();
             LogIn.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("======= : " + clsShared.DLL_CurrentUser.UserName);
+        }
     }
 }

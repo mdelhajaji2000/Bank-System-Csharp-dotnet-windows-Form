@@ -9,6 +9,20 @@ namespace BankSystem_Presentation_Tier.Global
 {
     public static class clsGlobal
     {
-        public static clsUsers CurrentUser;
+        private static clsUsers _Currentuser;
+        public static clsUsers CurrentUser
+        {
+
+            get
+            {
+                return _Currentuser;
+            }
+
+            set
+            {
+                _Currentuser = value;
+                clsShared.DLL_CurrentUser = _Currentuser;
+            }
+        }
     }
 }

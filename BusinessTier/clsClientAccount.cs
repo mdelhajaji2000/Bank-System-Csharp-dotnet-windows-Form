@@ -2,8 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -77,5 +80,80 @@ namespace BusinessTier
         {
             return ClientAccountData.IsPersonHadAccount(PersonId);
         }
+
+        private bool _AddNewClient()
+        {
+            this.AccountNumber = ClientAccountData.AddNewClient(DateTime.Now, this.ActivationStatus, this.PersonID);
+
+            return (this.AccountNumber != -1);
+        }
+
+        private bool _UpdateClient()
+        {
+            return ClientAccountData.UpdateClient(this.AccountNumber, this.Balance, this.ActivationStatus);
+        }
+
+        public bool Save()
+        {
+            switch (_Mode)
+            {
+                case enMode.AddNew:
+
+                    if (_AddNewClient())
+                    {
+                        this._Mode = enMode.Update;
+                        return true;
+                    }
+                    else
+                        return false;
+
+                case enMode.Update:
+
+                    if (_UpdateClient())
+                    {
+                        return true;
+                    }
+                    return false;
+
+            }
+
+            return false;
+        }
+
+        public static bool DeleteClient(int AccountNumber)
+        {
+            return ClientAccountData.DeleteClient(AccountNumber);
+        }
+
+        public bool DesactivateAccount()
+        {
+            return ClientAccountData.UpdateActivationStatus(this.AccountNumber, false);
+        }
+
+        public bool ActivateAccount()
+        {
+            return ClientAccountData.UpdateActivationStatus(this.AccountNumber, true);
+        }
+
+        //======================== Those Two Functions Should Store transactions Recordes in The DataBase ======================
+
+        public bool AddAmountToBalance(int Amount)
+        {
+            if (Amount > 0)
+                return ClientAccountData.UpdateBalance(this.AccountNumber, Amount);
+            else
+                return false;
+        }
+
+        public bool increaseAmountFromBalance(int Amount)
+        {
+            if (Amount > 0)
+                return ClientAccountData.UpdateBalance(this.AccountNumber, Amount);
+            else
+                return false;
+        }
+
+        //======================================================================================================================
+
     }
 }
