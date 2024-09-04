@@ -1,3 +1,7 @@
+<div align="center">
+<img src="BankSystemScreens/splashScreen.png">
+</div>
+
 # Bank System Application
 
 ### Progress
@@ -16,6 +20,9 @@ The **Bank System Application** is a comprehensive desktop application designed 
 
 ### Manage Users Page
 ![Login Page](BankSystemScreens/Screenshot-2024-09-01-063037.png)
+
+### Manage Clients Account`s
+![Manage Clients](BankSystemScreens/ManageClientsScreen.png)
 
 
 ## Features
