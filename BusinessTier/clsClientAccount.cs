@@ -50,7 +50,7 @@ namespace BusinessTier
             this._Mode = enMode.AddNew;
         }
 
-        public clsClientAccount Find(int AccountNumber)
+        public static clsClientAccount Find(int AccountNumber)
         {
             int Balance = 0;
             bool ActivationStatus = true;
@@ -63,7 +63,7 @@ namespace BusinessTier
                 return null;
         }
 
-        public clsClientAccount FindByPersonId(int PersonId)
+        public static clsClientAccount FindByPersonId(int PersonId)
         {
             int Balance = 0;
             bool ActivationStatus = true;

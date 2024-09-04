@@ -41,6 +41,14 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.ScreenManageClients = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.ClientsCardsContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.AcreenManagaeUsers = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.LB_UserID = new System.Windows.Forms.Label();
@@ -69,7 +77,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.ClientsCardsContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.clientCard1 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.clientCard2 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.clientCard3 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.clientCard4 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.clientCard5 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.clientCard6 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.clientCard7 = new BankSystem_Presentation_Tier.Controls.ClientCard();
+            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -85,39 +100,21 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
-            this.clientCard35 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.clientCard24 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard23 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard22 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard21 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard20 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard19 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard18 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard29 = new BankSystem_Presentation_Tier.Controls.ClientCard();
-            this.clientCard17 = new BankSystem_Presentation_Tier.Controls.ClientCard();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.ScreenManageClients.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.ClientsCardsContainer.SuspendLayout();
             this.AcreenManagaeUsers.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
-            this.ClientsCardsContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -275,6 +272,101 @@
             this.ScreenManageClients.Name = "ScreenManageClients";
             this.ScreenManageClients.Size = new System.Drawing.Size(1496, 639);
             this.ScreenManageClients.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label22);
+            this.panel7.Controls.Add(this.label21);
+            this.panel7.Controls.Add(this.label20);
+            this.panel7.Controls.Add(this.label18);
+            this.panel7.Controls.Add(this.label17);
+            this.panel7.Controls.Add(this.label16);
+            this.panel7.Location = new System.Drawing.Point(6, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1465, 70);
+            this.panel7.TabIndex = 1;
+            // 
+            // label22
+            // 
+            this.label22.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Transparent;
+            this.label22.Location = new System.Drawing.Point(1234, 5);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(137, 63);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "Activation Status";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Transparent;
+            this.label21.Location = new System.Drawing.Point(1035, 21);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(167, 29);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Creation Date";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Transparent;
+            this.label20.Location = new System.Drawing.Point(853, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(146, 29);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "Balance ($)";
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Transparent;
+            this.label18.Location = new System.Drawing.Point(462, 21);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(367, 29);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Email";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Transparent;
+            this.label17.Location = new System.Drawing.Point(287, 21);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(133, 29);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Last Name";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Transparent;
+            this.label16.Location = new System.Drawing.Point(122, 21);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(147, 29);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "First Name ";
+            // 
+            // ClientsCardsContainer
+            // 
+            this.ClientsCardsContainer.AutoScroll = true;
+            this.ClientsCardsContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.ClientsCardsContainer.Controls.Add(this.clientCard1);
+            this.ClientsCardsContainer.Controls.Add(this.clientCard2);
+            this.ClientsCardsContainer.Controls.Add(this.clientCard3);
+            this.ClientsCardsContainer.Controls.Add(this.clientCard4);
+            this.ClientsCardsContainer.Controls.Add(this.clientCard5);
+            this.ClientsCardsContainer.Controls.Add(this.clientCard6);
+            this.ClientsCardsContainer.Controls.Add(this.clientCard7);
+            this.ClientsCardsContainer.Location = new System.Drawing.Point(3, 79);
+            this.ClientsCardsContainer.Name = "ClientsCardsContainer";
+            this.ClientsCardsContainer.Size = new System.Drawing.Size(1490, 557);
+            this.ClientsCardsContainer.TabIndex = 0;
             // 
             // AcreenManagaeUsers
             // 
@@ -581,24 +673,69 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "V1.0.1";
             // 
-            // ClientsCardsContainer
+            // clientCard1
             // 
-            this.ClientsCardsContainer.AutoScroll = true;
-            this.ClientsCardsContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
-            this.ClientsCardsContainer.Controls.Add(this.clientCard17);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard18);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard19);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard20);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard21);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard22);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard23);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard24);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard29);
-            this.ClientsCardsContainer.Controls.Add(this.clientCard35);
-            this.ClientsCardsContainer.Location = new System.Drawing.Point(3, 79);
-            this.ClientsCardsContainer.Name = "ClientsCardsContainer";
-            this.ClientsCardsContainer.Size = new System.Drawing.Size(1490, 557);
-            this.ClientsCardsContainer.TabIndex = 0;
+            this.clientCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard1.Location = new System.Drawing.Point(3, 3);
+            this.clientCard1.Name = "clientCard1";
+            this.clientCard1.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard1.TabIndex = 0;
+            // 
+            // clientCard2
+            // 
+            this.clientCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard2.Location = new System.Drawing.Point(3, 98);
+            this.clientCard2.Name = "clientCard2";
+            this.clientCard2.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard2.TabIndex = 1;
+            // 
+            // clientCard3
+            // 
+            this.clientCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard3.Location = new System.Drawing.Point(3, 193);
+            this.clientCard3.Name = "clientCard3";
+            this.clientCard3.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard3.TabIndex = 2;
+            // 
+            // clientCard4
+            // 
+            this.clientCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard4.Location = new System.Drawing.Point(3, 288);
+            this.clientCard4.Name = "clientCard4";
+            this.clientCard4.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard4.TabIndex = 3;
+            // 
+            // clientCard5
+            // 
+            this.clientCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard5.Location = new System.Drawing.Point(3, 383);
+            this.clientCard5.Name = "clientCard5";
+            this.clientCard5.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard5.TabIndex = 4;
+            // 
+            // clientCard6
+            // 
+            this.clientCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard6.Location = new System.Drawing.Point(3, 478);
+            this.clientCard6.Name = "clientCard6";
+            this.clientCard6.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard6.TabIndex = 5;
+            // 
+            // clientCard7
+            // 
+            this.clientCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.clientCard7.Location = new System.Drawing.Point(3, 573);
+            this.clientCard7.Name = "clientCard7";
+            this.clientCard7.Size = new System.Drawing.Size(1464, 89);
+            this.clientCard7.TabIndex = 6;
+            // 
+            // dashBorad1
+            // 
+            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
+            this.dashBorad1.Name = "dashBorad1";
+            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
+            this.dashBorad1.TabIndex = 16;
             // 
             // pictureBox3
             // 
@@ -692,6 +829,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "          Manage Clients";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
@@ -817,173 +955,6 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label22);
-            this.panel7.Controls.Add(this.label21);
-            this.panel7.Controls.Add(this.label20);
-            this.panel7.Controls.Add(this.label18);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Location = new System.Drawing.Point(6, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1465, 70);
-            this.panel7.TabIndex = 1;
-            // 
-            // dashBorad1
-            // 
-            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
-            this.dashBorad1.Name = "dashBorad1";
-            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
-            this.dashBorad1.TabIndex = 16;
-            // 
-            // clientCard35
-            // 
-            this.clientCard35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientCard35.Location = new System.Drawing.Point(3, 858);
-            this.clientCard35.Name = "clientCard35";
-            this.clientCard35.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard35.TabIndex = 34;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Transparent;
-            this.label16.Location = new System.Drawing.Point(122, 21);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(147, 29);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "First Name ";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Transparent;
-            this.label17.Location = new System.Drawing.Point(300, 21);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(133, 29);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "Last Name";
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Transparent;
-            this.label18.Location = new System.Drawing.Point(483, 21);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(367, 29);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Email";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(872, 21);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(146, 29);
-            this.label20.TabIndex = 5;
-            this.label20.Text = "Balance ($)";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Transparent;
-            this.label21.Location = new System.Drawing.Point(1063, 21);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(167, 29);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Creation Date";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Transparent;
-            this.label22.Location = new System.Drawing.Point(1253, 21);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(203, 29);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Activation Status";
-            // 
-            // clientCard24
-            // 
-            this.clientCard24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.clientCard24.Location = new System.Drawing.Point(3, 668);
-            this.clientCard24.Name = "clientCard24";
-            this.clientCard24.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard24.TabIndex = 23;
-            // 
-            // clientCard23
-            // 
-            this.clientCard23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientCard23.Location = new System.Drawing.Point(3, 573);
-            this.clientCard23.Name = "clientCard23";
-            this.clientCard23.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard23.TabIndex = 22;
-            // 
-            // clientCard22
-            // 
-            this.clientCard22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.clientCard22.Location = new System.Drawing.Point(3, 478);
-            this.clientCard22.Name = "clientCard22";
-            this.clientCard22.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard22.TabIndex = 21;
-            // 
-            // clientCard21
-            // 
-            this.clientCard21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientCard21.Location = new System.Drawing.Point(3, 383);
-            this.clientCard21.Name = "clientCard21";
-            this.clientCard21.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard21.TabIndex = 20;
-            // 
-            // clientCard20
-            // 
-            this.clientCard20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.clientCard20.Location = new System.Drawing.Point(3, 288);
-            this.clientCard20.Name = "clientCard20";
-            this.clientCard20.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard20.TabIndex = 19;
-            // 
-            // clientCard19
-            // 
-            this.clientCard19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientCard19.Location = new System.Drawing.Point(3, 193);
-            this.clientCard19.Name = "clientCard19";
-            this.clientCard19.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard19.TabIndex = 18;
-            // 
-            // clientCard18
-            // 
-            this.clientCard18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.clientCard18.Location = new System.Drawing.Point(3, 98);
-            this.clientCard18.Name = "clientCard18";
-            this.clientCard18.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard18.TabIndex = 17;
-            // 
-            // clientCard29
-            // 
-            this.clientCard29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientCard29.Location = new System.Drawing.Point(3, 763);
-            this.clientCard29.Name = "clientCard29";
-            this.clientCard29.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard29.TabIndex = 28;
-            // 
-            // clientCard17
-            // 
-            this.clientCard17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientCard17.Location = new System.Drawing.Point(3, 3);
-            this.clientCard17.Name = "clientCard17";
-            this.clientCard17.Size = new System.Drawing.Size(1464, 89);
-            this.clientCard17.TabIndex = 16;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1014,6 +985,9 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ScreenManageClients.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.ClientsCardsContainer.ResumeLayout(false);
             this.AcreenManagaeUsers.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -1021,12 +995,9 @@
             this.panel5.PerformLayout();
             this.MainMenuPanel.ResumeLayout(false);
             this.MainMenuPanel.PerformLayout();
-            this.ClientsCardsContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1091,22 +1062,19 @@
         protected System.Windows.Forms.Label label9;
         private System.Windows.Forms.FlowLayoutPanel ClientsCardsContainer;
         private System.Windows.Forms.Panel panel7;
-        private Controls.ClientCard clientCard35;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private Controls.ClientCard clientCard17;
-        private Controls.ClientCard clientCard18;
-        private Controls.ClientCard clientCard19;
-        private Controls.ClientCard clientCard20;
-        private Controls.ClientCard clientCard21;
-        private Controls.ClientCard clientCard22;
-        private Controls.ClientCard clientCard23;
-        private Controls.ClientCard clientCard24;
-        private Controls.ClientCard clientCard29;
+        private Controls.ClientCard clientCard1;
+        private Controls.ClientCard clientCard2;
+        private Controls.ClientCard clientCard3;
+        private Controls.ClientCard clientCard4;
+        private Controls.ClientCard clientCard5;
+        private Controls.ClientCard clientCard6;
+        private Controls.ClientCard clientCard7;
     }
 }
 

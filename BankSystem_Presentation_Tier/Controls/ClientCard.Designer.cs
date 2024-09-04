@@ -31,14 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientCard));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.LB_FirstName = new System.Windows.Forms.Label();
+            this.LB_LastName = new System.Windows.Forms.Label();
+            this.LB_Email = new System.Windows.Forms.Label();
+            this.LB_Balance = new System.Windows.Forms.Label();
+            this.LB_CreationDate = new System.Windows.Forms.Label();
+            this.LB_ActivationStatus = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.PB_ClientPictureAvatar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_ClientPictureAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -54,97 +55,111 @@
             this.imageList1.Images.SetKeyName(6, "007-man-4.png");
             this.imageList1.Images.SetKeyName(7, "008-man-5.png");
             // 
-            // pictureBox1
+            // LB_FirstName
             // 
-            this.pictureBox1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._008_man_5;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.LB_FirstName.AutoSize = true;
+            this.LB_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_FirstName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LB_FirstName.Location = new System.Drawing.Point(124, 30);
+            this.LB_FirstName.Name = "LB_FirstName";
+            this.LB_FirstName.Size = new System.Drawing.Size(154, 31);
+            this.LB_FirstName.TabIndex = 1;
+            this.LB_FirstName.Text = "First Name ";
             // 
-            // label1
+            // LB_LastName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(124, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "First Name ";
+            this.LB_LastName.AutoSize = true;
+            this.LB_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_LastName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LB_LastName.Location = new System.Drawing.Point(287, 30);
+            this.LB_LastName.Name = "LB_LastName";
+            this.LB_LastName.Size = new System.Drawing.Size(145, 31);
+            this.LB_LastName.TabIndex = 2;
+            this.LB_LastName.Text = "Last Name";
             // 
-            // label2
+            // LB_Email
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(300, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 31);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Last Name";
+            this.LB_Email.AutoSize = true;
+            this.LB_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Email.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LB_Email.Location = new System.Drawing.Point(452, 30);
+            this.LB_Email.Name = "LB_Email";
+            this.LB_Email.Size = new System.Drawing.Size(384, 31);
+            this.LB_Email.TabIndex = 3;
+            this.LB_Email.Text = "mdelhajajipro2007@gmail.com";
             // 
-            // label3
+            // LB_Balance
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(470, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(384, 31);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "mdelhajajipro2007@gmail.com";
+            this.LB_Balance.AutoSize = true;
+            this.LB_Balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.LB_Balance.Location = new System.Drawing.Point(860, 30);
+            this.LB_Balance.Name = "LB_Balance";
+            this.LB_Balance.Size = new System.Drawing.Size(135, 31);
+            this.LB_Balance.TabIndex = 4;
+            this.LB_Balance.Text = "4.453.564";
             // 
-            // label4
+            // LB_CreationDate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(878, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 31);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "4.453.564";
+            this.LB_CreationDate.AutoSize = true;
+            this.LB_CreationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_CreationDate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LB_CreationDate.Location = new System.Drawing.Point(1024, 30);
+            this.LB_CreationDate.Name = "LB_CreationDate";
+            this.LB_CreationDate.Size = new System.Drawing.Size(182, 31);
+            this.LB_CreationDate.TabIndex = 5;
+            this.LB_CreationDate.Text = "Creation Date";
             // 
-            // label5
+            // LB_ActivationStatus
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(1047, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 31);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Creation Date";
+            this.LB_ActivationStatus.AutoSize = true;
+            this.LB_ActivationStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_ActivationStatus.ForeColor = System.Drawing.Color.Lime;
+            this.LB_ActivationStatus.Location = new System.Drawing.Point(1245, 30);
+            this.LB_ActivationStatus.Name = "LB_ActivationStatus";
+            this.LB_ActivationStatus.Size = new System.Drawing.Size(112, 31);
+            this.LB_ActivationStatus.TabIndex = 6;
+            this.LB_ActivationStatus.Text = "InActive";
             // 
-            // label6
+            // button8
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(1246, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(218, 31);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Activation Status";
+            this.button8.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_info;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(1377, 6);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(63, 78);
+            this.button8.TabIndex = 7;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // PB_ClientPictureAvatar
+            // 
+            this.PB_ClientPictureAvatar.Image = global::BankSystem_Presentation_Tier.Properties.Resources._008_man_5;
+            this.PB_ClientPictureAvatar.Location = new System.Drawing.Point(3, 3);
+            this.PB_ClientPictureAvatar.Name = "PB_ClientPictureAvatar";
+            this.PB_ClientPictureAvatar.Size = new System.Drawing.Size(103, 86);
+            this.PB_ClientPictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PB_ClientPictureAvatar.TabIndex = 0;
+            this.PB_ClientPictureAvatar.TabStop = false;
             // 
             // ClientCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.LB_ActivationStatus);
+            this.Controls.Add(this.LB_CreationDate);
+            this.Controls.Add(this.LB_Balance);
+            this.Controls.Add(this.LB_Email);
+            this.Controls.Add(this.LB_LastName);
+            this.Controls.Add(this.LB_FirstName);
+            this.Controls.Add(this.PB_ClientPictureAvatar);
             this.Name = "ClientCard";
             this.Size = new System.Drawing.Size(1464, 89);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.ClientCard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PB_ClientPictureAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,12 +168,13 @@
         #endregion
 
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox PB_ClientPictureAvatar;
+        private System.Windows.Forms.Label LB_FirstName;
+        private System.Windows.Forms.Label LB_LastName;
+        private System.Windows.Forms.Label LB_Email;
+        private System.Windows.Forms.Label LB_Balance;
+        private System.Windows.Forms.Label LB_CreationDate;
+        private System.Windows.Forms.Label LB_ActivationStatus;
+        protected System.Windows.Forms.Button button8;
     }
 }

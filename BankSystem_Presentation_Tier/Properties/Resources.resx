@@ -121,6 +121,9 @@
   <data name="002-bank-account" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-bank-account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="001-man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,6 +151,15 @@
   <data name="Screenshot 2024-07-24 044534" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-07-24 044534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="002-padlock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-padlock2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="003-woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="006-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\006-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,8 +172,11 @@
   <data name="007-atm-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\007-atm-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="003-time-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-time-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="004-man-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\004-man-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="008-man-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\008-man-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="010-add-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\010-add-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -177,6 +192,9 @@
   </data>
   <data name="002-padlock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-padlock1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="005-woman-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\005-woman-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="005-log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\005-log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,14 +220,17 @@
   <data name="001-user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="006-man-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\006-man-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="002-man-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-man-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="turn-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\turn-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="148544460-f498bb8d-fe7e-41ad-aa8d-66541661eb7a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\148544460-f498bb8d-fe7e-41ad-aa8d-66541661eb7a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="001-close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="001-account" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,14 +247,17 @@
   <data name="001-group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="004-credit-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\004-credit-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="001-people" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="002-padlock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-padlock2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="001-close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-end-user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-end-user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,20 +271,20 @@
   <data name="001-account1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-account1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="007-man-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\007-man-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="001-service" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-service.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="004-credit-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-credit-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="003-time-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-time-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="008-bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\008-bank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loading-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="windows" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\windows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,34 +295,13 @@
   <data name="001-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loading-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-bar-graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-bar-graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="001-man" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="002-man-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-man-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="003-woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-woman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="004-man-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-man-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="005-woman-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\005-woman-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="006-man-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\006-man-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="007-man-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\007-man-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="008-man-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\008-man-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="001-info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

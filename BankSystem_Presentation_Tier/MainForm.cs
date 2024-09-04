@@ -192,5 +192,11 @@ namespace BankSystem_Presentation_Tier
         {
             Console.WriteLine("======= : " + clsShared.DLL_CurrentUser.UserName);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Pagetitle.Text = "Manage Clients";
+            ScreenManageClients.BringToFront();
+        }
     }
 }
