@@ -51,6 +51,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BankDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ClientCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClientCard.Designer.cs">
+      <DependentUpon>ClientCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DashBorad.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <Compile Include="UsersManagement\EditAddnEwUserForm.Designer.cs">
       <DependentUpon>EditAddnEwUserForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\ClientCard.resx">
+      <DependentUpon>ClientCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\DashBorad.resx">
       <DependentUpon>DashBorad.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,6 +380,32 @@
   <ItemGroup>
     <None Include="Resources\BankWp.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ClientManagements\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-man-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-man-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-woman-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-man-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-man-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-man-5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
