@@ -15,10 +15,9 @@ namespace BankSystem_Presentation_Tier.Controls
     {
         private clsClientAccount _Client;
 
-        public ClientCard()
+        public ClientCard(int AccountNumber)
         {
             InitializeComponent();
-            int AccountNumber = -1;
 
             _Client = clsClientAccount.Find(AccountNumber);
             
@@ -37,13 +36,17 @@ namespace BankSystem_Presentation_Tier.Controls
                 if (_Client.ActivationStatus)
                 {
                     LB_ActivationStatus.Text = "Active";
-                    LB_ActivationStatus.ForeColor = Color.Green;
+                    LB_ActivationStatus.ForeColor = Color.Lime;
                 }
                 else
                 {
                     LB_ActivationStatus.Text = "InActive";
                     LB_ActivationStatus.ForeColor = Color.Red;
                 }
+
+                Random random = new Random();
+
+                this.PB_ClientPictureAvatar.Image = imageList1.Images[random.Next(0, 8)];
             }
         }
     }

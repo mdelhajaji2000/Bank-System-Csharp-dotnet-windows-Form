@@ -51,6 +51,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BankDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ClientsManagements\Forms\ClientsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsManagements\Forms\ClientsListForm.Designer.cs">
+      <DependentUpon>ClientsListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ClientCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     <Compile Include="UsersManagement\EditAddnEwUserForm.Designer.cs">
       <DependentUpon>EditAddnEwUserForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientsManagements\Forms\ClientsListForm.resx">
+      <DependentUpon>ClientsListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ClientCard.resx">
       <DependentUpon>ClientCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +418,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\001-info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-user3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-recruitment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-closure.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

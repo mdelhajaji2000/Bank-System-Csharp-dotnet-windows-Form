@@ -157,7 +157,7 @@
             this.Controls.Add(this.LB_FirstName);
             this.Controls.Add(this.PB_ClientPictureAvatar);
             this.Name = "ClientCard";
-            this.Size = new System.Drawing.Size(1464, 89);
+            this.Size = new System.Drawing.Size(1457, 94);
             this.Load += new System.EventHandler(this.ClientCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_ClientPictureAvatar)).EndInit();
             this.ResumeLayout(false);

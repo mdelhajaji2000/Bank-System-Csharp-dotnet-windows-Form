@@ -1,6 +1,7 @@
 ﻿using DataAccesstier;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -61,6 +62,11 @@ namespace BusinessTier
                 return new clsClientAccount(AccountNumber, Balance, ActivationStatus, CreationDate, PersonId);
             else
                 return null;
+        }
+
+        public static DataTable GetAllClientsAccounts()
+        {
+            return ClientAccountData.GetAllAccounts();
         }
 
         public static clsClientAccount FindByPersonId(int PersonId)
