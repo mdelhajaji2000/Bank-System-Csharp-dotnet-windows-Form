@@ -22,7 +22,7 @@ The **Bank System Application** is a comprehensive desktop application designed 
 ![Login Page](BankSystemScreens/Screenshot-2024-09-01-063037.png)
 
 ### Manage Clients Account`s
-![Manage Clients](BankSystemScreens/ManageClientsScreen.png)
+![Manage Clients](BankSystemScreens/manageClientsnew.png)
 
 
 ## Features
