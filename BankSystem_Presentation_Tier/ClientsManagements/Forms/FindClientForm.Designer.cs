@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.SerchControls = new System.Windows.Forms.Panel();
             this.btn_Find = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.FindTextBox = new System.Windows.Forms.TextBox();
@@ -39,21 +39,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.clientAccountInfo1 = new BankSystem_Presentation_Tier.Controls.ClientAccountInfo();
             this.userFullInfo1 = new BankSystem_Presentation_Tier.Controls.UserFullInfo();
-            this.panel1.SuspendLayout();
+            this.SerchControls.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // SerchControls
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btn_Find);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.FindTextBox);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(12, 57);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1093, 60);
-            this.panel1.TabIndex = 5;
+            this.SerchControls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SerchControls.Controls.Add(this.btn_Find);
+            this.SerchControls.Controls.Add(this.panel3);
+            this.SerchControls.Controls.Add(this.FindTextBox);
+            this.SerchControls.Controls.Add(this.label6);
+            this.SerchControls.Location = new System.Drawing.Point(12, 57);
+            this.SerchControls.Name = "SerchControls";
+            this.SerchControls.Size = new System.Drawing.Size(1093, 60);
+            this.SerchControls.TabIndex = 5;
             // 
             // btn_Find
             // 
@@ -171,12 +171,12 @@
             this.Controls.Add(this.clientAccountInfo1);
             this.Controls.Add(this.userFullInfo1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.SerchControls);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FindClientForm";
             this.Text = "FindClientForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.SerchControls.ResumeLayout(false);
+            this.SerchControls.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -185,7 +185,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel SerchControls;
         protected System.Windows.Forms.Button btn_Find;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox FindTextBox;

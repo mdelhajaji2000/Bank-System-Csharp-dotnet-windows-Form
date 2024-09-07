@@ -94,7 +94,7 @@ namespace BusinessTier
 
         private bool _AddNewClient()
         {
-            this.AccountNumber = ClientAccountData.AddNewClient(DateTime.Now, this.ActivationStatus, this.PersonID);
+            this.AccountNumber = ClientAccountData.AddNewClient(DateTime.Now, true, this.PersonID);
 
             return (this.AccountNumber != -1);
         }

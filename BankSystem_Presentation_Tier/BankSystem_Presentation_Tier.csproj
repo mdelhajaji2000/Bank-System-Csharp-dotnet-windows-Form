@@ -51,6 +51,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BankDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ClientsManagements\Forms\AddNewUpdateClientAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsManagements\Forms\AddNewUpdateClientAccount.Designer.cs">
+      <DependentUpon>AddNewUpdateClientAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientsManagements\Forms\ClientsListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,12 @@
     </Compile>
     <Compile Include="ClientsManagements\Forms\FindClientForm.Designer.cs">
       <DependentUpon>FindClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsManagements\Forms\FinduserMiniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsManagements\Forms\FinduserMiniForm.Designer.cs">
+      <DependentUpon>FinduserMiniForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ClientAccountInfo.cs">
       <SubType>UserControl</SubType>
@@ -157,11 +169,17 @@
     <Compile Include="UsersManagement\EditAddnEwUserForm.Designer.cs">
       <DependentUpon>EditAddnEwUserForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientsManagements\Forms\AddNewUpdateClientAccount.resx">
+      <DependentUpon>AddNewUpdateClientAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientsManagements\Forms\ClientsListForm.resx">
       <DependentUpon>ClientsListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientsManagements\Forms\FindClientForm.resx">
       <DependentUpon>FindClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsManagements\Forms\FinduserMiniForm.resx">
+      <DependentUpon>FinduserMiniForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ClientAccountInfo.resx">
       <DependentUpon>ClientAccountInfo.cs</DependentUpon>

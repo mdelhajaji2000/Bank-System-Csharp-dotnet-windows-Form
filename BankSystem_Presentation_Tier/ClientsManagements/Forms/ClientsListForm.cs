@@ -68,5 +68,38 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
             FillClientsContainer(clsClientAccount.GetAllClientsAccounts());
         }
 
+        private void detailsInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FindClientForm findForm = new FindClientForm();
+
+            findForm.FillDataUsingParameter(SelectedClientAccount.AccountNumber);
+            findForm.ShowDialog();
+        }
+
+        private void addNewClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNewUpdateClientAccount frmAddNew = new AddNewUpdateClientAccount();
+
+            frmAddNew.ShowDialog();
+        }
+
+        private void refresh()
+        {
+            ClientsContainer.Controls.Clear();
+
+            FillClientsContainer(clsClientAccount.GetAllClientsAccounts());
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            refresh();
+        }
+
+        private void editActivationStatusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNewUpdateClientAccount frmupdate = new AddNewUpdateClientAccount(SelectedClientAccount.AccountNumber);
+
+            frmupdate.ShowDialog();
+        }
     }
 }

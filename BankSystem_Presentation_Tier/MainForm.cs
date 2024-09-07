@@ -1,4 +1,5 @@
-﻿using BankSystem_Presentation_Tier.Controls;
+﻿using BankSystem_Presentation_Tier.ClientsManagements.Forms;
+using BankSystem_Presentation_Tier.Controls;
 using BankSystem_Presentation_Tier.Global;
 using BankSystem_Presentation_Tier.LogIn;
 using BankSystem_Presentation_Tier.UsersManagement;
@@ -227,6 +228,25 @@ namespace BankSystem_Presentation_Tier
             ClientsManagements.Forms.FindClientForm findClientForm = new ClientsManagements.Forms.FindClientForm();
 
             findClientForm.ShowDialog();
+        }
+
+        public void AddNewClientDialog()
+        {
+            AddNewUpdateClientAccount addnewclient = new AddNewUpdateClientAccount();
+
+            addnewclient.ShowDialog();
+        }
+
+        private void BT_AddClient_Click(object sender, EventArgs e)
+        {
+            AddNewClientDialog();
+        }
+
+        private void BT_EditClient_Click(object sender, EventArgs e)
+        {
+            
+
+            
         }
     }
 }

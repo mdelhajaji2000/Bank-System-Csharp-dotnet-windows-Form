@@ -44,6 +44,21 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
             }
         }
 
+        public void FillDataUsingParameter(int AccNumber)
+        {
+            SerchControls.Hide();
+
+            clsClientAccount Account = clsClientAccount.Find(AccNumber);
+
+            if (Account != null)
+            {
+                userFullInfo1._Person = clsPerson.Find(Account.PersonID);
+                userFullInfo1.FillpersonInfo();
+
+                clientAccountInfo1.FillData(Account.AccountNumber);
+            }
+        }
+
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();

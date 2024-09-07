@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientsListForm));
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Pagetitle = new System.Windows.Forms.Label();
@@ -48,6 +49,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.button8 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -97,7 +101,9 @@
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Palatino Linotype", 20F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(64, 64);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectedClientMenuStripDisplayName,
             this.detailsInfoToolStripMenuItem,
@@ -106,47 +112,58 @@
             this.showTransactionHistoryToolStripMenuItem,
             this.editActivationStatusToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(317, 218);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(461, 446);
             // 
             // selectedClientMenuStripDisplayName
             // 
             this.selectedClientMenuStripDisplayName.Enabled = false;
+            this.selectedClientMenuStripDisplayName.Image = global::BankSystem_Presentation_Tier.Properties.Resources._004_man_2;
             this.selectedClientMenuStripDisplayName.Name = "selectedClientMenuStripDisplayName";
-            this.selectedClientMenuStripDisplayName.Size = new System.Drawing.Size(316, 32);
+            this.selectedClientMenuStripDisplayName.Size = new System.Drawing.Size(460, 70);
             this.selectedClientMenuStripDisplayName.Text = "Selected Client";
             // 
             // detailsInfoToolStripMenuItem
             // 
+            this.detailsInfoToolStripMenuItem.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_info;
             this.detailsInfoToolStripMenuItem.Name = "detailsInfoToolStripMenuItem";
-            this.detailsInfoToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.detailsInfoToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
             this.detailsInfoToolStripMenuItem.Text = "Details info";
+            this.detailsInfoToolStripMenuItem.Click += new System.EventHandler(this.detailsInfoToolStripMenuItem_Click);
             // 
             // addNewClientToolStripMenuItem
             // 
+            this.addNewClientToolStripMenuItem.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_add_user;
             this.addNewClientToolStripMenuItem.Name = "addNewClientToolStripMenuItem";
-            this.addNewClientToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.addNewClientToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
             this.addNewClientToolStripMenuItem.Text = "Add New Client";
+            this.addNewClientToolStripMenuItem.Click += new System.EventHandler(this.addNewClientToolStripMenuItem_Click);
             // 
             // deleteClientToolStripMenuItem
             // 
+            this.deleteClientToolStripMenuItem.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_user3;
             this.deleteClientToolStripMenuItem.Name = "deleteClientToolStripMenuItem";
-            this.deleteClientToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.deleteClientToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
             this.deleteClientToolStripMenuItem.Text = "delete Client";
             // 
             // showTransactionHistoryToolStripMenuItem
             // 
+            this.showTransactionHistoryToolStripMenuItem.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_transaction;
             this.showTransactionHistoryToolStripMenuItem.Name = "showTransactionHistoryToolStripMenuItem";
-            this.showTransactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.showTransactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
             this.showTransactionHistoryToolStripMenuItem.Text = "Show transaction History";
             // 
             // editActivationStatusToolStripMenuItem
             // 
+            this.editActivationStatusToolStripMenuItem.Image = global::BankSystem_Presentation_Tier.Properties.Resources._004_resume;
             this.editActivationStatusToolStripMenuItem.Name = "editActivationStatusToolStripMenuItem";
-            this.editActivationStatusToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
-            this.editActivationStatusToolStripMenuItem.Text = "edit Client info";
+            this.editActivationStatusToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
+            this.editActivationStatusToolStripMenuItem.Text = "Edit Client Info";
+            this.editActivationStatusToolStripMenuItem.Click += new System.EventHandler(this.editActivationStatusToolStripMenuItem_Click);
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.label2);
+            this.panel7.Controls.Add(this.button8);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.label22);
             this.panel7.Controls.Add(this.label21);
@@ -237,6 +254,38 @@
             this.label16.TabIndex = 2;
             this.label16.Text = "First Name ";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "002-bank-account.png");
+            this.imageList1.Images.SetKeyName(1, "user-avatar.png");
+            this.imageList1.Images.SetKeyName(2, "001-delete.png");
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.loading_arrow;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(1406, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(42, 34);
+            this.button8.TabIndex = 9;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Location = new System.Drawing.Point(1399, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Refresh";
+            // 
             // ClientsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,5 +329,8 @@
         private System.Windows.Forms.ToolStripMenuItem showTransactionHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editActivationStatusToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectedClientMenuStripDisplayName;
+        private System.Windows.Forms.ImageList imageList1;
+        protected System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label2;
     }
 }
