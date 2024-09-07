@@ -57,6 +57,18 @@
     <Compile Include="ClientsManagements\Forms\ClientsListForm.Designer.cs">
       <DependentUpon>ClientsListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientsManagements\Forms\FindClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsManagements\Forms\FindClientForm.Designer.cs">
+      <DependentUpon>FindClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ClientAccountInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClientAccountInfo.Designer.cs">
+      <DependentUpon>ClientAccountInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ClientCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +159,12 @@
     </Compile>
     <EmbeddedResource Include="ClientsManagements\Forms\ClientsListForm.resx">
       <DependentUpon>ClientsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsManagements\Forms\FindClientForm.resx">
+      <DependentUpon>FindClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ClientAccountInfo.resx">
+      <DependentUpon>ClientAccountInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ClientCard.resx">
       <DependentUpon>ClientCard.cs</DependentUpon>
@@ -389,7 +407,9 @@
   <ItemGroup>
     <None Include="Resources\BankWp.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\001-dollar-sign.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\001-man.png" />
   </ItemGroup>

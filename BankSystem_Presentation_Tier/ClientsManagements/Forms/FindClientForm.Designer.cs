@@ -1,6 +1,6 @@
-﻿namespace BankSystem_Presentation_Tier.UsersManagement
+﻿namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
 {
-    partial class clsFindUserForm
+    partial class FindClientForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Find = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.FindTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.userDetailsinfoControl1 = new BankSystem_Presentation_Tier.Controls.UserDetailsinfoControl();
+            this.clientAccountInfo1 = new BankSystem_Presentation_Tier.Controls.ClientAccountInfo();
+            this.userFullInfo1 = new BankSystem_Presentation_Tier.Controls.UserFullInfo();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 23F);
-            this.comboBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "User Name",
-            "User ID"});
-            this.comboBox1.Location = new System.Drawing.Point(257, 7);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 48);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gold;
-            this.label6.Location = new System.Drawing.Point(16, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(235, 40);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Search Using : ";
             // 
             // panel1
             // 
@@ -76,21 +49,20 @@
             this.panel1.Controls.Add(this.btn_Find);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.FindTextBox);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(12, 58);
+            this.panel1.Location = new System.Drawing.Point(12, 57);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1093, 60);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 5;
             // 
             // btn_Find
             // 
             this.btn_Find.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_people;
             this.btn_Find.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_Find.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Find.Location = new System.Drawing.Point(1039, 3);
+            this.btn_Find.Location = new System.Drawing.Point(907, 3);
             this.btn_Find.Name = "btn_Find";
-            this.btn_Find.Size = new System.Drawing.Size(49, 50);
+            this.btn_Find.Size = new System.Drawing.Size(161, 50);
             this.btn_Find.TabIndex = 8;
             this.btn_Find.UseVisualStyleBackColor = true;
             this.btn_Find.Click += new System.EventHandler(this.btn_Find_Click);
@@ -98,7 +70,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel3.Location = new System.Drawing.Point(485, 45);
+            this.panel3.Location = new System.Drawing.Point(336, 45);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(548, 2);
             this.panel3.TabIndex = 6;
@@ -109,10 +81,21 @@
             this.FindTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FindTextBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
             this.FindTextBox.ForeColor = System.Drawing.SystemColors.Menu;
-            this.FindTextBox.Location = new System.Drawing.Point(486, 10);
+            this.FindTextBox.Location = new System.Drawing.Point(337, 10);
             this.FindTextBox.Name = "FindTextBox";
             this.FindTextBox.Size = new System.Drawing.Size(547, 34);
             this.FindTextBox.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gold;
+            this.label6.Location = new System.Drawing.Point(47, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(298, 40);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Account Number : ";
             // 
             // panel2
             // 
@@ -124,8 +107,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1117, 52);
-            this.panel2.TabIndex = 5;
+            this.panel2.Size = new System.Drawing.Size(1121, 52);
+            this.panel2.TabIndex = 6;
             // 
             // button7
             // 
@@ -146,11 +129,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(372, -1);
+            this.label1.Location = new System.Drawing.Point(321, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 50);
+            this.label1.Size = new System.Drawing.Size(448, 50);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Find User Page";
+            this.label1.Text = "Find Client Account ";
             // 
             // label4
             // 
@@ -163,24 +146,35 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "V 1.0.1";
             // 
-            // userDetailsinfoControl1
+            // clientAccountInfo1
             // 
-            this.userDetailsinfoControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.userDetailsinfoControl1.Location = new System.Drawing.Point(-7, 122);
-            this.userDetailsinfoControl1.Name = "userDetailsinfoControl1";
-            this.userDetailsinfoControl1.Size = new System.Drawing.Size(1132, 669);
-            this.userDetailsinfoControl1.TabIndex = 6;
+            this.clientAccountInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.clientAccountInfo1.Location = new System.Drawing.Point(11, 123);
+            this.clientAccountInfo1.Name = "clientAccountInfo1";
+            this.clientAccountInfo1.Size = new System.Drawing.Size(1102, 207);
+            this.clientAccountInfo1.TabIndex = 8;
             // 
-            // clsFindUserForm
+            // userFullInfo1
             // 
+            this.userFullInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.userFullInfo1.Location = new System.Drawing.Point(13, 321);
+            this.userFullInfo1.Name = "userFullInfo1";
+            this.userFullInfo1.Size = new System.Drawing.Size(1111, 456);
+            this.userFullInfo1.TabIndex = 7;
+            // 
+            // FindClientForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(1117, 781);
-            this.Controls.Add(this.userDetailsinfoControl1);
+            this.ClientSize = new System.Drawing.Size(1121, 773);
+            this.Controls.Add(this.clientAccountInfo1);
+            this.Controls.Add(this.userFullInfo1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "clsFindUserForm";
-            this.Text = "Find SUer";
+            this.Name = "FindClientForm";
+            this.Text = "FindClientForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -190,16 +184,17 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBox1;
-        protected System.Windows.Forms.Label label6;
+
         private System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.Button btn_Find;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox FindTextBox;
+        protected System.Windows.Forms.Label label6;
         protected System.Windows.Forms.Panel panel2;
+        protected System.Windows.Forms.Button button7;
         protected System.Windows.Forms.Label label1;
         protected System.Windows.Forms.Label label4;
-        protected System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel panel3;
-        protected System.Windows.Forms.Button btn_Find;
-        private Controls.UserDetailsinfoControl userDetailsinfoControl1;
+        private Controls.UserFullInfo userFullInfo1;
+        private Controls.ClientAccountInfo clientAccountInfo1;
     }
 }

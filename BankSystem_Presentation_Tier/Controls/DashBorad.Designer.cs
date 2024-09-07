@@ -76,7 +76,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_bar_graph;
-            this.pictureBox1.Location = new System.Drawing.Point(275, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(342, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(83, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,7 +88,7 @@
             this.Pagetitle.AutoSize = true;
             this.Pagetitle.Font = new System.Drawing.Font("Palatino Linotype", 35F, System.Drawing.FontStyle.Bold);
             this.Pagetitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Pagetitle.Location = new System.Drawing.Point(364, 7);
+            this.Pagetitle.Location = new System.Drawing.Point(431, 7);
             this.Pagetitle.Name = "Pagetitle";
             this.Pagetitle.Size = new System.Drawing.Size(280, 63);
             this.Pagetitle.TabIndex = 0;

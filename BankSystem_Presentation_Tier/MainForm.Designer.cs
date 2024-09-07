@@ -550,6 +550,7 @@
             this.BT_FindClient.TabIndex = 14;
             this.BT_FindClient.Text = "Find Client";
             this.BT_FindClient.UseVisualStyleBackColor = false;
+            this.BT_FindClient.Click += new System.EventHandler(this.BT_FindClient_Click);
             // 
             // BT_deleteClient
             // 

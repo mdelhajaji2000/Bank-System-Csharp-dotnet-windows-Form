@@ -101,12 +101,11 @@
             // 
             // LB_DAteOfBirth
             // 
-            this.LB_DAteOfBirth.AutoSize = true;
             this.LB_DAteOfBirth.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_DAteOfBirth.ForeColor = System.Drawing.Color.Gold;
-            this.LB_DAteOfBirth.Location = new System.Drawing.Point(815, 70);
+            this.LB_DAteOfBirth.Location = new System.Drawing.Point(814, 73);
             this.LB_DAteOfBirth.Name = "LB_DAteOfBirth";
-            this.LB_DAteOfBirth.Size = new System.Drawing.Size(23, 35);
+            this.LB_DAteOfBirth.Size = new System.Drawing.Size(233, 71);
             this.LB_DAteOfBirth.TabIndex = 44;
             this.LB_DAteOfBirth.Text = " ";
             // 
@@ -115,7 +114,7 @@
             this.LB_PersonID.AutoSize = true;
             this.LB_PersonID.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_PersonID.ForeColor = System.Drawing.Color.Gold;
-            this.LB_PersonID.Location = new System.Drawing.Point(772, 136);
+            this.LB_PersonID.Location = new System.Drawing.Point(772, 165);
             this.LB_PersonID.Name = "LB_PersonID";
             this.LB_PersonID.Size = new System.Drawing.Size(23, 35);
             this.LB_PersonID.TabIndex = 43;
@@ -186,7 +185,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(602, 136);
+            this.label2.Location = new System.Drawing.Point(602, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 35);
             this.label2.TabIndex = 36;
@@ -197,7 +196,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(602, 70);
+            this.label1.Location = new System.Drawing.Point(601, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 35);
             this.label1.TabIndex = 35;

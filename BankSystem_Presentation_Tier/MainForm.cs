@@ -195,8 +195,15 @@ namespace BankSystem_Presentation_Tier
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Pagetitle.Text = "Manage Clients";
-            ScreenManageClients.BringToFront();
+            if ((clsGlobal.CurrentUser.Permessions & clsPermessions.ManageClients) == clsPermessions.ManageClients)
+            {
+                Pagetitle.Text = "Manage Clients";
+                ScreenManageClients.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("PermessioDenied");
+            }
         }
 
         private void BT_ClientList_Click(object sender, EventArgs e)
@@ -213,6 +220,13 @@ namespace BankSystem_Presentation_Tier
             clientsList.ShowinactiveOnly();
 
             clientsList.ShowDialog();
+        }
+
+        private void BT_FindClient_Click(object sender, EventArgs e)
+        {
+            ClientsManagements.Forms.FindClientForm findClientForm = new ClientsManagements.Forms.FindClientForm();
+
+            findClientForm.ShowDialog();
         }
     }
 }
