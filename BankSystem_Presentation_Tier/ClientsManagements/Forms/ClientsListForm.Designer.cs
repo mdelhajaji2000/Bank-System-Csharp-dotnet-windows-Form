@@ -28,11 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Pagetitle = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.Pagetitle = new System.Windows.Forms.Label();
             this.ClientsContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.selectedClientMenuStripDisplayName = new System.Windows.Forms.ToolStripMenuItem();
+            this.detailsInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showTransactionHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editActivationStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -41,6 +50,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +65,16 @@
             this.panel3.Size = new System.Drawing.Size(1466, 72);
             this.panel3.TabIndex = 4;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_service;
+            this.pictureBox4.Location = new System.Drawing.Point(522, 5);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(69, 64);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
             // Pagetitle
             // 
             this.Pagetitle.AutoSize = true;
@@ -66,26 +86,68 @@
             this.Pagetitle.TabIndex = 0;
             this.Pagetitle.Text = "Manage Clients";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_service;
-            this.pictureBox4.Location = new System.Drawing.Point(522, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(69, 64);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
             // ClientsContainer
             // 
             this.ClientsContainer.AutoScroll = true;
+            this.ClientsContainer.ContextMenuStrip = this.contextMenuStrip1;
             this.ClientsContainer.Location = new System.Drawing.Point(0, 143);
             this.ClientsContainer.Name = "ClientsContainer";
             this.ClientsContainer.Size = new System.Drawing.Size(1465, 509);
             this.ClientsContainer.TabIndex = 5;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectedClientMenuStripDisplayName,
+            this.detailsInfoToolStripMenuItem,
+            this.addNewClientToolStripMenuItem,
+            this.deleteClientToolStripMenuItem,
+            this.showTransactionHistoryToolStripMenuItem,
+            this.editActivationStatusToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(317, 218);
+            // 
+            // selectedClientMenuStripDisplayName
+            // 
+            this.selectedClientMenuStripDisplayName.Enabled = false;
+            this.selectedClientMenuStripDisplayName.Name = "selectedClientMenuStripDisplayName";
+            this.selectedClientMenuStripDisplayName.Size = new System.Drawing.Size(316, 32);
+            this.selectedClientMenuStripDisplayName.Text = "Selected Client";
+            // 
+            // detailsInfoToolStripMenuItem
+            // 
+            this.detailsInfoToolStripMenuItem.Name = "detailsInfoToolStripMenuItem";
+            this.detailsInfoToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.detailsInfoToolStripMenuItem.Text = "Details info";
+            // 
+            // addNewClientToolStripMenuItem
+            // 
+            this.addNewClientToolStripMenuItem.Name = "addNewClientToolStripMenuItem";
+            this.addNewClientToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.addNewClientToolStripMenuItem.Text = "Add New Client";
+            // 
+            // deleteClientToolStripMenuItem
+            // 
+            this.deleteClientToolStripMenuItem.Name = "deleteClientToolStripMenuItem";
+            this.deleteClientToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.deleteClientToolStripMenuItem.Text = "delete Client";
+            // 
+            // showTransactionHistoryToolStripMenuItem
+            // 
+            this.showTransactionHistoryToolStripMenuItem.Name = "showTransactionHistoryToolStripMenuItem";
+            this.showTransactionHistoryToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.showTransactionHistoryToolStripMenuItem.Text = "Show transaction History";
+            // 
+            // editActivationStatusToolStripMenuItem
+            // 
+            this.editActivationStatusToolStripMenuItem.Name = "editActivationStatusToolStripMenuItem";
+            this.editActivationStatusToolStripMenuItem.Size = new System.Drawing.Size(316, 32);
+            this.editActivationStatusToolStripMenuItem.Text = "edit Client info";
+            // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.label22);
             this.panel7.Controls.Add(this.label21);
             this.panel7.Controls.Add(this.label20);
@@ -97,6 +159,17 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1466, 70);
             this.panel7.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 63);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Account Number";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label22
             // 
@@ -179,6 +252,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.ResumeLayout(false);
@@ -198,5 +272,13 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem detailsInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewClientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteClientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showTransactionHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editActivationStatusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectedClientMenuStripDisplayName;
     }
 }

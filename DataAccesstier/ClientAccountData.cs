@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
 using System.Runtime.Remoting;
 using System.Security.Policy;
 
@@ -408,6 +409,41 @@ namespace DataAccesstier
             }
 
             return ISExist;
+        }
+
+        public static DataTable GetOnlyInactiveClientsAccounts()
+        {
+            DataTable dtAcccountsinactive = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "select * from Accounts Where ActiveStatus = 0";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    dtAcccountsinactive.Load(reader);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dtAcccountsinactive;
         }
     }
 }

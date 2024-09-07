@@ -389,9 +389,7 @@
   <ItemGroup>
     <None Include="Resources\BankWp.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ClientManagements\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\001-man.png" />
   </ItemGroup>

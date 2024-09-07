@@ -498,6 +498,7 @@
             this.BT_InactiveClients.Text = "InActive Clients";
             this.BT_InactiveClients.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BT_InactiveClients.UseVisualStyleBackColor = false;
+            this.BT_InactiveClients.Click += new System.EventHandler(this.BT_InactiveClients_Click);
             // 
             // BT_EditClient
             // 

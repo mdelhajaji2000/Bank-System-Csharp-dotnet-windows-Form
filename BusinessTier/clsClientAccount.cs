@@ -69,6 +69,11 @@ namespace BusinessTier
             return ClientAccountData.GetAllAccounts();
         }
 
+        public static DataTable GetInactivateAccounts()
+        {
+            return ClientAccountData.GetOnlyInactiveClientsAccounts();
+        }
+
         public static clsClientAccount FindByPersonId(int PersonId)
         {
             int Balance = 0;

@@ -17,20 +17,22 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         public ClientsListForm()
         {
             InitializeComponent();
-            FillClientsContainer();
         }
+
+        private clsClientAccount SelectedClientAccount;
 
         private Color color1 = Color.FromArgb(27, 31, 49);
         private Color color2 = Color.FromArgb(27, 31, 43);
 
         static int colorChanger = 0;
-        private void FillClientsContainer()
+        private void FillClientsContainer(DataTable dtClientsAccounts)
         {
-            DataTable dtCllientsAccounts = clsClientAccount.GetAllClientsAccounts();
 
-            foreach(DataRow row in dtCllientsAccounts.Rows)
+            foreach(DataRow row in dtClientsAccounts.Rows)
             {
                 ClientCard clientcard = new ClientCard((int)row["AccountNumber"]);
+                clientcard.onClientselected += getSelectedClient;
+                clientcard.onDetailsbuttonClicked += DetailsButtonClicked;
                 ClientsContainer.Controls.Add(clientcard);
 
                 if (colorChanger % 2 == 0)
@@ -41,5 +43,30 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
                 colorChanger++;
             }
         }
+
+        private void getSelectedClient(int AccountNumber)
+        {
+            SelectedClientAccount = clsClientAccount.Find(AccountNumber);
+            selectedClientMenuStripDisplayName.Text = "Account Number : " + SelectedClientAccount.AccountNumber.ToString();
+        }
+
+        private void DetailsButtonClicked(int AccountNumber)
+        {
+            this.SelectedClientAccount = clsClientAccount.Find(AccountNumber);
+            selectedClientMenuStripDisplayName.Text = "Account Number : " + SelectedClientAccount.AccountNumber.ToString();
+            contextMenuStrip1.Show(Cursor.Position);
+        }
+
+
+        public void ShowinactiveOnly()
+        {
+            FillClientsContainer(clsClientAccount.GetInactivateAccounts());
+        }
+
+        public void ShowAllClients()
+        {
+            FillClientsContainer(clsClientAccount.GetAllClientsAccounts());
+        }
+
     }
 }
