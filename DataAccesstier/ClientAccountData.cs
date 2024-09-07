@@ -19,7 +19,7 @@ namespace DataAccesstier
 
             SqlCommand command = new SqlCommand(Query, connection);
 
-            command.Parameters.AddWithValue("@AccNum", AccountNumber);
+            command.Parameters.AddWithValue("@AccNumber", AccountNumber);
 
             try
             {
@@ -31,7 +31,7 @@ namespace DataAccesstier
                 {
                     Balance = (int)reader["Balance"];
                     CreationDate = (DateTime)reader["CreationDate"];
-                    IsActive = clsDataAccessSettings.intToBool((int)reader["ActiveStatus"]);
+                    IsActive = reader.GetBoolean(reader.GetOrdinal("ActiveStatus"));
                     PersonID = (int)reader["PersonID"];
 
                     IsFound = true;
@@ -73,7 +73,7 @@ namespace DataAccesstier
                 {
                     Balance = (int)reader["Balance"];
                     CreationDate = (DateTime)reader["CreationDate"];
-                    IsActive = clsDataAccessSettings.intToBool((int)reader["ActiveStatus"]);
+                    IsActive = reader.GetBoolean(reader.GetOrdinal("ActiveStatus"));
                     AccountNumber = (int)reader["AccountNumber"];
 
                     IsFound = true;
@@ -210,7 +210,11 @@ namespace DataAccesstier
             SqlCommand command = new SqlCommand(Query, connection);
 
             command.Parameters.AddWithValue("@CreationDate", CreationDate);
-            command.Parameters.AddWithValue("@ActiveStatus", clsDataAccessSettings.boolToByte(ActiveStatus));
+            if (ActiveStatus)
+                command.Parameters.AddWithValue("@ActiveStatus", 1);
+            else
+                command.Parameters.AddWithValue("@ActiveStatus", 0);
+
             command.Parameters.AddWithValue("@PersonID", PersonId);
 
             try
@@ -249,7 +253,11 @@ namespace DataAccesstier
 
             SqlCommand command = new SqlCommand(Query, connection);
 
-            command.Parameters.AddWithValue("@ActiveStatus", clsDataAccessSettings.boolToByte(ActiveStatus));
+            if (ActiveStatus)
+                command.Parameters.AddWithValue("@ActiveStatus", 1);
+            else
+                command.Parameters.AddWithValue("@ActiveStatus", 0);
+
             command.Parameters.AddWithValue("@Balance", Balance);
 
             try
@@ -302,7 +310,7 @@ namespace DataAccesstier
             return AffectedRows > 0;
         }
 
-        public static bool UpdateActivationStatus(int AccountNumber, bool ActivationStatus)
+        public static bool UpdateActivationStatus(int AccountNumber, bool ActiveStatus)
         {
             int Affectedrows = 0;
 
@@ -314,7 +322,11 @@ namespace DataAccesstier
 
             SqlCommand command = new SqlCommand(Query, connection);
             command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
-            command.Parameters.AddWithValue("@ActivationStatus", ActivationStatus);
+
+            if (ActiveStatus)
+                command.Parameters.AddWithValue("@ActiveStatus", 1);
+            else
+                command.Parameters.AddWithValue("@ActiveStatus", 0);
 
             try
             {

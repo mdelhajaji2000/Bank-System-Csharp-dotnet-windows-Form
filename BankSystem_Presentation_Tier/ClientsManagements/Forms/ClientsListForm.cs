@@ -17,8 +17,13 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         public ClientsListForm()
         {
             InitializeComponent();
+            FillClientsContainer();
         }
 
+        private Color color1 = Color.FromArgb(27, 31, 49);
+        private Color color2 = Color.FromArgb(27, 31, 43);
+
+        static int colorChanger = 0;
         private void FillClientsContainer()
         {
             DataTable dtCllientsAccounts = clsClientAccount.GetAllClientsAccounts();
@@ -27,6 +32,13 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
             {
                 ClientCard clientcard = new ClientCard((int)row["AccountNumber"]);
                 ClientsContainer.Controls.Add(clientcard);
+
+                if (colorChanger % 2 == 0)
+                    clientcard.BackColor = color1;
+                else
+                    clientcard.BackColor = color2;
+
+                colorChanger++;
             }
         }
     }

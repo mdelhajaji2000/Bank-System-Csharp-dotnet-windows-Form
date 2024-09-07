@@ -57,7 +57,6 @@
             // 
             // LB_FirstName
             // 
-            this.LB_FirstName.AutoSize = true;
             this.LB_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_FirstName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.LB_FirstName.Location = new System.Drawing.Point(124, 30);
@@ -65,10 +64,10 @@
             this.LB_FirstName.Size = new System.Drawing.Size(154, 31);
             this.LB_FirstName.TabIndex = 1;
             this.LB_FirstName.Text = "First Name ";
+            this.LB_FirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LB_LastName
             // 
-            this.LB_LastName.AutoSize = true;
             this.LB_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_LastName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.LB_LastName.Location = new System.Drawing.Point(287, 30);
@@ -76,10 +75,10 @@
             this.LB_LastName.Size = new System.Drawing.Size(145, 31);
             this.LB_LastName.TabIndex = 2;
             this.LB_LastName.Text = "Last Name";
+            this.LB_LastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LB_Email
             // 
-            this.LB_Email.AutoSize = true;
             this.LB_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Email.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.LB_Email.Location = new System.Drawing.Point(452, 30);
@@ -87,10 +86,10 @@
             this.LB_Email.Size = new System.Drawing.Size(384, 31);
             this.LB_Email.TabIndex = 3;
             this.LB_Email.Text = "mdelhajajipro2007@gmail.com";
+            this.LB_Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LB_Balance
             // 
-            this.LB_Balance.AutoSize = true;
             this.LB_Balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.LB_Balance.Location = new System.Drawing.Point(860, 30);
@@ -98,21 +97,21 @@
             this.LB_Balance.Size = new System.Drawing.Size(135, 31);
             this.LB_Balance.TabIndex = 4;
             this.LB_Balance.Text = "4.453.564";
+            this.LB_Balance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LB_CreationDate
             // 
-            this.LB_CreationDate.AutoSize = true;
             this.LB_CreationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_CreationDate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.LB_CreationDate.Location = new System.Drawing.Point(1024, 30);
+            this.LB_CreationDate.Location = new System.Drawing.Point(1024, 0);
             this.LB_CreationDate.Name = "LB_CreationDate";
-            this.LB_CreationDate.Size = new System.Drawing.Size(182, 31);
+            this.LB_CreationDate.Size = new System.Drawing.Size(182, 89);
             this.LB_CreationDate.TabIndex = 5;
             this.LB_CreationDate.Text = "Creation Date";
+            this.LB_CreationDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LB_ActivationStatus
             // 
-            this.LB_ActivationStatus.AutoSize = true;
             this.LB_ActivationStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_ActivationStatus.ForeColor = System.Drawing.Color.Lime;
             this.LB_ActivationStatus.Location = new System.Drawing.Point(1245, 30);
@@ -120,6 +119,7 @@
             this.LB_ActivationStatus.Size = new System.Drawing.Size(112, 31);
             this.LB_ActivationStatus.TabIndex = 6;
             this.LB_ActivationStatus.Text = "InActive";
+            this.LB_ActivationStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button8
             // 
@@ -161,7 +161,6 @@
             this.Load += new System.EventHandler(this.ClientCard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PB_ClientPictureAvatar)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

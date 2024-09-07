@@ -199,5 +199,11 @@ namespace BankSystem_Presentation_Tier
             ScreenManageClients.BringToFront();
         }
 
+        private void BT_ClientList_Click(object sender, EventArgs e)
+        {
+            ClientsManagements.Forms.ClientsListForm clientsList = new ClientsManagements.Forms.ClientsListForm();
+
+            clientsList.ShowDialog();
+        }
     }
 }

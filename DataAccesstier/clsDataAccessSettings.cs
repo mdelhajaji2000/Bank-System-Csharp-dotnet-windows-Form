@@ -13,16 +13,7 @@ namespace DataAccesstier
 
         public static bool intToBool(int value)
         {
-            if (value == 1) 
-                return true;
-            else if (value == 0) 
-                return false;
-            else if (value > 1) 
-                return true;
-            else if (value < 0) 
-                return false;
-
-            return false;
+            return (value == 1);
         }
 
         public static byte boolToByte(bool value)
