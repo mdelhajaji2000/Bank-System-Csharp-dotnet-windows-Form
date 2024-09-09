@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,8 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         {
             InitializeComponent();
         }
+
+        public bool IsOnlyForInactiveAccounts = false;
 
         private clsClientAccount SelectedClientAccount;
 
@@ -87,6 +90,12 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         {
             ClientsContainer.Controls.Clear();
 
+            if (IsOnlyForInactiveAccounts)
+            {
+                ShowinactiveOnly();
+                return;
+            }    
+
             FillClientsContainer(clsClientAccount.GetAllClientsAccounts());
         }
 
@@ -100,6 +109,21 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
             AddNewUpdateClientAccount frmupdate = new AddNewUpdateClientAccount(SelectedClientAccount.AccountNumber);
 
             frmupdate.ShowDialog();
+        }
+
+        private void deleteClientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are You Sure You Want To Delete This Account ? (" + SelectedClientAccount.AccountNumber + ") ?", "Perform Action", MessageBoxButtons.OKCancel);
+
+            Exception ex = new Exception("Fuck You Muther Fucker");
+
+            if (result == DialogResult.Yes)
+            {
+                if (clsClientAccount.DeleteClient(SelectedClientAccount.AccountNumber) && clsPerson.DeletePerson(SelectedClientAccount.PersonID))
+                    MessageBox.Show("Client Deleted Successfuly..!", "Action Performed (Success)");
+                else
+                    MessageBox.Show("Error Not Deleted");
+            }
         }
     }
 }

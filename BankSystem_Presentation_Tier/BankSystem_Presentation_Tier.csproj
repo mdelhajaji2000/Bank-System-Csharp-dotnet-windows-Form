@@ -69,11 +69,11 @@
     <Compile Include="ClientsManagements\Forms\FindClientForm.Designer.cs">
       <DependentUpon>FindClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientsManagements\Forms\FinduserMiniForm.cs">
+    <Compile Include="ClientsManagements\Forms\FindClientMiniForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientsManagements\Forms\FinduserMiniForm.Designer.cs">
-      <DependentUpon>FinduserMiniForm.cs</DependentUpon>
+    <Compile Include="ClientsManagements\Forms\FindClientMiniForm.Designer.cs">
+      <DependentUpon>FindClientMiniForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ClientAccountInfo.cs">
       <SubType>UserControl</SubType>
@@ -178,8 +178,8 @@
     <EmbeddedResource Include="ClientsManagements\Forms\FindClientForm.resx">
       <DependentUpon>FindClientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientsManagements\Forms\FinduserMiniForm.resx">
-      <DependentUpon>FinduserMiniForm.cs</DependentUpon>
+    <EmbeddedResource Include="ClientsManagements\Forms\FindClientMiniForm.resx">
+      <DependentUpon>FindClientMiniForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ClientAccountInfo.resx">
       <DependentUpon>ClientAccountInfo.cs</DependentUpon>
@@ -472,6 +472,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\001-closure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

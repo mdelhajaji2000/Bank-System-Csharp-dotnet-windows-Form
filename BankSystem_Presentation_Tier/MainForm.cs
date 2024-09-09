@@ -10,6 +10,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,15 @@ namespace BankSystem_Presentation_Tier
     public partial class MainForm : Form
     {
         private clsUsers SelectedUser;
+
+        struct DataBackfromFindForm
+        {
+            public int AccountNumber;
+            public bool PerformAction;
+        }
+
+        private DataBackfromFindForm ReturnedData = new DataBackfromFindForm();
+
         public MainForm()
         {
             InitializeComponent();
@@ -218,6 +228,7 @@ namespace BankSystem_Presentation_Tier
         private void BT_InactiveClients_Click(object sender, EventArgs e)
         {
             ClientsManagements.Forms.ClientsListForm clientsList = new ClientsManagements.Forms.ClientsListForm();
+            clientsList.IsOnlyForInactiveAccounts = true;
             clientsList.ShowinactiveOnly();
 
             clientsList.ShowDialog();
@@ -244,9 +255,39 @@ namespace BankSystem_Presentation_Tier
 
         private void BT_EditClient_Click(object sender, EventArgs e)
         {
-            
+            FindClientMiniForm findClient = new FindClientMiniForm();
+            findClient.DataBack += FindClientForm_DataBack;
 
-            
+            findClient.ShowDialog();
+            if (ReturnedData.PerformAction)
+            {
+                AddNewUpdateClientAccount fClient = new AddNewUpdateClientAccount(ReturnedData.AccountNumber);
+                fClient.ShowDialog();
+            }
+        }
+
+        private void FindClientForm_DataBack(object sender, int AccountNumber, bool PerformAction)
+        {
+            ReturnedData.AccountNumber = AccountNumber;
+            ReturnedData.PerformAction = PerformAction;
+        }
+
+        private void BT_deleteClient_Click(object sender, EventArgs e)
+        {
+            FindClientMiniForm frmFind = new FindClientMiniForm();
+            frmFind.DataBack += FindClientForm_DataBack;
+
+            frmFind.ShowDialog();
+
+            if (ReturnedData.PerformAction)
+            {
+                FindClientForm frmFindForDeletefrom = new FindClientForm();
+
+                frmFindForDeletefrom.FillDataUsingParameter(ReturnedData.AccountNumber);
+                frmFindForDeletefrom.ShowForDelete();
+
+                frmFindForDeletefrom.ShowDialog();
+            }
         }
     }
 }

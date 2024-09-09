@@ -146,6 +146,11 @@ namespace BusinessTier
             return ClientAccountData.UpdateActivationStatus(this.AccountNumber, true);
         }
 
+        public static bool IsclientExist(int AccountNumber)
+        {
+            return ClientAccountData.IsAccountExist(AccountNumber);
+        }
+
         //======================== Those Two Functions Should Store transactions Recordes in The DataBase ======================
 
         public bool AddAmountToBalance(int Amount)

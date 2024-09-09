@@ -39,8 +39,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.clientAccountInfo1 = new BankSystem_Presentation_Tier.Controls.ClientAccountInfo();
             this.userFullInfo1 = new BankSystem_Presentation_Tier.Controls.UserFullInfo();
+            this.DeleteControl = new System.Windows.Forms.Panel();
+            this.BT_deleteClient = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SerchControls.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.DeleteControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // SerchControls
@@ -50,7 +55,7 @@
             this.SerchControls.Controls.Add(this.panel3);
             this.SerchControls.Controls.Add(this.FindTextBox);
             this.SerchControls.Controls.Add(this.label6);
-            this.SerchControls.Location = new System.Drawing.Point(12, 57);
+            this.SerchControls.Location = new System.Drawing.Point(13, 64);
             this.SerchControls.Name = "SerchControls";
             this.SerchControls.Size = new System.Drawing.Size(1093, 60);
             this.SerchControls.TabIndex = 5;
@@ -162,12 +167,66 @@
             this.userFullInfo1.Size = new System.Drawing.Size(1111, 456);
             this.userFullInfo1.TabIndex = 7;
             // 
+            // DeleteControl
+            // 
+            this.DeleteControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DeleteControl.Controls.Add(this.BT_deleteClient);
+            this.DeleteControl.Controls.Add(this.button1);
+            this.DeleteControl.Controls.Add(this.label2);
+            this.DeleteControl.Location = new System.Drawing.Point(13, 58);
+            this.DeleteControl.Name = "DeleteControl";
+            this.DeleteControl.Size = new System.Drawing.Size(1093, 71);
+            this.DeleteControl.TabIndex = 9;
+            this.DeleteControl.Visible = false;
+            // 
+            // BT_deleteClient
+            // 
+            this.BT_deleteClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BT_deleteClient.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BT_deleteClient.FlatAppearance.BorderSize = 2;
+            this.BT_deleteClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_deleteClient.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_deleteClient.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BT_deleteClient.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_user3;
+            this.BT_deleteClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_deleteClient.Location = new System.Drawing.Point(792, 3);
+            this.BT_deleteClient.Name = "BT_deleteClient";
+            this.BT_deleteClient.Size = new System.Drawing.Size(254, 63);
+            this.BT_deleteClient.TabIndex = 14;
+            this.BT_deleteClient.Text = "         Delete Account";
+            this.BT_deleteClient.UseVisualStyleBackColor = false;
+            this.BT_deleteClient.Click += new System.EventHandler(this.BT_deleteClient_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_warning;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(93, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 63);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(239, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(486, 27);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Are you Sure You Want To Delete That User ...!";
+            // 
             // FindClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1121, 773);
+            this.Controls.Add(this.DeleteControl);
             this.Controls.Add(this.clientAccountInfo1);
             this.Controls.Add(this.userFullInfo1);
             this.Controls.Add(this.panel2);
@@ -179,6 +238,8 @@
             this.SerchControls.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.DeleteControl.ResumeLayout(false);
+            this.DeleteControl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -196,5 +257,9 @@
         protected System.Windows.Forms.Label label4;
         private Controls.UserFullInfo userFullInfo1;
         private Controls.ClientAccountInfo clientAccountInfo1;
+        private System.Windows.Forms.Panel DeleteControl;
+        protected System.Windows.Forms.Label label2;
+        protected System.Windows.Forms.Button button1;
+        protected System.Windows.Forms.Button BT_deleteClient;
     }
 }

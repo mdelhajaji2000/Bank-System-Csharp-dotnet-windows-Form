@@ -99,6 +99,8 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
                     {
                         account.PersonInfo = Updatedperson;
 
+                        account.PersonInfo.Save();
+
                         MessageBox.Show("Client Updated Successfuly !", "Success");
                     }
                     else

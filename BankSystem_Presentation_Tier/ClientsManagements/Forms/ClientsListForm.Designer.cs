@@ -42,6 +42,8 @@
             this.showTransactionHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editActivationStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -50,8 +52,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button8 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -144,6 +144,7 @@
             this.deleteClientToolStripMenuItem.Name = "deleteClientToolStripMenuItem";
             this.deleteClientToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
             this.deleteClientToolStripMenuItem.Text = "delete Client";
+            this.deleteClientToolStripMenuItem.Click += new System.EventHandler(this.deleteClientToolStripMenuItem_Click);
             // 
             // showTransactionHistoryToolStripMenuItem
             // 
@@ -176,6 +177,30 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1466, 70);
             this.panel7.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.label2.Location = new System.Drawing.Point(1399, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Refresh";
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.loading_arrow;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(1406, 3);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(42, 34);
+            this.button8.TabIndex = 9;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label1
             // 
@@ -261,30 +286,6 @@
             this.imageList1.Images.SetKeyName(0, "002-bank-account.png");
             this.imageList1.Images.SetKeyName(1, "user-avatar.png");
             this.imageList1.Images.SetKeyName(2, "001-delete.png");
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.loading_arrow;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(1406, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(42, 34);
-            this.button8.TabIndex = 9;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label2.Location = new System.Drawing.Point(1399, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Refresh";
             // 
             // ClientsListForm
             // 

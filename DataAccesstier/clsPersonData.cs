@@ -162,13 +162,13 @@ namespace DataAccesstier
 
             SqlCommand command = new SqlCommand(Query, connection);
 
-            command.Parameters.AddWithValue("@personID", PersonID);
+            command.Parameters.AddWithValue("@PersonID", PersonID);
 
             int AffectedRows = 0;
 
             try
             {
-                connection.Close();
+                connection.Open();
 
                 AffectedRows = command.ExecuteNonQuery();
             }

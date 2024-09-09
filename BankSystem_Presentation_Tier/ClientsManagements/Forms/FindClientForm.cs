@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,9 +19,10 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
             InitializeComponent();
         }
 
+        clsClientAccount Account = null;
+
         private void btn_Find_Click(object sender, EventArgs e)
         {
-            clsClientAccount Account = null;
 
             if (!string.IsNullOrEmpty(FindTextBox.Text) && int.TryParse(FindTextBox.Text, out int SerchAccnumber))
             {
@@ -48,7 +50,7 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         {
             SerchControls.Hide();
 
-            clsClientAccount Account = clsClientAccount.Find(AccNumber);
+            Account = clsClientAccount.Find(AccNumber);
 
             if (Account != null)
             {
@@ -62,6 +64,23 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void ShowForDelete()
+        {
+            DeleteControl.Show();
+            SerchControls.Hide();
+        }
+
+        private void BT_deleteClient_Click(object sender, EventArgs e)
+        {
+            if (clsClientAccount.DeleteClient(Account.AccountNumber) && clsPerson.DeletePerson(Account.PersonID))
+                MessageBox.Show("Account Number : " + Account.AccountNumber + "Was Deleted Successfuly..!", "Action Performed (Successded)");
+            else
+                MessageBox.Show("Deletion Faild\nClient Still Exist....Try To Desactivate It?");
+
+            this.Close();
+            
         }
     }
 }
