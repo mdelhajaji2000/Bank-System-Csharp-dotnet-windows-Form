@@ -1,4 +1,5 @@
 ﻿using BusinessTier;
+using BusinessTier.Logs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,9 @@ namespace BankSystem_Presentation_Tier.LogIn
                 ISAcceptedLogIn = true;
 
                 Global.clsGlobal.CurrentUser = User;
+                clsLogInLogs newLog = new clsLogInLogs(User);
+
+                newLog.AddLogInrecord();
             }
 
             return ISAcceptedLogIn;

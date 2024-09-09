@@ -2,6 +2,7 @@
 using BankSystem_Presentation_Tier.Controls;
 using BankSystem_Presentation_Tier.Global;
 using BankSystem_Presentation_Tier.LogIn;
+using BankSystem_Presentation_Tier.LogInLog;
 using BankSystem_Presentation_Tier.UsersManagement;
 using BusinessTier;
 using System;
@@ -288,6 +289,13 @@ namespace BankSystem_Presentation_Tier
 
                 frmFindForDeletefrom.ShowDialog();
             }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            LogInLogsrecords frm = new LogInLogsrecords();
+
+            frm.ShowDialog();
         }
     }
 }
