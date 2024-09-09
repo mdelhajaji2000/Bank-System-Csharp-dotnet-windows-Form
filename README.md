@@ -34,6 +34,8 @@ The **Bank System Application** is a comprehensive desktop application designed 
 - **Statistics Page**: View detailed statistics and reports about the bank's operations.
 - **ATM Service**: Interface for managing ATM-related operations.
 - **Loan Management**: Manage loan applications, approvals, and repayments.
+
+- **Ui**: Ui Will Be Modern (As Level I Can Do With windows Form Controls) and it will Be Updated Whene The BackEnd Part Of The App Completed.
 <!-- Installation Will Be Ready Whene The project Were Completed and Finished 
 ## Installation
 
