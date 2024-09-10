@@ -41,9 +41,13 @@
             this.DisplayAccountNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.personDataReader1 = new BankSystem_Presentation_Tier.Controls.PersonDataReader();
+            this.ActivationStatusCB = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ForUpdatePanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.ForUpdatePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +60,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(640, 92);
+            this.panel1.Size = new System.Drawing.Size(635, 92);
             this.panel1.TabIndex = 2;
             // 
             // LB_Title
@@ -100,9 +104,9 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
-            this.groupBox1.Location = new System.Drawing.Point(5, 778);
+            this.groupBox1.Location = new System.Drawing.Point(5, 777);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(626, 85);
+            this.groupBox1.Size = new System.Drawing.Size(626, 86);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
@@ -200,15 +204,50 @@
             this.personDataReader1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
             this.personDataReader1.Location = new System.Drawing.Point(6, 83);
             this.personDataReader1.Name = "personDataReader1";
-            this.personDataReader1.Size = new System.Drawing.Size(639, 706);
+            this.personDataReader1.Size = new System.Drawing.Size(630, 706);
             this.personDataReader1.TabIndex = 0;
+            // 
+            // ActivationStatusCB
+            // 
+            this.ActivationStatusCB.AutoSize = true;
+            this.ActivationStatusCB.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
+            this.ActivationStatusCB.ForeColor = System.Drawing.Color.Yellow;
+            this.ActivationStatusCB.Location = new System.Drawing.Point(266, 27);
+            this.ActivationStatusCB.Name = "ActivationStatusCB";
+            this.ActivationStatusCB.Size = new System.Drawing.Size(113, 39);
+            this.ActivationStatusCB.TabIndex = 101;
+            this.ActivationStatusCB.Text = "Active";
+            this.ActivationStatusCB.UseVisualStyleBackColor = true;
+            this.ActivationStatusCB.CheckedChanged += new System.EventHandler(this.ActivationStatusCB_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(3, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(257, 35);
+            this.label1.TabIndex = 102;
+            this.label1.Text = "Activation Status : ";
+            // 
+            // ForUpdatePanel
+            // 
+            this.ForUpdatePanel.Controls.Add(this.ActivationStatusCB);
+            this.ForUpdatePanel.Controls.Add(this.label1);
+            this.ForUpdatePanel.Location = new System.Drawing.Point(30, 616);
+            this.ForUpdatePanel.Name = "ForUpdatePanel";
+            this.ForUpdatePanel.Size = new System.Drawing.Size(564, 100);
+            this.ForUpdatePanel.TabIndex = 103;
+            this.ForUpdatePanel.Visible = false;
             // 
             // AddNewUpdateClientAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(640, 871);
+            this.ClientSize = new System.Drawing.Size(635, 871);
+            this.Controls.Add(this.ForUpdatePanel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.DisplayAccountNumber);
             this.Controls.Add(this.label2);
@@ -222,6 +261,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.ForUpdatePanel.ResumeLayout(false);
+            this.ForUpdatePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +283,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox DisplayAccountNumber;
         protected System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox ActivationStatusCB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel ForUpdatePanel;
     }
 }

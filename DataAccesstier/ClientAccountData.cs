@@ -318,7 +318,7 @@ namespace DataAccesstier
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
             string Query = "Update Accounts Set " +
-                "ActivationStatus = @ActivationStatus " +
+                "ActiveStatus = @ActiveStatus " +
                 " Where AccountNumber = @AccountNumber";
 
             SqlCommand command = new SqlCommand(Query, connection);

@@ -41,6 +41,7 @@
             this.deleteClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showTransactionHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editActivationStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activateDisactivateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -110,9 +111,10 @@
             this.addNewClientToolStripMenuItem,
             this.deleteClientToolStripMenuItem,
             this.showTransactionHistoryToolStripMenuItem,
-            this.editActivationStatusToolStripMenuItem});
+            this.editActivationStatusToolStripMenuItem,
+            this.activateDisactivateToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(461, 446);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(461, 494);
             // 
             // selectedClientMenuStripDisplayName
             // 
@@ -160,6 +162,13 @@
             this.editActivationStatusToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
             this.editActivationStatusToolStripMenuItem.Text = "Edit Client Info";
             this.editActivationStatusToolStripMenuItem.Click += new System.EventHandler(this.editActivationStatusToolStripMenuItem_Click);
+            // 
+            // activateDisactivateToolStripMenuItem
+            // 
+            this.activateDisactivateToolStripMenuItem.Name = "activateDisactivateToolStripMenuItem";
+            this.activateDisactivateToolStripMenuItem.Size = new System.Drawing.Size(460, 70);
+            this.activateDisactivateToolStripMenuItem.Text = "Activate / Disactivate";
+            this.activateDisactivateToolStripMenuItem.Click += new System.EventHandler(this.activateDisactivateToolStripMenuItem_Click);
             // 
             // panel7
             // 
@@ -283,9 +292,8 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "002-bank-account.png");
-            this.imageList1.Images.SetKeyName(1, "user-avatar.png");
-            this.imageList1.Images.SetKeyName(2, "001-delete.png");
+            this.imageList1.Images.SetKeyName(0, "001-toggle.png");
+            this.imageList1.Images.SetKeyName(1, "002-switch.png");
             // 
             // ClientsListForm
             // 
@@ -299,6 +307,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ClientsListForm";
             this.Text = "ClientsListForm";
+            this.Load += new System.EventHandler(this.ClientsListForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -333,5 +342,6 @@
         private System.Windows.Forms.ImageList imageList1;
         protected System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem activateDisactivateToolStripMenuItem;
     }
 }

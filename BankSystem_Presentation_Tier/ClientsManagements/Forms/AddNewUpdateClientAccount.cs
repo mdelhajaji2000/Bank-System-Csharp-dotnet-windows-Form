@@ -52,6 +52,7 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
                 case enMode.AddNew:
 
                     LB_Title.Text = "Create New Client";
+                    ActivationStatusCB.Hide();
 
                     break;
                 case enMode.Update:
@@ -60,6 +61,12 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
 
                     personDataReader1.FillData(account.PersonID);
                     DisplayAccountNumber.Text = account.AccountNumber.ToString();
+                    ForUpdatePanel.Show();
+
+                    if (account.ActivationStatus)
+                        ActivationStatusCB.CheckState = CheckState.Checked;
+                    else
+                        ActivationStatusCB.CheckState = CheckState.Unchecked;
 
                     break;
             }
@@ -101,6 +108,11 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
 
                         account.PersonInfo.Save();
 
+                        if (ActivationStatusCB.Checked)
+                            account.ActivateAccount();
+                        else
+                            account.DesactivateAccount();
+
                         MessageBox.Show("Client Updated Successfuly !", "Success");
                     }
                     else
@@ -118,6 +130,12 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         private void AddNewUpdateClientAccount_Load(object sender, EventArgs e)
         {
             Loadinfo();
+        }
+
+        private void ActivationStatusCB_CheckedChanged(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

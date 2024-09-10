@@ -51,6 +51,18 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         {
             SelectedClientAccount = clsClientAccount.Find(AccountNumber);
             selectedClientMenuStripDisplayName.Text = "Account Number : " + SelectedClientAccount.AccountNumber.ToString();
+
+            if (SelectedClientAccount.ActivationStatus)
+            {
+                activateDisactivateToolStripMenuItem.Text = "Desactivate Account";
+                activateDisactivateToolStripMenuItem.Image = imageList1.Images[0];
+            }
+            else
+            {
+                activateDisactivateToolStripMenuItem.Text = "Activate Account";
+                activateDisactivateToolStripMenuItem.Image = imageList1.Images[1];
+            }
+            
         }
 
         private void DetailsButtonClicked(int AccountNumber)
@@ -124,6 +136,31 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
                 else
                     MessageBox.Show("Error Not Deleted");
             }
+        }
+
+        private void activateDisactivateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SelectedClientAccount.ActivationStatus)
+            {
+                SelectedClientAccount.DesactivateAccount();
+
+                activateDisactivateToolStripMenuItem.Text = "Activate Account";
+                activateDisactivateToolStripMenuItem.Image = imageList1.Images[0];
+            }
+            else
+            {
+                SelectedClientAccount.ActivateAccount();
+
+                activateDisactivateToolStripMenuItem.Text = "Desactivate Account";
+                activateDisactivateToolStripMenuItem.Image = imageList1.Images[1];
+            }
+
+            refresh();
+        }
+
+        private void ClientsListForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
