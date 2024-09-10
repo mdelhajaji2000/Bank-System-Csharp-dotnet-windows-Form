@@ -45,6 +45,7 @@
     <Compile Include="clsCountriesData.cs" />
     <Compile Include="clsDataAccessSettings.cs" />
     <Compile Include="clsPersonData.cs" />
+    <Compile Include="clsTransactions.cs" />
     <Compile Include="clsUsersData.cs" />
     <Compile Include="Logs\clsLogInLogsData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
