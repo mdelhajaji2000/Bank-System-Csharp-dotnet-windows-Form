@@ -270,9 +270,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessTier\BusinessTier.csproj">
+    <ProjectReference Include="..\BusinessTier\BusinessLayer.csproj">
       <Project>{8cea250a-8445-4815-872d-6b9ed4e4cb02}</Project>
-      <Name>BusinessTier</Name>
+      <Name>BusinessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

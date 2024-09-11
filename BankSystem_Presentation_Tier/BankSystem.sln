@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystem_Presentation_Tier", "BankSystem_Presentation_Tier.csproj", "{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer.csproj", "{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessTier", "..\BusinessTier\BusinessTier.csproj", "{8CEA250A-8445-4815-872D-6B9ED4E4CB02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "..\BusinessTier\BusinessLayer.csproj", "{8CEA250A-8445-4815-872D-6B9ED4E4CB02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesstier", "..\DataAccesstier\DataAccesstier.csproj", "{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccesstier\DataAccessLayer.csproj", "{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingUnitConsoleApp", "..\TestingUnitConsoleApp\TestingUnitConsoleApp.csproj", "{99310890-639B-4632-8154-596E7679B1A0}"
 EndProject

@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccesstier\DataAccesstier.csproj">
+    <ProjectReference Include="..\DataAccesstier\DataAccessLayer.csproj">
       <Project>{8aabf536-3ba3-45e5-8758-fe3c1cfa9bc5}</Project>
-      <Name>DataAccesstier</Name>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

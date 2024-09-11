@@ -156,15 +156,21 @@ namespace BusinessTier
         public bool AddAmountToBalance(int Amount)
         {
             if (Amount > 0)
+            {
+                clsTransactionsData.InsertDeposit(this.AccountNumber, Amount, this.Balance, this.Balance + Amount);
                 return ClientAccountData.UpdateBalance(this.AccountNumber, Amount);
+            }
             else
                 return false;
         }
 
-        public bool increaseAmountFromBalance(int Amount)
+        public bool IncreaseAmountFromBalance(int Amount)
         {
             if (Amount > 0)
+            {
+                clsTransactionsData.InsertWithDraw(this.AccountNumber, Amount, this.Balance, this.Balance - Amount);
                 return ClientAccountData.UpdateBalance(this.AccountNumber, Amount);
+            }
             else
                 return false;
         }

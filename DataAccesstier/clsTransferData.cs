@@ -125,5 +125,101 @@ namespace DataAccesstier
 
             return IsFound;
         }
+
+        public static DataTable GetAllTransfersPerAccountByAccountNumber(int AccountNumber)
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "Select * From Transfers Where AccNumberFrom  = @AccountNumber OR AccNumberTo = @AccountNumber";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                    dt.Load(reader);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dt;
+        }
+
+        public static DataTable GetTransfersPerAccountFromByAccNumber(int AccountNumber)
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "Select * From Transfers Where AccNumberFrom  = @AccountNumber";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                    dt.Load(reader);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dt;
+        }
+
+        public static DataTable GetTransfersPerAccountToByAccNumber(int AccountNumber)
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "Select * From Transfers Where AccNumberTo = @AccountNumber";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                    dt.Load(reader);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dt;
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -47,13 +48,16 @@ namespace DataAccesstier
             return dt; 
         }
 
-        public static bool GetTransactionRecordById(int TransactionID, ref int AccountNumber, ref int Amount, ref int BalanceBefore, ref int BalanceNow, ref int TransferID, ref int TransactionType)
+        public static bool GetTransactionRecordById(int TransactionID, ref int AccountNumber, ref int Amount, ref int BalanceBefore, ref int BalanceNow, ref int TransferID, ref string TransactionType)
         {
             bool IsFound = false;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "SELECT * FROM Transactions Where transactionID = @TransactionID";
+            string Query = "SELECT        transactions.TransactionID, transactions.Amount, transactions.BalanceBefore, transactions.BalanceNow, transactions.transferID, transactions.AccountNumber, TransactionType.TransactionTypeName" +
+                "\r\nFROM            TransactionType INNER JOIN" +
+                "\r\n                         transactions ON TransactionType.ID = transactions.TransactionType " +
+                "Where TransactionID = @TransactionID";
 
             SqlCommand command = new SqlCommand(Query, connection);
             command.Parameters.AddWithValue("@TransactionID", TransactionID);
@@ -70,7 +74,7 @@ namespace DataAccesstier
                     Amount = (int)reader["Amount"];
                     BalanceBefore = (int)reader["BalanceBefore"];
                     BalanceNow = (int)reader["BalanceNow"];
-                    TransactionType = (int)reader["TransactionType"];
+                    TransactionType = (string)reader["TransactionTypeName"];
 
                     if (reader["TransferID"] == System.DBNull.Value)
                         BalanceNow = -1;
@@ -226,7 +230,38 @@ namespace DataAccesstier
             }
         }
 
-        
+        public static DataTable GetTransactionsPerAccountByAccounNumber(int AccountNumber)
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "SELECT        transactions.TransactionID, transactions.Amount, transactions.BalanceBefore, transactions.BalanceNow, transactions.transferID, transactions.AccountNumber, TransactionType.TransactionTypeName" +
+                "\r\nFROM            TransactionType INNER JOIN" +
+                "\r\n                         transactions ON TransactionType.ID = transactions.TransactionType Where AccountNumber = @AccountNumber";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                    dt.Load(reader);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return dt;
+        }
 
     }
 

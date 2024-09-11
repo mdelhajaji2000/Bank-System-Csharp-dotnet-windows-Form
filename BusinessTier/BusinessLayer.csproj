@@ -46,14 +46,15 @@
     <Compile Include="clsPermessions.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsShared.cs" />
+    <Compile Include="clsTransactions.cs" />
     <Compile Include="clsUsers.cs" />
     <Compile Include="Logs\clsLogInLogs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccesstier\DataAccesstier.csproj">
+    <ProjectReference Include="..\DataAccesstier\DataAccessLayer.csproj">
       <Project>{8aabf536-3ba3-45e5-8758-fe3c1cfa9bc5}</Project>
-      <Name>DataAccesstier</Name>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
