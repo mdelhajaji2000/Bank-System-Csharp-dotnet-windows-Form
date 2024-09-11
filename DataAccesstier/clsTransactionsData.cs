@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccesstier
 {
-    public static class clsTransactions
+    public static class clsTransactionsData
     {
         public static DataTable GetAllTransactionsrecords()
         {
@@ -18,7 +18,9 @@ namespace DataAccesstier
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "Select * From Transactions";
+            string Query = "SELECT        transactions.TransactionID, transactions.Amount, transactions.BalanceBefore, transactions.BalanceNow, transactions.transferID, transactions.AccountNumber, TransactionType.TransactionTypeName" +
+                "\r\nFROM            TransactionType INNER JOIN" +
+                "\r\n                         transactions ON TransactionType.ID = transactions.TransactionType;";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
@@ -45,7 +47,7 @@ namespace DataAccesstier
             return dt; 
         }
 
-        public static bool TransactionRecordById(int TransactionID, ref int AccountNumber, ref int Amount, ref int BalanceBefore, ref int BalanceNow, ref int TransferID)
+        public static bool GetTransactionRecordById(int TransactionID, ref int AccountNumber, ref int Amount, ref int BalanceBefore, ref int BalanceNow, ref int TransferID, ref int TransactionType)
         {
             bool IsFound = false;
 
@@ -68,6 +70,7 @@ namespace DataAccesstier
                     Amount = (int)reader["Amount"];
                     BalanceBefore = (int)reader["BalanceBefore"];
                     BalanceNow = (int)reader["BalanceNow"];
+                    TransactionType = (int)reader["TransactionType"];
 
                     if (reader["TransferID"] == System.DBNull.Value)
                         BalanceNow = -1;
@@ -157,6 +160,43 @@ namespace DataAccesstier
 
             return RecordID;
         }
+
+        public static void InsertDeposit(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow)
+        {
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID) " +
+                "values " +
+                "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID)";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+            command.Parameters.AddWithValue("@Amount", Amount);
+            command.Parameters.AddWithValue("@BalanceNow", BalanceNow);
+            command.Parameters.AddWithValue("@BalanceBefore", BalanceBefore);
+            command.Parameters.AddWithValue("@TransferID", System.DBNull.Value);
+
+            try
+            {
+                connection.Open();
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public static void InsertWithDraw()
+        {
+
+        }
+
     }
 
 }

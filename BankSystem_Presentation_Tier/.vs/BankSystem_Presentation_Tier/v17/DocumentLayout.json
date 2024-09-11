@@ -3,7 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clstransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clstransactionsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,17 +16,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 625,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\DataAccesstier\\clsDataAccessSettings.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\DataAccesstier\\clsDataAccessSettings.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T16:47:29.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsTransactions.cs",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransactions.cs",
-              "RelativeDocumentMoniker": "..\\DataAccesstier\\clsTransactions.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransactions.cs",
-              "RelativeToolTip": "..\\DataAccesstier\\clsTransactions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ4AAAAJAAAA",
+              "Title": "clsTransactionsData.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransactionsData.cs",
+              "RelativeDocumentMoniker": "..\\DataAccesstier\\clsTransactionsData.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransactionsData.cs",
+              "RelativeToolTip": "..\\DataAccesstier\\clsTransactionsData.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T15:56:49.819Z",
               "EditorCaption": ""
