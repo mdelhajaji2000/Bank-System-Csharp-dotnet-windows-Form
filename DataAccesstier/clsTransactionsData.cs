@@ -123,14 +123,14 @@ namespace DataAccesstier
             return (AffectedRows > 0);
         }
 
-        public static int AddNewRecord(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow, int TransferID)
+        public static int AddNewRecord(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow, int TransferID, int TransactionType)
         {
             int RecordID = -1;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "INSERT INTO Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID) values " +
-                "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID); " +
+            string Query = "INSERT INTO Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID, TransactionType) values " +
+                "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID, @TransactionType); " +
                 "Select Scope_Identity(); ";
 
             SqlCommand command = new SqlCommand(Query, connection);
@@ -139,6 +139,7 @@ namespace DataAccesstier
             command.Parameters.AddWithValue("@BalanceNow", BalanceNow);
             command.Parameters.AddWithValue("@BalanceBefore", BalanceBefore);
             command.Parameters.AddWithValue("@TransferID", TransferID);
+            command.Parameters.AddWithValue("@TransactionType", TransactionType);
 
             try
             {
@@ -167,7 +168,7 @@ namespace DataAccesstier
 
             string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID) " +
                 "values " +
-                "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID)";
+                "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID, @TransactionType)";
 
             SqlCommand command = new SqlCommand(Query, connection);
             command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
@@ -175,6 +176,7 @@ namespace DataAccesstier
             command.Parameters.AddWithValue("@BalanceNow", BalanceNow);
             command.Parameters.AddWithValue("@BalanceBefore", BalanceBefore);
             command.Parameters.AddWithValue("@TransferID", System.DBNull.Value);
+            command.Parameters.AddWithValue("@TransactionType", 1);
 
             try
             {
@@ -192,10 +194,39 @@ namespace DataAccesstier
             }
         }
 
-        public static void InsertWithDraw()
+        public static void InsertWithDraw(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow)
         {
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
+            string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID) " +
+                "values " +
+                "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID, @TransactionType)";
+
+            SqlCommand command = new SqlCommand(Query, connection);
+            command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+            command.Parameters.AddWithValue("@Amount", Amount);
+            command.Parameters.AddWithValue("@BalanceNow", BalanceNow);
+            command.Parameters.AddWithValue("@BalanceBefore", BalanceBefore);
+            command.Parameters.AddWithValue("@TransferID", System.DBNull.Value);
+            command.Parameters.AddWithValue("@TransactionType", 2);
+
+            try
+            {
+                connection.Open();
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error : " + ex);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
+
+        
 
     }
 
