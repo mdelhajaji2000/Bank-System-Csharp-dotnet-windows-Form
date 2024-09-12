@@ -485,5 +485,32 @@
   <ItemGroup>
     <None Include="Resources\001-warning.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-symbols.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-cash-withdrawal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-transaction1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-transfer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-transfer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-transference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-transference1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

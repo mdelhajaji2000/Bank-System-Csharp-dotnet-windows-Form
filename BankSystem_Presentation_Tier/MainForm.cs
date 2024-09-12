@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -296,6 +297,19 @@ namespace BankSystem_Presentation_Tier
             LogInLogsrecords frm = new LogInLogsrecords();
 
             frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if ((clsGlobal.CurrentUser.Permessions & clsPermessions.Transaction) == clsPermessions.Transaction)
+            {
+                Pagetitle.Text = "Transactions Management";
+                ScreenTransaction.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Action Denied, Contact Your Admin...!");
+            }
         }
     }
 }

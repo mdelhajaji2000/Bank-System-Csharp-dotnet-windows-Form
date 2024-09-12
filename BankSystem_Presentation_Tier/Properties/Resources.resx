@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="001-transfer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-transfer2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Screenshot 2024-07-24 044534" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-07-24 044534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,6 +129,9 @@
   </data>
   <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="001-transference" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-transference.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="001-dollar-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-dollar-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,17 +142,23 @@
   <data name="BankWp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BankWp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="004-resume" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-resume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="002-gears" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-gears.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="001-transfer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-transfer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="008-bank1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\008-bank1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="001-info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="c-sharp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c-sharp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="001-transfer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-transfer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="003-multiply" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\003-multiply.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +178,8 @@
   <data name="user-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="003-time-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-time-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="008-man-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\008-man-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-man-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-man-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,6 +208,9 @@
   <data name="001-user3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-user3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="005-log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\005-log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="004-transaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\004-transaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,6 +229,9 @@
   <data name="001-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="003-deposit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-deposit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="005-transaction-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\005-transaction-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,6 +240,9 @@
   </data>
   <data name="002-padlock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-padlock1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="001-cash-withdrawal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-cash-withdrawal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="004-man-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\004-man-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -243,6 +264,9 @@
   </data>
   <data name="003-add-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\003-add-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="002-transaction1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-transaction1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-end-user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-end-user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,8 +304,8 @@
   <data name="002-end-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-end-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="008-man-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\008-man-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="001-symbols" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-symbols.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="005-woman-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\005-woman-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,6 +322,9 @@
   <data name="turn-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\turn-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="003-time-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-time-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -313,19 +340,19 @@
   <data name="003-wallet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\003-wallet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="005-log" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\005-log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="004-resume" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\004-resume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-recruitment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-recruitment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="001-info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="001-warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="002-transaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-transaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="001-warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="001-transference1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-transference1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

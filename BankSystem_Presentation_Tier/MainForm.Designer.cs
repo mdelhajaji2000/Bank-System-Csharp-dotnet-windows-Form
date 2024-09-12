@@ -65,22 +65,21 @@
             this.UsersListContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.ScreenATMService = new System.Windows.Forms.Panel();
             this.ScreenTransaction = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.ScreenStatsPage = new System.Windows.Forms.Panel();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.BT_InactiveClients = new System.Windows.Forms.Button();
-            this.BT_EditClient = new System.Windows.Forms.Button();
-            this.BT_AddClient = new System.Windows.Forms.Button();
-            this.BT_FindClient = new System.Windows.Forms.Button();
-            this.BT_deleteClient = new System.Windows.Forms.Button();
-            this.BT_ClientList = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BTN_QuickTransactions = new System.Windows.Forms.Button();
+            this.BTN_FilteringTransactions = new System.Windows.Forms.Button();
+            this.BTN_TransactionsLog = new System.Windows.Forms.Button();
+            this.BTN_Transfer = new System.Windows.Forms.Button();
+            this.BTN_WithDraw = new System.Windows.Forms.Button();
+            this.BTN_Deposit = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -93,6 +92,16 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.BT_InactiveClients = new System.Windows.Forms.Button();
+            this.BT_EditClient = new System.Windows.Forms.Button();
+            this.BT_AddClient = new System.Windows.Forms.Button();
+            this.BT_FindClient = new System.Windows.Forms.Button();
+            this.BT_deleteClient = new System.Windows.Forms.Button();
+            this.BT_ClientList = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -103,11 +112,13 @@
             this.AcreenManagaeUsers.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.ScreenTransaction.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -223,14 +234,14 @@
             // 
             // Pagetitle
             // 
-            this.Pagetitle.AutoSize = true;
             this.Pagetitle.Font = new System.Drawing.Font("Palatino Linotype", 35F, System.Drawing.FontStyle.Bold);
             this.Pagetitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Pagetitle.Location = new System.Drawing.Point(581, 6);
+            this.Pagetitle.Location = new System.Drawing.Point(144, 6);
             this.Pagetitle.Name = "Pagetitle";
-            this.Pagetitle.Size = new System.Drawing.Size(369, 63);
+            this.Pagetitle.Size = new System.Drawing.Size(1220, 63);
             this.Pagetitle.TabIndex = 0;
-            this.Pagetitle.Text = "Manage Clients";
+            this.Pagetitle.Text = "PageTitle";
+            this.Pagetitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -268,9 +279,9 @@
             this.ScreenManageClients.Controls.Add(this.BT_deleteClient);
             this.ScreenManageClients.Controls.Add(this.BT_ClientList);
             this.ScreenManageClients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ScreenManageClients.Location = new System.Drawing.Point(311, 164);
+            this.ScreenManageClients.Location = new System.Drawing.Point(0, 0);
             this.ScreenManageClients.Name = "ScreenManageClients";
-            this.ScreenManageClients.Size = new System.Drawing.Size(1496, 639);
+            this.ScreenManageClients.Size = new System.Drawing.Size(1807, 875);
             this.ScreenManageClients.TabIndex = 5;
             // 
             // label17
@@ -304,9 +315,9 @@
             this.AcreenManagaeUsers.Controls.Add(this.button11);
             this.AcreenManagaeUsers.Controls.Add(this.UsersListContainer);
             this.AcreenManagaeUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AcreenManagaeUsers.Location = new System.Drawing.Point(311, 164);
+            this.AcreenManagaeUsers.Location = new System.Drawing.Point(0, 0);
             this.AcreenManagaeUsers.Name = "AcreenManagaeUsers";
-            this.AcreenManagaeUsers.Size = new System.Drawing.Size(1496, 639);
+            this.AcreenManagaeUsers.Size = new System.Drawing.Size(1807, 875);
             this.AcreenManagaeUsers.TabIndex = 6;
             // 
             // panel6
@@ -531,11 +542,43 @@
             // 
             // ScreenTransaction
             // 
+            this.ScreenTransaction.Controls.Add(this.label18);
+            this.ScreenTransaction.Controls.Add(this.label20);
+            this.ScreenTransaction.Controls.Add(this.pictureBox5);
+            this.ScreenTransaction.Controls.Add(this.BTN_QuickTransactions);
+            this.ScreenTransaction.Controls.Add(this.BTN_FilteringTransactions);
+            this.ScreenTransaction.Controls.Add(this.BTN_TransactionsLog);
+            this.ScreenTransaction.Controls.Add(this.BTN_Transfer);
+            this.ScreenTransaction.Controls.Add(this.BTN_WithDraw);
+            this.ScreenTransaction.Controls.Add(this.BTN_Deposit);
             this.ScreenTransaction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ScreenTransaction.Location = new System.Drawing.Point(311, 164);
             this.ScreenTransaction.Name = "ScreenTransaction";
             this.ScreenTransaction.Size = new System.Drawing.Size(1496, 639);
             this.ScreenTransaction.TabIndex = 6;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label18.Location = new System.Drawing.Point(637, 430);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(261, 27);
+            this.label18.TabIndex = 19;
+            this.label18.Text = "Transactions managements";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label20.Location = new System.Drawing.Point(620, 380);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(299, 50);
+            this.label20.TabIndex = 27;
+            this.label20.Text = "Bank System ";
             // 
             // ScreenStatsPage
             // 
@@ -600,6 +643,296 @@
             this.label11.Size = new System.Drawing.Size(49, 17);
             this.label11.TabIndex = 13;
             this.label11.Text = "V1.0.1";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_transference1;
+            this.pictureBox5.Location = new System.Drawing.Point(652, 196);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(211, 191);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // BTN_QuickTransactions
+            // 
+            this.BTN_QuickTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BTN_QuickTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BTN_QuickTransactions.FlatAppearance.BorderSize = 2;
+            this.BTN_QuickTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_QuickTransactions.Font = new System.Drawing.Font("Palatino Linotype", 37F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_QuickTransactions.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN_QuickTransactions.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_transfer;
+            this.BTN_QuickTransactions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_QuickTransactions.Location = new System.Drawing.Point(929, 462);
+            this.BTN_QuickTransactions.Name = "BTN_QuickTransactions";
+            this.BTN_QuickTransactions.Size = new System.Drawing.Size(541, 105);
+            this.BTN_QuickTransactions.TabIndex = 26;
+            this.BTN_QuickTransactions.Text = "Quick Transactions";
+            this.BTN_QuickTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTN_QuickTransactions.UseVisualStyleBackColor = false;
+            // 
+            // BTN_FilteringTransactions
+            // 
+            this.BTN_FilteringTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BTN_FilteringTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BTN_FilteringTransactions.FlatAppearance.BorderSize = 2;
+            this.BTN_FilteringTransactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_FilteringTransactions.Font = new System.Drawing.Font("Palatino Linotype", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_FilteringTransactions.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN_FilteringTransactions.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_recruitment;
+            this.BTN_FilteringTransactions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_FilteringTransactions.Location = new System.Drawing.Point(929, 261);
+            this.BTN_FilteringTransactions.Name = "BTN_FilteringTransactions";
+            this.BTN_FilteringTransactions.Size = new System.Drawing.Size(541, 105);
+            this.BTN_FilteringTransactions.TabIndex = 25;
+            this.BTN_FilteringTransactions.Text = "   Filtering Transactions";
+            this.BTN_FilteringTransactions.UseVisualStyleBackColor = false;
+            // 
+            // BTN_TransactionsLog
+            // 
+            this.BTN_TransactionsLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BTN_TransactionsLog.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BTN_TransactionsLog.FlatAppearance.BorderSize = 2;
+            this.BTN_TransactionsLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_TransactionsLog.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_TransactionsLog.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN_TransactionsLog.Image = global::BankSystem_Presentation_Tier.Properties.Resources._005_transaction_1;
+            this.BTN_TransactionsLog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_TransactionsLog.Location = new System.Drawing.Point(926, 71);
+            this.BTN_TransactionsLog.Name = "BTN_TransactionsLog";
+            this.BTN_TransactionsLog.Size = new System.Drawing.Size(544, 105);
+            this.BTN_TransactionsLog.TabIndex = 24;
+            this.BTN_TransactionsLog.Text = "     Transactions Log";
+            this.BTN_TransactionsLog.UseVisualStyleBackColor = false;
+            // 
+            // BTN_Transfer
+            // 
+            this.BTN_Transfer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BTN_Transfer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BTN_Transfer.FlatAppearance.BorderSize = 2;
+            this.BTN_Transfer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Transfer.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Transfer.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN_Transfer.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_transaction1;
+            this.BTN_Transfer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_Transfer.Location = new System.Drawing.Point(44, 462);
+            this.BTN_Transfer.Name = "BTN_Transfer";
+            this.BTN_Transfer.Size = new System.Drawing.Size(544, 105);
+            this.BTN_Transfer.TabIndex = 23;
+            this.BTN_Transfer.Text = "Transfer";
+            this.BTN_Transfer.UseVisualStyleBackColor = false;
+            // 
+            // BTN_WithDraw
+            // 
+            this.BTN_WithDraw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BTN_WithDraw.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BTN_WithDraw.FlatAppearance.BorderSize = 2;
+            this.BTN_WithDraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_WithDraw.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_WithDraw.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN_WithDraw.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.BTN_WithDraw.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_WithDraw.Location = new System.Drawing.Point(44, 261);
+            this.BTN_WithDraw.Name = "BTN_WithDraw";
+            this.BTN_WithDraw.Size = new System.Drawing.Size(544, 105);
+            this.BTN_WithDraw.TabIndex = 22;
+            this.BTN_WithDraw.Text = "WithDraw";
+            this.BTN_WithDraw.UseVisualStyleBackColor = false;
+            // 
+            // BTN_Deposit
+            // 
+            this.BTN_Deposit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.BTN_Deposit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.BTN_Deposit.FlatAppearance.BorderSize = 2;
+            this.BTN_Deposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Deposit.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Deposit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN_Deposit.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_deposit;
+            this.BTN_Deposit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_Deposit.Location = new System.Drawing.Point(44, 71);
+            this.BTN_Deposit.Name = "BTN_Deposit";
+            this.BTN_Deposit.Size = new System.Drawing.Size(544, 105);
+            this.BTN_Deposit.TabIndex = 21;
+            this.BTN_Deposit.Text = "Deposit";
+            this.BTN_Deposit.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.logout;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(1400, 3);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(70, 69);
+            this.button9.TabIndex = 6;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.information;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(1324, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(70, 69);
+            this.button10.TabIndex = 5;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_user;
+            this.pictureBox1.Location = new System.Drawing.Point(56, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_service;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(304, 86);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "          Manage Clients";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._006_symbols;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(3, 306);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(304, 86);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "         Transactions";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_bar_graph;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(3, 398);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(304, 86);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "         Stats Page";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_user2;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(3, 490);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(304, 86);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "         Manage Users";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button5.Image = global::BankSystem_Presentation_Tier.Properties.Resources._004_credit_card;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(3, 582);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(304, 86);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "         ATM Service";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button6.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_loan;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(3, 674);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(304, 86);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "         Loan Management";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.button6.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._008_bank1;
+            this.pictureBox2.Location = new System.Drawing.Point(810, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 61);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._009_support;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(87, 11);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(70, 69);
+            this.button8.TabIndex = 4;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.information;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(11, 11);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(70, 69);
+            this.button7.TabIndex = 3;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox4
             // 
@@ -763,182 +1096,6 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button9
-            // 
-            this.button9.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.logout;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(1400, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(70, 69);
-            this.button9.TabIndex = 6;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.information;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(1324, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(70, 69);
-            this.button10.TabIndex = 5;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_user;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 141);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_service;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 214);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(304, 86);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "          Manage Clients";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._006_symbols;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(304, 86);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "         Transactions";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_bar_graph;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 398);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(304, 86);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "         Stats Page";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button3.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_user2;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 490);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(304, 86);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "         Manage Users";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button4.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Image = global::BankSystem_Presentation_Tier.Properties.Resources._004_credit_card;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 582);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(304, 86);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "         ATM Service";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button5.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_loan;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(3, 674);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(304, 86);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "         Loan Management";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
-            this.button6.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._008_bank1;
-            this.pictureBox2.Location = new System.Drawing.Point(810, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 61);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._009_support;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(87, 11);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(70, 69);
-            this.button8.TabIndex = 4;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.information;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(11, 11);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(70, 69);
-            this.button7.TabIndex = 3;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
             // dashBorad1
             // 
             this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
@@ -953,17 +1110,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1807, 875);
-            this.Controls.Add(this.ScreenManageClients);
-            this.Controls.Add(this.AcreenManagaeUsers);
+            this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenLoanManagements);
             this.Controls.Add(this.ScreenATMService);
-            this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainMenuPanel);
+            this.Controls.Add(this.ScreenManageClients);
+            this.Controls.Add(this.AcreenManagaeUsers);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -973,7 +1130,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ScreenManageClients.ResumeLayout(false);
@@ -983,12 +1139,15 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.ScreenTransaction.ResumeLayout(false);
+            this.ScreenTransaction.PerformLayout();
             this.MainMenuPanel.ResumeLayout(false);
             this.MainMenuPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1060,6 +1219,15 @@
         protected System.Windows.Forms.PictureBox pictureBox4;
         protected System.Windows.Forms.Label label17;
         protected System.Windows.Forms.Label label16;
+        protected System.Windows.Forms.Label label18;
+        protected System.Windows.Forms.Label label20;
+        protected System.Windows.Forms.PictureBox pictureBox5;
+        protected System.Windows.Forms.Button BTN_QuickTransactions;
+        protected System.Windows.Forms.Button BTN_FilteringTransactions;
+        protected System.Windows.Forms.Button BTN_TransactionsLog;
+        protected System.Windows.Forms.Button BTN_Transfer;
+        protected System.Windows.Forms.Button BTN_WithDraw;
+        protected System.Windows.Forms.Button BTN_Deposit;
     }
 }
 
