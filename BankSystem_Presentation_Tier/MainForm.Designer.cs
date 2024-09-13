@@ -458,9 +458,9 @@
             this.ScreenManageClients.Controls.Add(this.BT_deleteClient);
             this.ScreenManageClients.Controls.Add(this.BT_ClientList);
             this.ScreenManageClients.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ScreenManageClients.Location = new System.Drawing.Point(0, 0);
+            this.ScreenManageClients.Location = new System.Drawing.Point(311, 164);
             this.ScreenManageClients.Name = "ScreenManageClients";
-            this.ScreenManageClients.Size = new System.Drawing.Size(1807, 875);
+            this.ScreenManageClients.Size = new System.Drawing.Size(1496, 639);
             this.ScreenManageClients.TabIndex = 5;
             // 
             // label17
@@ -1116,6 +1116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1807, 875);
+            this.Controls.Add(this.ScreenManageClients);
             this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenLoanManagements);
             this.Controls.Add(this.ScreenATMService);
@@ -1125,7 +1126,6 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainMenuPanel);
-            this.Controls.Add(this.ScreenManageClients);
             this.Controls.Add(this.AcreenManagaeUsers);
             this.Name = "MainForm";
             this.Text = "Form1";

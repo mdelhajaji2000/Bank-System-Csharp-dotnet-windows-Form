@@ -144,6 +144,7 @@
     <Compile Include="Controls\UserInfoMiniCard.Designer.cs">
       <DependentUpon>UserInfoMiniCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Libraries\clsUtility.cs" />
     <Compile Include="LogInLog\LogInLogsrecords.cs">
       <SubType>Form</SubType>
     </Compile>

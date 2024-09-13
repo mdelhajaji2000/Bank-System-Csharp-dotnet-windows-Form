@@ -32,8 +32,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.PageTitle = new System.Windows.Forms.Label();
             this.PageIcon = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.AccountFromContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.AccountToContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -43,12 +43,10 @@
             this.TB_Amount = new System.Windows.Forms.MaskedTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.clientMiniCard1 = new BankSystem_Presentation_Tier.Controls.ClientMiniCard();
-            this.clientMiniCard2 = new BankSystem_Presentation_Tier.Controls.ClientMiniCard();
+            this.SetClientFrom = new System.Windows.Forms.LinkLabel();
+            this.SetClientTo = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(907, 73);
+            this.panel1.Size = new System.Drawing.Size(907, 91);
             this.panel1.TabIndex = 3;
             // 
             // button7
@@ -73,11 +71,12 @@
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(847, 10);
+            this.button7.Location = new System.Drawing.Point(829, 10);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(49, 50);
+            this.button7.Size = new System.Drawing.Size(67, 66);
             this.button7.TabIndex = 8;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // PageTitle
             // 
@@ -101,23 +100,21 @@
             this.PageIcon.TabIndex = 4;
             this.PageIcon.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // AccountFromContainer
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
-            this.flowLayoutPanel1.Controls.Add(this.clientMiniCard1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 149);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(309, 348);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.AccountFromContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.AccountFromContainer.Location = new System.Drawing.Point(16, 149);
+            this.AccountFromContainer.Name = "AccountFromContainer";
+            this.AccountFromContainer.Size = new System.Drawing.Size(309, 348);
+            this.AccountFromContainer.TabIndex = 4;
             // 
-            // flowLayoutPanel2
+            // AccountToContainer
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
-            this.flowLayoutPanel2.Controls.Add(this.clientMiniCard2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(585, 149);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(309, 348);
-            this.flowLayoutPanel2.TabIndex = 5;
+            this.AccountToContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.AccountToContainer.Location = new System.Drawing.Point(585, 149);
+            this.AccountToContainer.Name = "AccountToContainer";
+            this.AccountToContainer.Size = new System.Drawing.Size(309, 348);
+            this.AccountToContainer.TabIndex = 5;
             // 
             // label1
             // 
@@ -226,21 +223,31 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // clientMiniCard1
+            // SetClientFrom
             // 
-            this.clientMiniCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientMiniCard1.Location = new System.Drawing.Point(3, 3);
-            this.clientMiniCard1.Name = "clientMiniCard1";
-            this.clientMiniCard1.Size = new System.Drawing.Size(302, 346);
-            this.clientMiniCard1.TabIndex = 0;
+            this.SetClientFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.SetClientFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetClientFrom.Location = new System.Drawing.Point(16, 278);
+            this.SetClientFrom.Name = "SetClientFrom";
+            this.SetClientFrom.Size = new System.Drawing.Size(309, 59);
+            this.SetClientFrom.TabIndex = 14;
+            this.SetClientFrom.TabStop = true;
+            this.SetClientFrom.Text = "Select Client account";
+            this.SetClientFrom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SetClientFrom.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SetClientFrom_LinkClicked);
             // 
-            // clientMiniCard2
+            // SetClientTo
             // 
-            this.clientMiniCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.clientMiniCard2.Location = new System.Drawing.Point(3, 3);
-            this.clientMiniCard2.Name = "clientMiniCard2";
-            this.clientMiniCard2.Size = new System.Drawing.Size(302, 346);
-            this.clientMiniCard2.TabIndex = 0;
+            this.SetClientTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.SetClientTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetClientTo.Location = new System.Drawing.Point(585, 286);
+            this.SetClientTo.Name = "SetClientTo";
+            this.SetClientTo.Size = new System.Drawing.Size(309, 59);
+            this.SetClientTo.TabIndex = 15;
+            this.SetClientTo.TabStop = true;
+            this.SetClientTo.Text = "Select Client account";
+            this.SetClientTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SetClientTo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SetClientTo_LinkClicked);
             // 
             // clsNewtransferForm
             // 
@@ -248,20 +255,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(907, 653);
+            this.Controls.Add(this.SetClientTo);
+            this.Controls.Add(this.SetClientFrom);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.AccountToContainer);
+            this.Controls.Add(this.AccountFromContainer);
             this.Controls.Add(this.panel1);
             this.Name = "clsNewtransferForm";
             this.Text = "clsNewtransferForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -277,8 +284,8 @@
         protected System.Windows.Forms.Button button7;
         protected System.Windows.Forms.Label PageTitle;
         protected System.Windows.Forms.PictureBox PageIcon;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel AccountFromContainer;
+        private System.Windows.Forms.FlowLayoutPanel AccountToContainer;
         protected System.Windows.Forms.Label label1;
         protected System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
@@ -288,7 +295,7 @@
         private System.Windows.Forms.MaskedTextBox TB_Amount;
         private System.Windows.Forms.Panel panel5;
         protected System.Windows.Forms.PictureBox pictureBox1;
-        private Controls.ClientMiniCard clientMiniCard1;
-        private Controls.ClientMiniCard clientMiniCard2;
+        private System.Windows.Forms.LinkLabel SetClientFrom;
+        private System.Windows.Forms.LinkLabel SetClientTo;
     }
 }
