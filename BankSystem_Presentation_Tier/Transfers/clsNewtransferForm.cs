@@ -16,7 +16,10 @@ namespace BankSystem_Presentation_Tier.Transfers
 {
     public partial class clsNewtransferForm : Form
     {
-        int ChoisedAccNumber = -1;
+        private int ChoisedAccNumber = -1;
+
+        private clsClientAccount AccountFrom;
+        private clsClientAccount AccountTo;
 
         private struct DataBack
         {
@@ -81,6 +84,8 @@ namespace BankSystem_Presentation_Tier.Transfers
                 SetClientFrom.Hide();
 
                 AccountFromContainer.Controls.Add(clientCard);
+
+                AccountFrom = clsClientAccount.Find(returnedData.AccountNumber);
             }
         }
 
@@ -108,7 +113,37 @@ namespace BankSystem_Presentation_Tier.Transfers
                 SetClientTo.Hide();
 
                 AccountToContainer.Controls.Add(clientCard);
+
+                AccountTo = clsClientAccount.Find(returnedData.AccountNumber);
             }
+        }
+
+        private void BTN_Done_Click(object sender, EventArgs e)
+        {
+            int Amount;
+
+            if (int.TryParse(TB_Amount.Text, out int result))
+                Amount = result;
+            else
+            {
+                MessageBox.Show("Invalid Input...!");
+                return;
+            }
+
+            if (AccountFrom.Balance < Amount)
+            {
+                MessageBox.Show("Account From Balance Is not Enought..!");
+                return;
+            }
+
+            if (clsClientAccount.PerformTransfer(AccountFrom.AccountNumber, AccountTo.AccountNumber, Amount))
+            {
+                MessageBox.Show("Action Performed..!");
+            }
+            else
+                MessageBox.Show("echec..!");
+
+            
         }
     }
 }

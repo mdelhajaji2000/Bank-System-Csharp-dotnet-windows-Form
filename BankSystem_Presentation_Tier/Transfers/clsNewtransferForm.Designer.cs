@@ -169,6 +169,7 @@
             this.BTN_Done.TabIndex = 12;
             this.BTN_Done.Text = "Done";
             this.BTN_Done.UseVisualStyleBackColor = true;
+            this.BTN_Done.Click += new System.EventHandler(this.BTN_Done_Click);
             // 
             // label3
             // 
