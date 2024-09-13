@@ -4,6 +4,7 @@ using BankSystem_Presentation_Tier.Global;
 using BankSystem_Presentation_Tier.LogIn;
 using BankSystem_Presentation_Tier.LogInLog;
 using BankSystem_Presentation_Tier.Transactions;
+using BankSystem_Presentation_Tier.Transfers;
 using BankSystem_Presentation_Tier.UsersManagement;
 using BusinessTier;
 using System;
@@ -393,6 +394,13 @@ namespace BankSystem_Presentation_Tier
 
                 form.ShowDialog();
             }
+        }
+
+        private void BTN_Transfer_Click(object sender, EventArgs e)
+        {
+            clstransactionsForm frm = new clstransactionsForm();
+
+            frm.ShowDialog();
         }
     }
 }

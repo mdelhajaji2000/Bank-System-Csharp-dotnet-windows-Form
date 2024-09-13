@@ -10,18 +10,12 @@ using System.Windows.Forms;
 
 namespace BankSystem_Presentation_Tier.Transfers
 {
-    public partial class clstransactionsForm : Form
+    public partial class clsNewtransferForm : Form
     {
-        public clstransactionsForm()
+        public clsNewtransferForm()
         {
             InitializeComponent();
         }
 
-        private void BTN_Newtransfer_Click(object sender, EventArgs e)
-        {
-            clsNewtransferForm frm = new clsNewtransferForm();
-
-            frm.ShowDialog();
-        }
     }
 }

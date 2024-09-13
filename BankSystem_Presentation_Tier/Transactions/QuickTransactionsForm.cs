@@ -51,7 +51,7 @@ namespace BankSystem_Presentation_Tier.Transactions
                 }
             }
             else
-                MessageBox.Show("You Can not Perform That Action (Your Balance isnt enought...!)")
+                MessageBox.Show("You Can not Perform That Action (Your Balance isnt enought...!)");
             
 
             DisplayBalance.Text = account.Balance.ToString();

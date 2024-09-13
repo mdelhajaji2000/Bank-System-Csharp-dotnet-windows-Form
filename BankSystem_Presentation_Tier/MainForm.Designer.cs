@@ -1000,6 +1000,7 @@
             this.BTN_Transfer.TabIndex = 23;
             this.BTN_Transfer.Text = "Transfer";
             this.BTN_Transfer.UseVisualStyleBackColor = false;
+            this.BTN_Transfer.Click += new System.EventHandler(this.BTN_Transfer_Click);
             // 
             // BTN_WithDraw
             // 

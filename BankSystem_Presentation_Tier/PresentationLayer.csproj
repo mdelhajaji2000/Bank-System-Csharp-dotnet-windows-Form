@@ -90,6 +90,12 @@
     <Compile Include="Controls\ClientCard.Designer.cs">
       <DependentUpon>ClientCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ClientMiniCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClientMiniCard.Designer.cs">
+      <DependentUpon>ClientMiniCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\DashBorad.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     <Compile Include="Transactions\QuickTransactionsForm.Designer.cs">
       <DependentUpon>QuickTransactionsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transfers\clsNewtransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfers\clsNewtransferForm.Designer.cs">
+      <DependentUpon>clsNewtransferForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transfers\clstransactionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ClientCard.resx">
       <DependentUpon>ClientCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ClientMiniCard.resx">
+      <DependentUpon>ClientMiniCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\DashBorad.resx">
       <DependentUpon>DashBorad.cs</DependentUpon>
@@ -265,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transactions\QuickTransactionsForm.resx">
       <DependentUpon>QuickTransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfers\clsNewtransferForm.resx">
+      <DependentUpon>clsNewtransferForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transfers\clstransactionsForm.resx">
       <DependentUpon>clstransactionsForm.cs</DependentUpon>
