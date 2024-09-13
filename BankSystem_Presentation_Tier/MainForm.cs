@@ -3,6 +3,7 @@ using BankSystem_Presentation_Tier.Controls;
 using BankSystem_Presentation_Tier.Global;
 using BankSystem_Presentation_Tier.LogIn;
 using BankSystem_Presentation_Tier.LogInLog;
+using BankSystem_Presentation_Tier.Transactions;
 using BankSystem_Presentation_Tier.UsersManagement;
 using BusinessTier;
 using System;
@@ -341,6 +342,41 @@ namespace BankSystem_Presentation_Tier
             }
             else
                 MessageBox.Show("Action Denied, Contact Your Admin");
+        }
+
+        private void BTN_Deposit_Click(object sender, EventArgs e)
+        {
+            FindClientMiniForm findfrm = new FindClientMiniForm();
+
+            findfrm.DataBack += FindClientForm_DataBack;
+
+            findfrm.ShowDialog();
+
+            if (ReturnedData.PerformAction)
+            {
+                DepositFrom depositFrom = new DepositFrom(ReturnedData.AccountNumber, '+');
+                depositFrom.ShowDialog();
+            }
+            else
+                MessageBox.Show("Error");
+        }
+
+        private void BTN_WithDraw_Click(object sender, EventArgs e)
+        {
+            FindClientMiniForm findfrm = new FindClientMiniForm();
+
+            findfrm.DataBack += FindClientForm_DataBack;
+            findfrm.ShowDialog();
+
+
+            if (ReturnedData.PerformAction)
+            {
+                DepositFrom depositFrom = new DepositFrom(ReturnedData.AccountNumber, '-');
+
+                depositFrom.ShowDialog();
+            }
+            else
+                MessageBox.Show("Error");
         }
     }
 }

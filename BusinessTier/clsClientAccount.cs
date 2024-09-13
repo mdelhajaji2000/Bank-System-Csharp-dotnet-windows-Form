@@ -157,8 +157,13 @@ namespace BusinessTier
         {
             if (Amount > 0)
             {
+
                 clsTransactionsData.InsertDeposit(this.AccountNumber, Amount, this.Balance, this.Balance + Amount);
-                return ClientAccountData.UpdateBalance(this.AccountNumber, Amount);
+                bool IsUpdated = ClientAccountData.UpdateBalance(this.AccountNumber, this.Balance + Amount);
+
+                this.Balance += Amount;
+
+                return IsUpdated;
             }
             else
                 return false;
@@ -169,7 +174,11 @@ namespace BusinessTier
             if (Amount > 0)
             {
                 clsTransactionsData.InsertWithDraw(this.AccountNumber, Amount, this.Balance, this.Balance - Amount);
-                return ClientAccountData.UpdateBalance(this.AccountNumber, Amount);
+                bool IsUpdated = ClientAccountData.UpdateBalance(this.AccountNumber,this.Balance - Amount);
+
+                this.Balance += Amount;
+
+                return IsUpdated;
             }
             else
                 return false;

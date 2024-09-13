@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepositFrom));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PageTitle = new System.Windows.Forms.Label();
+            this.PageIcon = new System.Windows.Forms.PictureBox();
             this.DisplayBalance = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,13 +44,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.BTN_Done = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.TB_Amount = new System.Windows.Forms.MaskedTextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -61,8 +64,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.PageTitle);
+            this.panel1.Controls.Add(this.PageIcon);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -80,28 +83,29 @@
             this.button7.Size = new System.Drawing.Size(49, 50);
             this.button7.TabIndex = 8;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // label1
+            // PageTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(236, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(453, 50);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Transactions-Deposit";
+            this.PageTitle.AutoSize = true;
+            this.PageTitle.BackColor = System.Drawing.Color.Transparent;
+            this.PageTitle.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PageTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.PageTitle.Location = new System.Drawing.Point(236, 11);
+            this.PageTitle.Name = "PageTitle";
+            this.PageTitle.Size = new System.Drawing.Size(453, 50);
+            this.PageTitle.TabIndex = 5;
+            this.PageTitle.Text = "Transactions-Deposit";
             // 
-            // pictureBox2
+            // PageIcon
             // 
-            this.pictureBox2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._008_bank1;
-            this.pictureBox2.Location = new System.Drawing.Point(163, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 61);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.PageIcon.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_deposit;
+            this.PageIcon.Location = new System.Drawing.Point(170, 5);
+            this.PageIcon.Name = "PageIcon";
+            this.PageIcon.Size = new System.Drawing.Size(67, 61);
+            this.PageIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PageIcon.TabIndex = 4;
+            this.PageIcon.TabStop = false;
             // 
             // DisplayBalance
             // 
@@ -110,7 +114,7 @@
             this.DisplayBalance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DisplayBalance.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayBalance.ForeColor = System.Drawing.Color.Lime;
-            this.DisplayBalance.Location = new System.Drawing.Point(62, 97);
+            this.DisplayBalance.Location = new System.Drawing.Point(174, 107);
             this.DisplayBalance.Name = "DisplayBalance";
             this.DisplayBalance.Size = new System.Drawing.Size(452, 79);
             this.DisplayBalance.TabIndex = 3;
@@ -121,17 +125,17 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(112, 20);
+            this.label3.Location = new System.Drawing.Point(165, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(417, 77);
+            this.label3.Size = new System.Drawing.Size(522, 77);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Balance : ";
+            this.label3.Text = "($) Balance : ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.pictureBox1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_dollar_sign;
-            this.pictureBox1.Location = new System.Drawing.Point(501, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(613, 107);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(67, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,19 +213,19 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.DisplayBalance);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(133, 197);
+            this.panel3.Location = new System.Drawing.Point(8, 184);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(627, 217);
+            this.panel3.Size = new System.Drawing.Size(889, 246);
             this.panel3.TabIndex = 11;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.button10);
+            this.panel4.Controls.Add(this.BTN_Done);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.maskedTextBox1);
+            this.panel4.Controls.Add(this.TB_Amount);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 436);
@@ -229,36 +233,21 @@
             this.panel4.Size = new System.Drawing.Size(909, 135);
             this.panel4.TabIndex = 12;
             // 
-            // panel5
+            // BTN_Done
             // 
-            this.panel5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel5.Location = new System.Drawing.Point(186, 109);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(496, 2);
-            this.panel5.TabIndex = 8;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Bold);
-            this.maskedTextBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.maskedTextBox1.Location = new System.Drawing.Point(186, 24);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = '0';
-            this.maskedTextBox1.Size = new System.Drawing.Size(496, 84);
-            this.maskedTextBox1.TabIndex = 9;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.pictureBox3.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_dollar_sign;
-            this.pictureBox3.Location = new System.Drawing.Point(684, 24);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(67, 87);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            this.BTN_Done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTN_Done.FlatAppearance.BorderSize = 3;
+            this.BTN_Done.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.BTN_Done.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Done.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_Done.ForeColor = System.Drawing.Color.Gold;
+            this.BTN_Done.Location = new System.Drawing.Point(757, 25);
+            this.BTN_Done.Name = "BTN_Done";
+            this.BTN_Done.Size = new System.Drawing.Size(139, 84);
+            this.BTN_Done.TabIndex = 12;
+            this.BTN_Done.Text = "Done";
+            this.BTN_Done.UseVisualStyleBackColor = true;
+            this.BTN_Done.Click += new System.EventHandler(this.BTN_Done_Click);
             // 
             // label2
             // 
@@ -272,20 +261,43 @@
             this.label2.Text = "Enter Amount : ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button10
+            // pictureBox3
             // 
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.FlatAppearance.BorderSize = 3;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.Gold;
-            this.button10.Location = new System.Drawing.Point(757, 25);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(139, 84);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "Done";
-            this.button10.UseVisualStyleBackColor = true;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.pictureBox3.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_dollar_sign;
+            this.pictureBox3.Location = new System.Drawing.Point(684, 24);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(67, 87);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // TB_Amount
+            // 
+            this.TB_Amount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.TB_Amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Amount.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Bold);
+            this.TB_Amount.ForeColor = System.Drawing.SystemColors.Info;
+            this.TB_Amount.Location = new System.Drawing.Point(186, 24);
+            this.TB_Amount.Name = "TB_Amount";
+            this.TB_Amount.PromptChar = '0';
+            this.TB_Amount.Size = new System.Drawing.Size(496, 84);
+            this.TB_Amount.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel5.Location = new System.Drawing.Point(186, 109);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(496, 2);
+            this.panel5.TabIndex = 8;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "003-deposit.png");
+            this.imageList1.Images.SetKeyName(1, "001-cash-withdrawal.png");
             // 
             // DepositFrom
             // 
@@ -297,11 +309,13 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DepositFrom";
             this.Text = "DepositFrom";
+            this.Load += new System.EventHandler(this.DepositFrom_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -316,8 +330,8 @@
         #endregion
 
         protected System.Windows.Forms.Panel panel1;
-        protected System.Windows.Forms.Label label1;
-        protected System.Windows.Forms.PictureBox pictureBox2;
+        protected System.Windows.Forms.Label PageTitle;
+        protected System.Windows.Forms.PictureBox PageIcon;
         protected System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label DisplayBalance;
         private System.Windows.Forms.Label label3;
@@ -329,10 +343,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox TB_Amount;
         private System.Windows.Forms.Panel panel5;
         protected System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
-        protected System.Windows.Forms.Button button10;
+        protected System.Windows.Forms.Button BTN_Done;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

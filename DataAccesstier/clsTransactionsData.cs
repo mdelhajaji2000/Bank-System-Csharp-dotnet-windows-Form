@@ -170,7 +170,7 @@ namespace DataAccesstier
         {
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID) " +
+            string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID, TransactionType) " +
                 "values " +
                 "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID, @TransactionType)";
 
@@ -202,7 +202,7 @@ namespace DataAccesstier
         {
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID) " +
+            string Query = "insert into Transactions (AccountNumber, Amount, BalanceNow, BalanceBefore, TransferID, TransactionType) " +
                 "values " +
                 "(@AccountNumber, @Amount, @BalanceNow, @BalanceBefore, @TransferID, @TransactionType)";
 
