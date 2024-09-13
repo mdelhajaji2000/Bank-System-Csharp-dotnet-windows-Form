@@ -19,7 +19,7 @@ namespace BusinessTier
 
         private enMode _Mode = enMode.AddNew;
 
-        public int Balance { get; set; }
+        public int Balance { get; protected set; }
         public bool ActivationStatus { get; set; }
         public int PersonID { get; set; }
         public int AccountNumber { get; private set; }
@@ -151,7 +151,6 @@ namespace BusinessTier
             return ClientAccountData.IsAccountExist(AccountNumber);
         }
 
-        //======================== Those Two Functions Should Store transactions Recordes in The DataBase ======================
 
         public bool AddAmountToBalance(int Amount)
         {
@@ -184,7 +183,29 @@ namespace BusinessTier
                 return false;
         }
 
-        //======================================================================================================================
+        public static bool PerformTransfer(int AccountNumberFrom, int AccountNumberTo, int Amount)
+        {
+            bool IsPerformed = false;
+
+            clsClientAccount accFrom = clsClientAccount.Find(AccountNumberFrom);
+            clsClientAccount accTo = clsClientAccount.Find(AccountNumberTo);
+
+            if (accFrom != null && accTo != null)
+            {
+                if (clsTransferData.InsertTransferRecord(accFrom.AccountNumber, accTo.AccountNumber, Amount, accFrom.Balance, accFrom.Balance - Amount, accTo.Balance, accTo.Balance + Amount))
+                {
+                    accFrom.Balance -= Amount;
+                    accTo.Balance += Amount;
+
+                    ClientAccountData.UpdateBalance(accFrom.AccountNumber, accFrom.Balance);
+                    ClientAccountData.UpdateBalance(accTo.AccountNumber, accTo.Balance);
+                }
+            }
+            else
+                throw new Exception("acc is Null", null);
+
+            return IsPerformed;
+        }
 
     }
 }

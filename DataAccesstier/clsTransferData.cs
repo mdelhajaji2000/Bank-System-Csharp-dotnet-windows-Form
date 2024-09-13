@@ -49,8 +49,11 @@ namespace DataAccesstier
             return dt;
         }
 
-        public static void InsertTransferRecord(int AccountNumberFrom, int AccountNumberTo, int Amount, int BalanceBefore, int BalanceNow)
+        public static bool InsertTransferRecord(int AccountNumberFrom, int AccountNumberTo, int Amount, int AccFrom_BalanceBefore, int AccFrom_BalanceNow
+           , int AccTo_BalanceBefore, int Acc_ToBalanceNow )
         {
+            bool IsPereformed = false;
+
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
             string Query = "Insert into Transfers (AccNumberFrom, AccNumberTo, Amount) Values (@AccNumberFrom, @AccNumberTo, @Amount); " +
@@ -72,9 +75,10 @@ namespace DataAccesstier
                 if (result != null && int.TryParse(result.ToString(), out int intResult))
                 {
                     TransferID = intResult;
+                    clsTransactionsData.AddNewRecord(AccountNumberFrom, Amount, AccFrom_BalanceBefore, AccFrom_BalanceNow, TransferID, 3);
+                    clsTransactionsData.AddNewRecord(AccountNumberTo, Amount, Acc_ToBalanceNow, AccTo_BalanceBefore, TransferID, 3);
 
-                    clsTransactionsData.AddNewRecord(AccountNumberFrom, Amount, BalanceBefore, BalanceNow, TransferID, 3);
-                    clsTransactionsData.AddNewRecord(AccountNumberTo, Amount, BalanceBefore, BalanceNow, TransferID, 3);
+                    IsPereformed = intResult != -1;
                 }
 
             }
@@ -86,6 +90,8 @@ namespace DataAccesstier
             {
                 connection.Close();
             }
+
+            return IsPereformed;
         }
 
         public static bool GetTransferRecordByTransferId(int TransferID, ref int Amount, ref int AccountNumberFrom, ref int AccountNumberTo)
