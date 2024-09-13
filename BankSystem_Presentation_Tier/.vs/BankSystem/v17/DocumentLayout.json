@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transactions\\quicktransactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\quicktransactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transactions\\quicktransactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\quicktransactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transactions\\quicktransactionsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\quicktransactionsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccessLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clstransferdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -17,10 +33,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AABF536-3BA3-45E5-8758-FE3C1CFA9BC5}|..\\DataAccesstier\\DataAccesstier.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\dataaccesstier\\clstransferdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,11 +69,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 625,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "QuickTransactionsForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\QuickTransactionsForm.Designer.cs",
+              "RelativeDocumentMoniker": "Transactions\\QuickTransactionsForm.Designer.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\QuickTransactionsForm.Designer.cs",
+              "RelativeToolTip": "Transactions\\QuickTransactionsForm.Designer.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAWwJIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:23:38.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuickTransactionsForm.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\QuickTransactionsForm.cs",
+              "RelativeDocumentMoniker": "Transactions\\QuickTransactionsForm.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\QuickTransactionsForm.cs",
+              "RelativeToolTip": "Transactions\\QuickTransactionsForm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAWwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:23:26.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuickTransactionsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\QuickTransactionsForm.cs",
+              "RelativeDocumentMoniker": "Transactions\\QuickTransactionsForm.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\QuickTransactionsForm.cs [Design]",
+              "RelativeToolTip": "Transactions\\QuickTransactionsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:20:02.842Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "clsTransferData.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransferData.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsTransferData.cs",
@@ -69,12 +119,11 @@
               "RelativeToolTip": "..\\DataAccesstier\\clsTransferData.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAWwE8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T12:31:26.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T12:31:26.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "clsTransfers.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsTransfers.cs",
               "RelativeDocumentMoniker": "..\\BusinessTier\\clsTransfers.cs",
@@ -82,12 +131,11 @@
               "RelativeToolTip": "..\\BusinessTier\\clsTransfers.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAcwBoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:42:21.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T09:42:21.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "clsDataAccessSettings.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsDataAccessSettings.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsDataAccessSettings.cs",
@@ -99,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "DepositFrom.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\DepositFrom.cs",
               "RelativeDocumentMoniker": "Transactions\\DepositFrom.cs",
@@ -107,22 +155,24 @@
               "RelativeToolTip": "Transactions\\DepositFrom.cs",
               "ViewState": "AQIAAJAAAAAAAAAAAAD4v6IAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T07:38:20.852Z"
+              "WhenOpened": "2024-09-13T07:38:20.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "DepositFrom.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\DepositFrom.cs",
               "RelativeDocumentMoniker": "Transactions\\DepositFrom.cs",
               "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\DepositFrom.cs [Design]",
               "RelativeToolTip": "Transactions\\DepositFrom.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T16:44:30.023Z"
+              "WhenOpened": "2024-09-12T16:44:30.023Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Class1.cs",
               "RelativeDocumentMoniker": "Class1.cs",
@@ -134,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -147,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -159,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "clsTransactions.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsTransactions.cs",
               "RelativeDocumentMoniker": "..\\BusinessTier\\clsTransactions.cs",
@@ -171,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "clsClientAccount.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BusinessTier\\clsClientAccount.cs",
               "RelativeDocumentMoniker": "..\\BusinessTier\\clsClientAccount.cs",
@@ -179,12 +229,11 @@
               "RelativeToolTip": "..\\BusinessTier\\clsClientAccount.cs",
               "ViewState": "AQIAALkAAAAAAAAAAIA5wMgAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T22:49:14.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T22:49:14.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "clsTransactionsData.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransactionsData.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsTransactionsData.cs",
@@ -196,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "clsTransferData.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransferData.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsTransferData.cs",
@@ -208,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "clsDataAccessSettings.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsDataAccessSettings.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsDataAccessSettings.cs",
@@ -220,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "clsTransactionsData.cs",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\DataAccesstier\\clsTransactionsData.cs",
               "RelativeDocumentMoniker": "..\\DataAccesstier\\clsTransactionsData.cs",
