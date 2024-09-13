@@ -948,6 +948,7 @@
             this.BTN_QuickTransactions.Text = "Quick Transactions";
             this.BTN_QuickTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_QuickTransactions.UseVisualStyleBackColor = false;
+            this.BTN_QuickTransactions.Click += new System.EventHandler(this.BTN_QuickTransactions_Click);
             // 
             // BTN_FilteringTransactions
             // 

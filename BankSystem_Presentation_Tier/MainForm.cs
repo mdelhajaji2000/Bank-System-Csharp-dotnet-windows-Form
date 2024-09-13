@@ -378,5 +378,21 @@ namespace BankSystem_Presentation_Tier
             else
                 MessageBox.Show("Error");
         }
+
+        private void BTN_QuickTransactions_Click(object sender, EventArgs e)
+        {
+            FindClientMiniForm find = new FindClientMiniForm();
+
+            find.DataBack += FindClientForm_DataBack;
+
+            find.ShowDialog();
+
+            if (ReturnedData.PerformAction)
+            {
+                QuickTransactionsForm form = new QuickTransactionsForm(ReturnedData.AccountNumber);
+
+                form.ShowDialog();
+            }
+        }
     }
 }

@@ -42,12 +42,12 @@
             this.PageTitle = new System.Windows.Forms.Label();
             this.PageIcon = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.Get_10000 = new System.Windows.Forms.Button();
+            this.Get_5000 = new System.Windows.Forms.Button();
+            this.Get_2000 = new System.Windows.Forms.Button();
+            this.Get_100 = new System.Windows.Forms.Button();
+            this.Get_200 = new System.Windows.Forms.Button();
+            this.Get_500 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(-11, 10);
+            this.label3.Location = new System.Drawing.Point(-10, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(500, 77);
             this.label3.TabIndex = 4;
@@ -228,114 +228,126 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_multiply;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(631, 447);
+            this.button1.Location = new System.Drawing.Point(631, 445);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(375, 85);
             this.button1.TabIndex = 24;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Get_10000
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(631, 360);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(375, 85);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "10000$";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Get_10000.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.Get_10000.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Get_10000.FlatAppearance.BorderSize = 2;
+            this.Get_10000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Get_10000.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Get_10000.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Get_10000.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.Get_10000.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Get_10000.Location = new System.Drawing.Point(631, 356);
+            this.Get_10000.Name = "Get_10000";
+            this.Get_10000.Size = new System.Drawing.Size(375, 85);
+            this.Get_10000.TabIndex = 25;
+            this.Get_10000.Tag = "10000";
+            this.Get_10000.Text = "10000$";
+            this.Get_10000.UseVisualStyleBackColor = false;
+            this.Get_10000.Click += new System.EventHandler(this.Get_100_Click);
             // 
-            // button3
+            // Get_5000
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(631, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(375, 85);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "5000$";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Get_5000.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.Get_5000.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Get_5000.FlatAppearance.BorderSize = 2;
+            this.Get_5000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Get_5000.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Get_5000.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Get_5000.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.Get_5000.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Get_5000.Location = new System.Drawing.Point(631, 267);
+            this.Get_5000.Name = "Get_5000";
+            this.Get_5000.Size = new System.Drawing.Size(375, 85);
+            this.Get_5000.TabIndex = 26;
+            this.Get_5000.Tag = "5000";
+            this.Get_5000.Text = "5000$";
+            this.Get_5000.UseVisualStyleBackColor = false;
+            this.Get_5000.Click += new System.EventHandler(this.Get_100_Click);
             // 
-            // button4
+            // Get_2000
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(631, 178);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(375, 85);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "2000$";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Get_2000.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.Get_2000.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Get_2000.FlatAppearance.BorderSize = 2;
+            this.Get_2000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Get_2000.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Get_2000.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Get_2000.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.Get_2000.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Get_2000.Location = new System.Drawing.Point(631, 178);
+            this.Get_2000.Name = "Get_2000";
+            this.Get_2000.Size = new System.Drawing.Size(375, 85);
+            this.Get_2000.TabIndex = 27;
+            this.Get_2000.Tag = "2000";
+            this.Get_2000.Text = "2000$";
+            this.Get_2000.UseVisualStyleBackColor = false;
+            this.Get_2000.Click += new System.EventHandler(this.Get_100_Click);
             // 
-            // button5
+            // Get_100
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(12, 178);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(375, 85);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "100$";
-            this.button5.UseVisualStyleBackColor = false;
+            this.Get_100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.Get_100.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Get_100.FlatAppearance.BorderSize = 2;
+            this.Get_100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Get_100.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Get_100.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Get_100.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.Get_100.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Get_100.Location = new System.Drawing.Point(12, 178);
+            this.Get_100.Name = "Get_100";
+            this.Get_100.Size = new System.Drawing.Size(375, 85);
+            this.Get_100.TabIndex = 31;
+            this.Get_100.Tag = "100";
+            this.Get_100.Text = "100$";
+            this.Get_100.UseVisualStyleBackColor = false;
+            this.Get_100.Click += new System.EventHandler(this.Get_100_Click);
             // 
-            // button6
+            // Get_200
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button6.FlatAppearance.BorderSize = 2;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(12, 269);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(375, 85);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "200$";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Get_200.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.Get_200.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Get_200.FlatAppearance.BorderSize = 2;
+            this.Get_200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Get_200.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Get_200.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Get_200.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.Get_200.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Get_200.Location = new System.Drawing.Point(12, 267);
+            this.Get_200.Name = "Get_200";
+            this.Get_200.Size = new System.Drawing.Size(375, 85);
+            this.Get_200.TabIndex = 30;
+            this.Get_200.Tag = "200";
+            this.Get_200.Text = "200$";
+            this.Get_200.UseVisualStyleBackColor = false;
+            this.Get_200.Click += new System.EventHandler(this.Get_100_Click);
             // 
-            // button8
+            // Get_500
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.button8.FlatAppearance.BorderSize = 2;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(12, 360);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(375, 85);
-            this.button8.TabIndex = 29;
-            this.button8.Text = "500$";
-            this.button8.UseVisualStyleBackColor = false;
+            this.Get_500.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.Get_500.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Get_500.FlatAppearance.BorderSize = 2;
+            this.Get_500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Get_500.Font = new System.Drawing.Font("Palatino Linotype", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Get_500.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Get_500.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
+            this.Get_500.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Get_500.Location = new System.Drawing.Point(12, 356);
+            this.Get_500.Name = "Get_500";
+            this.Get_500.Size = new System.Drawing.Size(375, 85);
+            this.Get_500.TabIndex = 29;
+            this.Get_500.Tag = "500";
+            this.Get_500.Text = "500$";
+            this.Get_500.UseVisualStyleBackColor = false;
+            this.Get_500.Click += new System.EventHandler(this.Get_100_Click);
             // 
             // button9
             // 
@@ -347,17 +359,19 @@
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button9.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_cash_withdrawal;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(12, 447);
+            this.button9.Location = new System.Drawing.Point(12, 445);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(375, 85);
             this.button9.TabIndex = 28;
+            this.button9.Tag = "1000";
             this.button9.Text = "1.000$";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.Get_100_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_deposit;
-            this.pictureBox2.Location = new System.Drawing.Point(454, 269);
+            this.pictureBox2.Location = new System.Drawing.Point(456, 303);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(120, 138);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -370,7 +384,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(468, 410);
+            this.label1.Location = new System.Drawing.Point(472, 444);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 16);
             this.label1.TabIndex = 9;
@@ -382,7 +396,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(451, 429);
+            this.label2.Location = new System.Drawing.Point(453, 460);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 16);
             this.label2.TabIndex = 32;
@@ -395,20 +409,21 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1018, 642);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.Get_100);
+            this.Controls.Add(this.Get_200);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.Get_500);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Get_2000);
+            this.Controls.Add(this.Get_5000);
+            this.Controls.Add(this.Get_10000);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "QuickTransactionsForm";
+            this.Tag = "2000";
             this.Text = "QuickTransactionsForm";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -439,12 +454,12 @@
         protected System.Windows.Forms.Label PageTitle;
         protected System.Windows.Forms.PictureBox PageIcon;
         protected System.Windows.Forms.Button button1;
-        protected System.Windows.Forms.Button button2;
-        protected System.Windows.Forms.Button button3;
-        protected System.Windows.Forms.Button button4;
-        protected System.Windows.Forms.Button button5;
-        protected System.Windows.Forms.Button button6;
-        protected System.Windows.Forms.Button button8;
+        protected System.Windows.Forms.Button Get_10000;
+        protected System.Windows.Forms.Button Get_5000;
+        protected System.Windows.Forms.Button Get_2000;
+        protected System.Windows.Forms.Button Get_100;
+        protected System.Windows.Forms.Button Get_200;
+        protected System.Windows.Forms.Button Get_500;
         protected System.Windows.Forms.Button button9;
         protected System.Windows.Forms.PictureBox pictureBox2;
         protected System.Windows.Forms.Label label1;

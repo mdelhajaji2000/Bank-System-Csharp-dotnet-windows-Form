@@ -175,7 +175,7 @@ namespace BusinessTier
                 clsTransactionsData.InsertWithDraw(this.AccountNumber, Amount, this.Balance, this.Balance - Amount);
                 bool IsUpdated = ClientAccountData.UpdateBalance(this.AccountNumber,this.Balance - Amount);
 
-                this.Balance += Amount;
+                this.Balance -= Amount;
 
                 return IsUpdated;
             }

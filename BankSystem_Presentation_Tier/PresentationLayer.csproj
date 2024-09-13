@@ -178,6 +178,12 @@
     <Compile Include="Transactions\QuickTransactionsForm.Designer.cs">
       <DependentUpon>QuickTransactionsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transfers\clstransactionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfers\clstransactionsForm.Designer.cs">
+      <DependentUpon>clstransactionsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersManagement\clsFindUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transactions\QuickTransactionsForm.resx">
       <DependentUpon>QuickTransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfers\clstransactionsForm.resx">
+      <DependentUpon>clstransactionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersManagement\clsFindUserForm.resx">
       <DependentUpon>clsFindUserForm.cs</DependentUpon>
