@@ -18,6 +18,8 @@ namespace BankSystem_Presentation_Tier
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            Application.Run(new Transactions.DepositFrom());
+
             using (SplashScreenForm spalsh = new SplashScreenForm())
             {
                 spalsh.StartPosition = FormStartPosition.CenterScreen;

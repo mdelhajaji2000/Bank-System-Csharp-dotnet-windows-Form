@@ -107,8 +107,14 @@ namespace BankSystem_Presentation_Tier
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AcreenManagaeUsers.BringToFront();
-            Pagetitle.Text = "Manage Users";
+            if ((clsGlobal.CurrentUser.Permessions & clsPermessions.ManageUsers) == clsPermessions.ManageUsers)
+            {
+                AcreenManagaeUsers.BringToFront();
+                Pagetitle.Text = "Manage Users";
+            }
+            else
+                MessageBox.Show("Action Denied, Contact Your Admin...!");
+
         }
 
         private void userCard1_OnUserSelected(int obj)
@@ -189,7 +195,12 @@ namespace BankSystem_Presentation_Tier
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if ((clsGlobal.CurrentUser.Permessions & clsPermessions.ATNService) == clsPermessions.ATNService)
+            {
 
+            }
+            else
+                MessageBox.Show("Action Denied, Contact Your Admin...!");
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -310,6 +321,26 @@ namespace BankSystem_Presentation_Tier
             {
                 MessageBox.Show("Action Denied, Contact Your Admin...!");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if ((clsGlobal.CurrentUser.Permessions & clsPermessions.StatsPage) == clsPermessions.StatsPage)
+            {
+
+            }
+            else
+                MessageBox.Show("Action Denied, Contact Your Admin...!");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if ((clsGlobal.CurrentUser.Permessions & clsPermessions.LoanManagement) == clsPermessions.LoanManagement)
+            {
+
+            }
+            else
+                MessageBox.Show("Action Denied, Contact Your Admin");
         }
     }
 }

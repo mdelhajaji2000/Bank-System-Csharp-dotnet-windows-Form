@@ -564,9 +564,9 @@
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label18.Location = new System.Drawing.Point(637, 430);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(261, 27);
+            this.label18.Size = new System.Drawing.Size(263, 27);
             this.label18.TabIndex = 19;
-            this.label18.Text = "Transactions managements";
+            this.label18.Text = "Transactions Managements";
             // 
             // label20
             // 
@@ -647,7 +647,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_transference1;
-            this.pictureBox5.Location = new System.Drawing.Point(652, 196);
+            this.pictureBox5.Location = new System.Drawing.Point(652, 195);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(211, 191);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -843,6 +843,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "         Stats Page";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             this.button3.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
@@ -896,6 +897,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "         Loan Management";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             this.button6.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
