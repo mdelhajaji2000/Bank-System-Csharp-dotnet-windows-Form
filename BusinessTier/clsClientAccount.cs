@@ -199,6 +199,8 @@ namespace BusinessTier
 
                     ClientAccountData.UpdateBalance(accFrom.AccountNumber, accFrom.Balance);
                     ClientAccountData.UpdateBalance(accTo.AccountNumber, accTo.Balance);
+
+                    IsPerformed = true;
                 }
             }
             else
