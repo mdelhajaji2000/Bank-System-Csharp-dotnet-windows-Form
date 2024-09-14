@@ -43,6 +43,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.RecordsContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel7.SuspendLayout();
@@ -61,7 +62,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.panel3.Controls.Add(this.button13);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.Pagetitle);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -226,6 +228,19 @@
             this.RecordsContainer.Size = new System.Drawing.Size(1463, 485);
             this.RecordsContainer.TabIndex = 23;
             // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(1400, 1);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(63, 65);
+            this.button13.TabIndex = 11;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // clsTransactionsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,6 +250,7 @@
             this.Controls.Add(this.RecordsContainer);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "clsTransactionsListForm";
             this.Text = "clsTransactionsListForm";
             this.panel3.ResumeLayout(false);
@@ -262,5 +278,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.FlowLayoutPanel RecordsContainer;
+        protected System.Windows.Forms.Button button13;
     }
 }

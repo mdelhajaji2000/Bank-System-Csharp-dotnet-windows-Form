@@ -57,5 +57,9 @@ namespace BankSystem_Presentation_Tier.Transactions
             DisplayBalance.Text = account.Balance.ToString();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

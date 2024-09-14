@@ -24,5 +24,7 @@ namespace BankSystem_Presentation_Tier.Global
                 clsShared.DLL_CurrentUser = _Currentuser;
             }
         }
+
+        public const string Version = "Alpha-V1.0.0";
     }
 }

@@ -31,5 +31,10 @@ namespace BankSystem_Presentation_Tier.Transactions
                 RecordsContainer.Controls.Add(record);
             }
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

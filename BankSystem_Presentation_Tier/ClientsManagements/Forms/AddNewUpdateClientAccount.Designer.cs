@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.LB_Title = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -54,14 +55,38 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.LB_Title);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(635, 92);
+            this.panel1.Size = new System.Drawing.Size(653, 92);
             this.panel1.TabIndex = 2;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(581, 9);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(66, 68);
+            this.button7.TabIndex = 8;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_add_user;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(67, 61);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // LB_Title
             // 
@@ -69,11 +94,11 @@
             this.LB_Title.BackColor = System.Drawing.Color.Transparent;
             this.LB_Title.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Title.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LB_Title.Location = new System.Drawing.Point(75, 13);
+            this.LB_Title.Location = new System.Drawing.Point(61, 13);
             this.LB_Title.Name = "LB_Title";
             this.LB_Title.Size = new System.Drawing.Size(532, 60);
             this.LB_Title.TabIndex = 5;
-            this.LB_Title.Text = "Craete New Account";
+            this.LB_Title.Text = "Create New Account";
             // 
             // label4
             // 
@@ -86,16 +111,6 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "V 1.0.1";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_add_user;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 61);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
@@ -104,7 +119,7 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
-            this.groupBox1.Location = new System.Drawing.Point(5, 777);
+            this.groupBox1.Location = new System.Drawing.Point(17, 776);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(626, 86);
             this.groupBox1.TabIndex = 10;
@@ -171,7 +186,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel6.Location = new System.Drawing.Point(261, 758);
+            this.panel6.Location = new System.Drawing.Point(270, 758);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(51, 2);
             this.panel6.TabIndex = 100;
@@ -183,7 +198,7 @@
             this.DisplayAccountNumber.Enabled = false;
             this.DisplayAccountNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F);
             this.DisplayAccountNumber.ForeColor = System.Drawing.SystemColors.Menu;
-            this.DisplayAccountNumber.Location = new System.Drawing.Point(262, 723);
+            this.DisplayAccountNumber.Location = new System.Drawing.Point(271, 723);
             this.DisplayAccountNumber.Name = "DisplayAccountNumber";
             this.DisplayAccountNumber.Size = new System.Drawing.Size(74, 34);
             this.DisplayAccountNumber.TabIndex = 99;
@@ -193,7 +208,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(12, 722);
+            this.label2.Location = new System.Drawing.Point(21, 722);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 35);
             this.label2.TabIndex = 98;
@@ -202,7 +217,7 @@
             // personDataReader1
             // 
             this.personDataReader1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
-            this.personDataReader1.Location = new System.Drawing.Point(6, 83);
+            this.personDataReader1.Location = new System.Drawing.Point(15, 83);
             this.personDataReader1.Name = "personDataReader1";
             this.personDataReader1.Size = new System.Drawing.Size(630, 706);
             this.personDataReader1.TabIndex = 0;
@@ -235,7 +250,7 @@
             // 
             this.ForUpdatePanel.Controls.Add(this.ActivationStatusCB);
             this.ForUpdatePanel.Controls.Add(this.label1);
-            this.ForUpdatePanel.Location = new System.Drawing.Point(30, 616);
+            this.ForUpdatePanel.Location = new System.Drawing.Point(39, 616);
             this.ForUpdatePanel.Name = "ForUpdatePanel";
             this.ForUpdatePanel.Size = new System.Drawing.Size(564, 100);
             this.ForUpdatePanel.TabIndex = 103;
@@ -246,7 +261,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(635, 871);
+            this.ClientSize = new System.Drawing.Size(653, 871);
             this.Controls.Add(this.ForUpdatePanel);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.DisplayAccountNumber);
@@ -254,6 +269,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.personDataReader1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewUpdateClientAccount";
             this.Text = "AddNewUpdateClientInfo";
             this.Load += new System.EventHandler(this.AddNewUpdateClientAccount_Load);
@@ -286,5 +302,6 @@
         private System.Windows.Forms.CheckBox ActivationStatusCB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel ForUpdatePanel;
+        protected System.Windows.Forms.Button button7;
     }
 }

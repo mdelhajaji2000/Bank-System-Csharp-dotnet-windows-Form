@@ -265,6 +265,7 @@
             this.Controls.Add(this.AccountToContainer);
             this.Controls.Add(this.AccountFromContainer);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "clsNewtransferForm";
             this.Text = "clsNewtransferForm";
             this.panel1.ResumeLayout(false);

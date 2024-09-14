@@ -36,7 +36,7 @@ namespace BankSystem_Presentation_Tier
         public MainForm()
         {
             InitializeComponent();
-            
+            this.Version.Text = clsGlobal.Version;
         }
 
         #region Users management Screen
@@ -408,6 +408,11 @@ namespace BankSystem_Presentation_Tier
             clsTransactionsListForm frm = new clsTransactionsListForm();
 
             frm.ShowDialog();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

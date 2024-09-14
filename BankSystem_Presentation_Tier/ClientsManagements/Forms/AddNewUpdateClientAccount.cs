@@ -137,5 +137,10 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
             
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

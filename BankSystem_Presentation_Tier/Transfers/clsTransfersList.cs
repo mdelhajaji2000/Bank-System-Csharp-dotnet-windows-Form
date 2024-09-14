@@ -93,5 +93,10 @@ namespace BankSystem_Presentation_Tier.Transfers
                 TableBody.Controls.Add(record);
             }
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

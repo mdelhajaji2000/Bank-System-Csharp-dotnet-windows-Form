@@ -181,6 +181,7 @@
             this.Controls.Add(this.BTN_TransferLog);
             this.Controls.Add(this.BTN_Newtransfer);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "clsTransferMainMenu";
             this.Text = "clstransactionsForm";
             this.panel1.ResumeLayout(false);

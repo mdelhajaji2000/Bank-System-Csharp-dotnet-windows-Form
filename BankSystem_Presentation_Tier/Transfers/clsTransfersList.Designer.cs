@@ -50,6 +50,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Pagetitle = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             this.TableSousHeader.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -282,7 +283,8 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.panel3.Controls.Add(this.button13);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.Pagetitle);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -312,6 +314,19 @@
             this.Pagetitle.TabIndex = 0;
             this.Pagetitle.Text = "Transfers Log Liste";
             // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(1390, 10);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(71, 59);
+            this.button13.TabIndex = 11;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // clsTransfersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,6 +337,7 @@
             this.Controls.Add(this.TableHead);
             this.Controls.Add(this.TableBody);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "clsTransfersList";
             this.Text = "clsTransfersList";
             this.Load += new System.EventHandler(this.clsTransfersList_Load);
@@ -360,5 +376,6 @@
         protected System.Windows.Forms.Panel panel3;
         protected System.Windows.Forms.PictureBox pictureBox4;
         protected System.Windows.Forms.Label Pagetitle;
+        protected System.Windows.Forms.Button button13;
     }
 }

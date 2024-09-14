@@ -195,6 +195,7 @@
             this.button7.Size = new System.Drawing.Size(49, 50);
             this.button7.TabIndex = 8;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // PageTitle
             // 
@@ -422,6 +423,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QuickTransactionsForm";
             this.Tag = "2000";
             this.Text = "QuickTransactionsForm";
