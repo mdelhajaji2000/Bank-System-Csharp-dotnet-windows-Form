@@ -108,6 +108,12 @@
     <Compile Include="Controls\PersonDataReader.Designer.cs">
       <DependentUpon>PersonDataReader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\TransactionLogRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TransactionLogRecord.Designer.cs">
+      <DependentUpon>TransactionLogRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,11 +197,17 @@
     <Compile Include="Transfers\clsNewtransferForm.Designer.cs">
       <DependentUpon>clsNewtransferForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transfers\clstransactionsForm.cs">
+    <Compile Include="Transfers\clsTransfersList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transfers\clstransactionsForm.Designer.cs">
-      <DependentUpon>clstransactionsForm.cs</DependentUpon>
+    <Compile Include="Transfers\clsTransfersList.Designer.cs">
+      <DependentUpon>clsTransfersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\clsTransferMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfers\clsTransferMainMenu.Designer.cs">
+      <DependentUpon>clsTransferMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="UsersManagement\clsFindUserForm.cs">
       <SubType>Form</SubType>
@@ -235,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\PersonDataReader.resx">
       <DependentUpon>PersonDataReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TransactionLogRecord.resx">
+      <DependentUpon>TransactionLogRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserCard.resx">
       <DependentUpon>UserCard.cs</DependentUpon>
@@ -285,8 +300,11 @@
     <EmbeddedResource Include="Transfers\clsNewtransferForm.resx">
       <DependentUpon>clsNewtransferForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transfers\clstransactionsForm.resx">
-      <DependentUpon>clstransactionsForm.cs</DependentUpon>
+    <EmbeddedResource Include="Transfers\clsTransfersList.resx">
+      <DependentUpon>clsTransfersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfers\clsTransferMainMenu.resx">
+      <DependentUpon>clsTransferMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersManagement\clsFindUserForm.resx">
       <DependentUpon>clsFindUserForm.cs</DependentUpon>

@@ -398,7 +398,7 @@ namespace BankSystem_Presentation_Tier
 
         private void BTN_Transfer_Click(object sender, EventArgs e)
         {
-            clstransactionsForm frm = new clstransactionsForm();
+            clsTransferMainMenu frm = new clsTransferMainMenu();
 
             frm.ShowDialog();
         }

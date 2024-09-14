@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BankSystem_Presentation_Tier.Transfers
 {
-    public partial class clstransactionsForm : Form
+    public partial class clsTransferMainMenu : Form
     {
-        public clstransactionsForm()
+        public clsTransferMainMenu()
         {
             InitializeComponent();
         }

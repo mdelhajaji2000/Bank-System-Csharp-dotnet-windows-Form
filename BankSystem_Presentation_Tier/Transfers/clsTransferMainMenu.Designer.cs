@@ -1,6 +1,6 @@
 ﻿namespace BankSystem_Presentation_Tier.Transfers
 {
-    partial class clstransactionsForm
+    partial class clsTransferMainMenu
     {
         /// <summary>
         /// Required designer variable.

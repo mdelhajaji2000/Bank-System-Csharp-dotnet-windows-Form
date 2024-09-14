@@ -50,6 +50,7 @@ namespace BankSystem_Presentation_Tier.Transfers
             if (Perform)
             AccountFromContainer.Controls.Clear();
             SetClientFrom.Show();
+            AccountFrom = null;
         }
 
         private void removeAccToClientCard(bool perform)
@@ -57,6 +58,7 @@ namespace BankSystem_Presentation_Tier.Transfers
             if (perform)
                 AccountToContainer.Controls.Clear();
             SetClientTo.Show();
+            AccountTo = null;
         }
 
         private void SetClientFrom_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -120,6 +122,9 @@ namespace BankSystem_Presentation_Tier.Transfers
 
         private void BTN_Done_Click(object sender, EventArgs e)
         {
+            if (AccountFrom == null && AccountTo == null)
+                return;
+
             int Amount;
 
             if (int.TryParse(TB_Amount.Text, out int result))
@@ -143,6 +148,12 @@ namespace BankSystem_Presentation_Tier.Transfers
             else
                 MessageBox.Show("echec..!");
 
+
+            TB_Amount.Clear();
+            AccountFromContainer.Controls.Clear();
+            AccountToContainer.Controls.Clear();
+            AccountFrom = null;
+            AccountTo = null;
             
         }
     }
