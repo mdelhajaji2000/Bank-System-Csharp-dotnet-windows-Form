@@ -1,6 +1,6 @@
 ﻿namespace BankSystem_Presentation_Tier.Controls
 {
-    partial class TransactionLogRecord
+    partial class TransferLogRecord
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.Display_TransferID = new System.Windows.Forms.Label();
-            this.Dispaly_AccFrom_AccNumber = new System.Windows.Forms.Label();
+            this.Display_AccFrom_AccountNumber = new System.Windows.Forms.Label();
             this.Display_AccFrom_FirstName = new System.Windows.Forms.Label();
             this.Display_AccTo_FirstName = new System.Windows.Forms.Label();
             this.Display_AccfromLastName = new System.Windows.Forms.Label();
@@ -51,16 +51,16 @@
             this.Display_TransferID.Text = "345";
             this.Display_TransferID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Dispaly_AccFrom_AccNumber
+            // Display_AccFrom_AccountNumber
             // 
-            this.Dispaly_AccFrom_AccNumber.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dispaly_AccFrom_AccNumber.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Dispaly_AccFrom_AccNumber.Location = new System.Drawing.Point(167, 5);
-            this.Dispaly_AccFrom_AccNumber.Name = "Dispaly_AccFrom_AccNumber";
-            this.Dispaly_AccFrom_AccNumber.Size = new System.Drawing.Size(156, 64);
-            this.Dispaly_AccFrom_AccNumber.TabIndex = 18;
-            this.Dispaly_AccFrom_AccNumber.Text = "5389";
-            this.Dispaly_AccFrom_AccNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Display_AccFrom_AccountNumber.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_AccFrom_AccountNumber.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Display_AccFrom_AccountNumber.Location = new System.Drawing.Point(167, 5);
+            this.Display_AccFrom_AccountNumber.Name = "Display_AccFrom_AccountNumber";
+            this.Display_AccFrom_AccountNumber.Size = new System.Drawing.Size(156, 64);
+            this.Display_AccFrom_AccountNumber.TabIndex = 18;
+            this.Display_AccFrom_AccountNumber.Text = "5389";
+            this.Display_AccFrom_AccountNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Display_AccFrom_FirstName
             // 
@@ -160,7 +160,7 @@
             this.Controls.Add(this.Display_transfer_Amount);
             this.Controls.Add(this.Display_TransferID);
             this.Controls.Add(this.Display_AccFrom_FirstName);
-            this.Controls.Add(this.Dispaly_AccFrom_AccNumber);
+            this.Controls.Add(this.Display_AccFrom_AccountNumber);
             this.Controls.Add(this.Display_AccTo_LastName);
             this.Controls.Add(this.DisplayAccfromBalance);
             this.Controls.Add(this.Display_AccfromLastName);
@@ -181,6 +181,6 @@
         private System.Windows.Forms.Label Display_AccTo_Balance;
         private System.Windows.Forms.Label Display_AccfromLastName;
         private System.Windows.Forms.Label DisplayAccfromBalance;
-        private System.Windows.Forms.Label Dispaly_AccFrom_AccNumber;
+        private System.Windows.Forms.Label Display_AccFrom_AccountNumber;
     }
 }

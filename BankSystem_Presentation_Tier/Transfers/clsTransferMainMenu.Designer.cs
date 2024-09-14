@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.PageTitle = new System.Windows.Forms.Label();
+            this.PageIcon = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.BTN_Findtransfers = new System.Windows.Forms.Button();
             this.BTN_TransferLog = new System.Windows.Forms.Button();
             this.BTN_Newtransfer = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.PageIcon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,6 +55,19 @@
             this.panel1.Size = new System.Drawing.Size(948, 82);
             this.panel1.TabIndex = 13;
             // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(872, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(69, 69);
+            this.button7.TabIndex = 8;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // PageTitle
             // 
             this.PageTitle.AutoSize = true;
@@ -66,6 +79,16 @@
             this.PageTitle.Size = new System.Drawing.Size(326, 50);
             this.PageTitle.TabIndex = 5;
             this.PageTitle.Text = "Transfers Page";
+            // 
+            // PageIcon
+            // 
+            this.PageIcon.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_transaction;
+            this.PageIcon.Location = new System.Drawing.Point(263, 3);
+            this.PageIcon.Name = "PageIcon";
+            this.PageIcon.Size = new System.Drawing.Size(67, 69);
+            this.PageIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PageIcon.TabIndex = 4;
+            this.PageIcon.TabStop = false;
             // 
             // panel2
             // 
@@ -107,6 +130,7 @@
             this.BTN_Findtransfers.Tag = "2000";
             this.BTN_Findtransfers.Text = "Find Transfers Per Client";
             this.BTN_Findtransfers.UseVisualStyleBackColor = false;
+            this.BTN_Findtransfers.Click += new System.EventHandler(this.BTN_Findtransfers_Click);
             // 
             // BTN_TransferLog
             // 
@@ -125,6 +149,7 @@
             this.BTN_TransferLog.Tag = "2000";
             this.BTN_TransferLog.Text = "Transfers Log";
             this.BTN_TransferLog.UseVisualStyleBackColor = false;
+            this.BTN_TransferLog.Click += new System.EventHandler(this.BTN_TransferLog_Click);
             // 
             // BTN_Newtransfer
             // 
@@ -145,29 +170,7 @@
             this.BTN_Newtransfer.UseVisualStyleBackColor = false;
             this.BTN_Newtransfer.Click += new System.EventHandler(this.BTN_Newtransfer_Click);
             // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(872, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(69, 69);
-            this.button7.TabIndex = 8;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // PageIcon
-            // 
-            this.PageIcon.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_transaction;
-            this.PageIcon.Location = new System.Drawing.Point(263, 3);
-            this.PageIcon.Name = "PageIcon";
-            this.PageIcon.Size = new System.Drawing.Size(67, 69);
-            this.PageIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PageIcon.TabIndex = 4;
-            this.PageIcon.TabStop = false;
-            // 
-            // clstransactionsForm
+            // clsTransferMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,13 +181,13 @@
             this.Controls.Add(this.BTN_TransferLog);
             this.Controls.Add(this.BTN_Newtransfer);
             this.Controls.Add(this.panel1);
-            this.Name = "clstransactionsForm";
+            this.Name = "clsTransferMainMenu";
             this.Text = "clstransactionsForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PageIcon)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -48,19 +48,12 @@
             this.label16 = new System.Windows.Forms.Label();
             this.TableBody = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Pagetitle = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.transactionLogRecord21 = new BankSystem_Presentation_Tier.Controls.TransactionLogRecord();
-            this.transactionLogRecord22 = new BankSystem_Presentation_Tier.Controls.TransactionLogRecord();
-            this.transactionLogRecord23 = new BankSystem_Presentation_Tier.Controls.TransactionLogRecord();
-            this.transactionLogRecord24 = new BankSystem_Presentation_Tier.Controls.TransactionLogRecord();
-            this.transactionLogRecord25 = new BankSystem_Presentation_Tier.Controls.TransactionLogRecord();
-            this.transactionLogRecord26 = new BankSystem_Presentation_Tier.Controls.TransactionLogRecord();
+            this.Pagetitle = new System.Windows.Forms.Label();
             this.TableSousHeader.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.TableHead.SuspendLayout();
-            this.TableBody.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +78,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(156, 38);
             this.label13.TabIndex = 14;
-            this.label13.Text = "Account Number";
+            this.label13.Text = "ID";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
@@ -282,12 +275,6 @@
             // TableBody
             // 
             this.TableBody.AutoScroll = true;
-            this.TableBody.Controls.Add(this.transactionLogRecord21);
-            this.TableBody.Controls.Add(this.transactionLogRecord22);
-            this.TableBody.Controls.Add(this.transactionLogRecord23);
-            this.TableBody.Controls.Add(this.transactionLogRecord24);
-            this.TableBody.Controls.Add(this.transactionLogRecord25);
-            this.TableBody.Controls.Add(this.transactionLogRecord26);
             this.TableBody.Location = new System.Drawing.Point(0, 181);
             this.TableBody.Name = "TableBody";
             this.TableBody.Size = new System.Drawing.Size(1631, 470);
@@ -304,17 +291,6 @@
             this.panel3.Size = new System.Drawing.Size(1633, 72);
             this.panel3.TabIndex = 17;
             // 
-            // Pagetitle
-            // 
-            this.Pagetitle.AutoSize = true;
-            this.Pagetitle.Font = new System.Drawing.Font("Palatino Linotype", 35F, System.Drawing.FontStyle.Bold);
-            this.Pagetitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Pagetitle.Location = new System.Drawing.Point(541, 6);
-            this.Pagetitle.Name = "Pagetitle";
-            this.Pagetitle.Size = new System.Drawing.Size(440, 63);
-            this.Pagetitle.TabIndex = 0;
-            this.Pagetitle.Text = "Transfers Log Liste";
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._005_log;
@@ -325,53 +301,16 @@
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
-            // transactionLogRecord21
+            // Pagetitle
             // 
-            this.transactionLogRecord21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.transactionLogRecord21.Location = new System.Drawing.Point(3, 3);
-            this.transactionLogRecord21.Name = "transactionLogRecord21";
-            this.transactionLogRecord21.Size = new System.Drawing.Size(1607, 70);
-            this.transactionLogRecord21.TabIndex = 20;
-            // 
-            // transactionLogRecord22
-            // 
-            this.transactionLogRecord22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.transactionLogRecord22.Location = new System.Drawing.Point(3, 79);
-            this.transactionLogRecord22.Name = "transactionLogRecord22";
-            this.transactionLogRecord22.Size = new System.Drawing.Size(1607, 70);
-            this.transactionLogRecord22.TabIndex = 21;
-            // 
-            // transactionLogRecord23
-            // 
-            this.transactionLogRecord23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.transactionLogRecord23.Location = new System.Drawing.Point(3, 155);
-            this.transactionLogRecord23.Name = "transactionLogRecord23";
-            this.transactionLogRecord23.Size = new System.Drawing.Size(1607, 70);
-            this.transactionLogRecord23.TabIndex = 22;
-            // 
-            // transactionLogRecord24
-            // 
-            this.transactionLogRecord24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.transactionLogRecord24.Location = new System.Drawing.Point(3, 231);
-            this.transactionLogRecord24.Name = "transactionLogRecord24";
-            this.transactionLogRecord24.Size = new System.Drawing.Size(1607, 70);
-            this.transactionLogRecord24.TabIndex = 23;
-            // 
-            // transactionLogRecord25
-            // 
-            this.transactionLogRecord25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.transactionLogRecord25.Location = new System.Drawing.Point(3, 307);
-            this.transactionLogRecord25.Name = "transactionLogRecord25";
-            this.transactionLogRecord25.Size = new System.Drawing.Size(1607, 70);
-            this.transactionLogRecord25.TabIndex = 24;
-            // 
-            // transactionLogRecord26
-            // 
-            this.transactionLogRecord26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.transactionLogRecord26.Location = new System.Drawing.Point(3, 383);
-            this.transactionLogRecord26.Name = "transactionLogRecord26";
-            this.transactionLogRecord26.Size = new System.Drawing.Size(1607, 70);
-            this.transactionLogRecord26.TabIndex = 25;
+            this.Pagetitle.AutoSize = true;
+            this.Pagetitle.Font = new System.Drawing.Font("Palatino Linotype", 35F, System.Drawing.FontStyle.Bold);
+            this.Pagetitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Pagetitle.Location = new System.Drawing.Point(541, 6);
+            this.Pagetitle.Name = "Pagetitle";
+            this.Pagetitle.Size = new System.Drawing.Size(440, 63);
+            this.Pagetitle.TabIndex = 0;
+            this.Pagetitle.Text = "Transfers Log Liste";
             // 
             // clsTransfersList
             // 
@@ -385,11 +324,11 @@
             this.Controls.Add(this.panel3);
             this.Name = "clsTransfersList";
             this.Text = "clsTransfersList";
+            this.Load += new System.EventHandler(this.clsTransfersList_Load);
             this.TableSousHeader.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.TableHead.ResumeLayout(false);
-            this.TableBody.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -421,11 +360,5 @@
         protected System.Windows.Forms.Panel panel3;
         protected System.Windows.Forms.PictureBox pictureBox4;
         protected System.Windows.Forms.Label Pagetitle;
-        private Controls.TransactionLogRecord transactionLogRecord21;
-        private Controls.TransactionLogRecord transactionLogRecord22;
-        private Controls.TransactionLogRecord transactionLogRecord23;
-        private Controls.TransactionLogRecord transactionLogRecord24;
-        private Controls.TransactionLogRecord transactionLogRecord25;
-        private Controls.TransactionLogRecord transactionLogRecord26;
     }
 }

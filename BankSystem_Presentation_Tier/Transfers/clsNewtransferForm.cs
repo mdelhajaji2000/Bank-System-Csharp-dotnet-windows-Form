@@ -154,6 +154,9 @@ namespace BankSystem_Presentation_Tier.Transfers
             AccountToContainer.Controls.Clear();
             AccountFrom = null;
             AccountTo = null;
+
+            SetClientFrom.Show();
+            SetClientTo.Show();
             
         }
     }

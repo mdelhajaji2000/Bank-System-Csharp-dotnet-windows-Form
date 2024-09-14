@@ -1,6 +1,7 @@
 ﻿using DataAccesstier;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -20,8 +21,8 @@ namespace BusinessTier
         {
             this.Amount = Amount;
             this.transferID = transferID;
-            this.AccnumberFrom = AccnumberFrom;
-            this.AccnumberTo = AccnumberTo;
+            this.AccnumberFrom = AccNumberFrom;
+            this.AccnumberTo = AccNumberTo;
         }
 
         public static clsTransfers Find(int transferID)
@@ -34,6 +35,16 @@ namespace BusinessTier
                 return new clsTransfers(transferID, AccnumberFrom, AccnumberTo, Amount);
             else
                 return null;
+        }
+
+        public static DataTable GetAllTransfersrecords()
+        {
+            return clsTransferData.GetAllTransferRecords();
+        }
+
+        public static DataTable GetAllTransferPerClient(int AccountNumber)
+        {
+            return clsTransferData.GetAllTransfersPerAccountByAccountNumber(AccountNumber);
         }
     }
 }
