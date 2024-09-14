@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            this.Top_Panel = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Version = new System.Windows.Forms.Label();
@@ -37,7 +38,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.CurrentUserPermessionLevel = new System.Windows.Forms.Label();
             this.CurrentUserLabel = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.SideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -100,13 +101,15 @@
             this.ScreenStatsPage = new System.Windows.Forms.Panel();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
-            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.button14 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
+            this.Top_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.SideBar.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -122,21 +125,21 @@
             this.MainMenuPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Top_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.Version);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1807, 92);
-            this.panel1.TabIndex = 1;
+            this.Top_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Top_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Top_Panel.Controls.Add(this.button13);
+            this.Top_Panel.Controls.Add(this.label1);
+            this.Top_Panel.Controls.Add(this.Version);
+            this.Top_Panel.Controls.Add(this.pictureBox2);
+            this.Top_Panel.Controls.Add(this.button8);
+            this.Top_Panel.Controls.Add(this.button7);
+            this.Top_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Top_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Top_Panel.Name = "Top_Panel";
+            this.Top_Panel.Size = new System.Drawing.Size(1807, 92);
+            this.Top_Panel.TabIndex = 1;
             // 
             // button13
             // 
@@ -214,7 +217,7 @@
             this.CurrentUserPermessionLevel.AutoSize = true;
             this.CurrentUserPermessionLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentUserPermessionLevel.ForeColor = System.Drawing.Color.Gold;
-            this.CurrentUserPermessionLevel.Location = new System.Drawing.Point(165, 167);
+            this.CurrentUserPermessionLevel.Location = new System.Drawing.Point(225, 167);
             this.CurrentUserPermessionLevel.Name = "CurrentUserPermessionLevel";
             this.CurrentUserPermessionLevel.Size = new System.Drawing.Size(27, 20);
             this.CurrentUserPermessionLevel.TabIndex = 3;
@@ -225,32 +228,33 @@
             this.CurrentUserLabel.AutoSize = true;
             this.CurrentUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentUserLabel.ForeColor = System.Drawing.Color.Gold;
-            this.CurrentUserLabel.Location = new System.Drawing.Point(91, 147);
+            this.CurrentUserLabel.Location = new System.Drawing.Point(109, 147);
             this.CurrentUserLabel.Name = "CurrentUserLabel";
             this.CurrentUserLabel.Size = new System.Drawing.Size(112, 20);
             this.CurrentUserLabel.TabIndex = 2;
             this.CurrentUserLabel.Text = "Current User : ";
             // 
-            // flowLayoutPanel1
+            // SideBar
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.button6);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 92);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(311, 783);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
+            this.SideBar.Controls.Add(this.panel2);
+            this.SideBar.Controls.Add(this.button1);
+            this.SideBar.Controls.Add(this.button2);
+            this.SideBar.Controls.Add(this.button3);
+            this.SideBar.Controls.Add(this.button4);
+            this.SideBar.Controls.Add(this.button5);
+            this.SideBar.Controls.Add(this.button6);
+            this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideBar.Location = new System.Drawing.Point(0, 92);
+            this.SideBar.Name = "SideBar";
+            this.SideBar.Size = new System.Drawing.Size(311, 783);
+            this.SideBar.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(49)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button14);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.CurrentUserPermessionLevel);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -260,13 +264,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(304, 205);
             this.panel2.TabIndex = 0;
+            this.panel2.Tag = "lolo";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label9.Location = new System.Drawing.Point(14, 167);
+            this.label9.Location = new System.Drawing.Point(74, 167);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 20);
             this.label9.TabIndex = 4;
@@ -275,7 +280,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_end_user1;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -294,6 +299,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(304, 86);
             this.button1.TabIndex = 1;
+            this.button1.Tag = "          Manage Clients";
             this.button1.Text = "          Manage Clients";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -312,6 +318,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(304, 86);
             this.button2.TabIndex = 2;
+            this.button2.Tag = "         Transactions";
             this.button2.Text = "         Transactions";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -330,6 +337,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(304, 86);
             this.button3.TabIndex = 3;
+            this.button3.Tag = "         Stats Page";
             this.button3.Text = "         Stats Page";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -348,6 +356,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(304, 86);
             this.button4.TabIndex = 4;
+            this.button4.Tag = "         Manage Users";
             this.button4.Text = "         Manage Users";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -366,6 +375,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(304, 86);
             this.button5.TabIndex = 5;
+            this.button5.Tag = "         ATM Service";
             this.button5.Text = "         ATM Service";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -384,6 +394,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(304, 86);
             this.button6.TabIndex = 6;
+            this.button6.Tag = "         Loan Management";
             this.button6.Text = "         Loan Management";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -402,6 +413,8 @@
             // 
             // Pagetitle
             // 
+            this.Pagetitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Pagetitle.Font = new System.Drawing.Font("Palatino Linotype", 35F, System.Drawing.FontStyle.Bold);
             this.Pagetitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Pagetitle.Location = new System.Drawing.Point(144, 6);
@@ -425,6 +438,8 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -437,11 +452,12 @@
             // 
             // button9
             // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button9.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.logout;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(1400, 3);
+            this.button9.Location = new System.Drawing.Point(1423, 0);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(70, 69);
             this.button9.TabIndex = 6;
@@ -450,11 +466,12 @@
             // 
             // button10
             // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.information;
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(1324, 3);
+            this.button10.Location = new System.Drawing.Point(1347, 0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(70, 69);
             this.button10.TabIndex = 5;
@@ -480,6 +497,9 @@
             // 
             // label17
             // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -491,6 +511,9 @@
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -503,6 +526,9 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::BankSystem_Presentation_Tier.Properties.Resources.bank;
             this.pictureBox4.Location = new System.Drawing.Point(661, 204);
             this.pictureBox4.Name = "pictureBox4";
@@ -513,6 +539,9 @@
             // 
             // BT_InactiveClients
             // 
+            this.BT_InactiveClients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_InactiveClients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BT_InactiveClients.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BT_InactiveClients.FlatAppearance.BorderSize = 2;
@@ -532,6 +561,9 @@
             // 
             // BT_EditClient
             // 
+            this.BT_EditClient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_EditClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BT_EditClient.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BT_EditClient.FlatAppearance.BorderSize = 2;
@@ -550,6 +582,9 @@
             // 
             // BT_AddClient
             // 
+            this.BT_AddClient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_AddClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BT_AddClient.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BT_AddClient.FlatAppearance.BorderSize = 2;
@@ -568,6 +603,9 @@
             // 
             // BT_FindClient
             // 
+            this.BT_FindClient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_FindClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BT_FindClient.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BT_FindClient.FlatAppearance.BorderSize = 2;
@@ -586,6 +624,9 @@
             // 
             // BT_deleteClient
             // 
+            this.BT_deleteClient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_deleteClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BT_deleteClient.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BT_deleteClient.FlatAppearance.BorderSize = 2;
@@ -604,6 +645,9 @@
             // 
             // BT_ClientList
             // 
+            this.BT_ClientList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BT_ClientList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BT_ClientList.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BT_ClientList.FlatAppearance.BorderSize = 2;
@@ -628,13 +672,14 @@
             this.AcreenManagaeUsers.Controls.Add(this.button11);
             this.AcreenManagaeUsers.Controls.Add(this.UsersListContainer);
             this.AcreenManagaeUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AcreenManagaeUsers.Location = new System.Drawing.Point(0, 0);
+            this.AcreenManagaeUsers.Location = new System.Drawing.Point(311, 164);
             this.AcreenManagaeUsers.Name = "AcreenManagaeUsers";
-            this.AcreenManagaeUsers.Size = new System.Drawing.Size(1807, 875);
+            this.AcreenManagaeUsers.Size = new System.Drawing.Size(1496, 639);
             this.AcreenManagaeUsers.TabIndex = 6;
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.LB_UserID);
             this.panel6.Controls.Add(this.label14);
@@ -817,6 +862,8 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.label6);
@@ -849,6 +896,7 @@
             // 
             // button12
             // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button12.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -865,6 +913,7 @@
             // 
             // button11
             // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button11.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -881,6 +930,8 @@
             // 
             // UsersListContainer
             // 
+            this.UsersListContainer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.UsersListContainer.AutoScroll = true;
             this.UsersListContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UsersListContainer.Location = new System.Drawing.Point(6, 93);
@@ -915,6 +966,9 @@
             // 
             // label18
             // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -926,6 +980,9 @@
             // 
             // label20
             // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Modern No. 20", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -938,6 +995,9 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_transference1;
             this.pictureBox5.Location = new System.Drawing.Point(652, 195);
             this.pictureBox5.Name = "pictureBox5";
@@ -948,6 +1008,9 @@
             // 
             // BTN_QuickTransactions
             // 
+            this.BTN_QuickTransactions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_QuickTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BTN_QuickTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BTN_QuickTransactions.FlatAppearance.BorderSize = 2;
@@ -967,6 +1030,9 @@
             // 
             // BTN_FilteringTransactions
             // 
+            this.BTN_FilteringTransactions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_FilteringTransactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BTN_FilteringTransactions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BTN_FilteringTransactions.FlatAppearance.BorderSize = 2;
@@ -984,6 +1050,9 @@
             // 
             // BTN_TransactionsLog
             // 
+            this.BTN_TransactionsLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_TransactionsLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BTN_TransactionsLog.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BTN_TransactionsLog.FlatAppearance.BorderSize = 2;
@@ -1002,6 +1071,9 @@
             // 
             // BTN_Transfer
             // 
+            this.BTN_Transfer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Transfer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BTN_Transfer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BTN_Transfer.FlatAppearance.BorderSize = 2;
@@ -1020,6 +1092,9 @@
             // 
             // BTN_WithDraw
             // 
+            this.BTN_WithDraw.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_WithDraw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BTN_WithDraw.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BTN_WithDraw.FlatAppearance.BorderSize = 2;
@@ -1038,6 +1113,9 @@
             // 
             // BTN_Deposit
             // 
+            this.BTN_Deposit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Deposit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(61)))));
             this.BTN_Deposit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.BTN_Deposit.FlatAppearance.BorderSize = 2;
@@ -1082,14 +1160,6 @@
             this.MainMenuPanel.Size = new System.Drawing.Size(1807, 875);
             this.MainMenuPanel.TabIndex = 8;
             // 
-            // dashBorad1
-            // 
-            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
-            this.dashBorad1.Name = "dashBorad1";
-            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
-            this.dashBorad1.TabIndex = 16;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1126,31 +1196,57 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "V1.0.1";
             // 
+            // button14
+            // 
+            this.button14.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.minimize__1_1;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(7, 2);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(43, 51);
+            this.button14.TabIndex = 11;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // dashBorad1
+            // 
+            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
+            this.dashBorad1.Name = "dashBorad1";
+            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
+            this.dashBorad1.TabIndex = 16;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1807, 875);
-            this.Controls.Add(this.ScreenTransaction);
+            this.Controls.Add(this.AcreenManagaeUsers);
             this.Controls.Add(this.ScreenManageClients);
+            this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenLoanManagements);
             this.Controls.Add(this.ScreenATMService);
             this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.SideBar);
+            this.Controls.Add(this.Top_Panel);
             this.Controls.Add(this.MainMenuPanel);
-            this.Controls.Add(this.AcreenManagaeUsers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Top_Panel.ResumeLayout(false);
+            this.Top_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.SideBar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1176,11 +1272,11 @@
         }
 
         #endregion
-        protected System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.Panel Top_Panel;
         protected System.Windows.Forms.Label CurrentUserPermessionLevel;
         protected System.Windows.Forms.Label CurrentUserLabel;
         protected System.Windows.Forms.PictureBox pictureBox1;
-        protected System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        protected System.Windows.Forms.FlowLayoutPanel SideBar;
         protected System.Windows.Forms.Panel panel2;
         protected System.Windows.Forms.Button button1;
         protected System.Windows.Forms.Button button2;
@@ -1252,6 +1348,8 @@
         protected System.Windows.Forms.Button BTN_WithDraw;
         protected System.Windows.Forms.Button BTN_Deposit;
         protected System.Windows.Forms.Button button13;
+        protected System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

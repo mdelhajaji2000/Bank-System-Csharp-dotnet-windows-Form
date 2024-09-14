@@ -48,9 +48,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.TableBody = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Pagetitle = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
             this.TableSousHeader.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -293,6 +293,19 @@
             this.panel3.Size = new System.Drawing.Size(1633, 72);
             this.panel3.TabIndex = 17;
             // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(1559, 5);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(71, 59);
+            this.button13.TabIndex = 11;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BankSystem_Presentation_Tier.Properties.Resources._005_log;
@@ -314,25 +327,12 @@
             this.Pagetitle.TabIndex = 0;
             this.Pagetitle.Text = "Transfers Log Liste";
             // 
-            // button13
-            // 
-            this.button13.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(1390, 10);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(71, 59);
-            this.button13.TabIndex = 11;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
             // clsTransfersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(1633, 651);
+            this.ClientSize = new System.Drawing.Size(1633, 655);
             this.Controls.Add(this.TableSousHeader);
             this.Controls.Add(this.TableHead);
             this.Controls.Add(this.TableBody);

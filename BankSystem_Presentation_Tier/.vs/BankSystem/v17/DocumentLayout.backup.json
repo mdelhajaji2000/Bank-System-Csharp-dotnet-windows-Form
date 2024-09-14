@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\usersmanagement\\editaddnewuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:usersmanagement\\editaddnewuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\usersmanagement\\clsfinduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:usersmanagement\\clsfinduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transfers\\clstransferslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transfers\\clstransferslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transfers\\clstransfermainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transfers\\clstransfermainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transfers\\clstransferslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transfers\\clstransferslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transfers\\clsnewtransferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transfers\\clsnewtransferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\controls\\transactionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:controls\\transactionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\depositfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\controls\\transferlogrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:controls\\transferlogrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\transactions\\clstransactionslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:transactions\\clstransactionslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|c:\\users\\mdelh\\onedrive\\desktop\\my-full-real-projects\\c#-dotnet-winforms-sqldb-realprojects\\bank-system-csharp-dotnet-windows-form\\banksystem_presentation_tier\\controls\\transactionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3FF4AFA-1046-4E4C-BDA9-E19ED9BFFC9D}|PresentationLayer.csproj|solutionrelative:controls\\transactionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,79 +38,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 625,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditAddnEwUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\EditAddnEwUserForm.cs",
-              "RelativeDocumentMoniker": "UsersManagement\\EditAddnEwUserForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\EditAddnEwUserForm.cs [Design]",
-              "RelativeToolTip": "UsersManagement\\EditAddnEwUserForm.cs [Design]",
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs*",
+              "RelativeToolTip": "MainForm.cs*",
+              "ViewState": "AgIAAKcBAAAAAAAAAAAmwM8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:18:50.388Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsFindUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\clsFindUserForm.cs",
-              "RelativeDocumentMoniker": "UsersManagement\\clsFindUserForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\UsersManagement\\clsFindUserForm.cs [Design]",
-              "RelativeToolTip": "UsersManagement\\clsFindUserForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:18:48.206Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsTransfersList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransfersList.cs",
-              "RelativeDocumentMoniker": "Transfers\\clsTransfersList.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransfersList.cs [Design]*",
-              "RelativeToolTip": "Transfers\\clsTransfersList.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:17:50.032Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clsTransferMainMenu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransferMainMenu.cs",
-              "RelativeDocumentMoniker": "Transfers\\clsTransferMainMenu.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransferMainMenu.cs [Design]",
-              "RelativeToolTip": "Transfers\\clsTransferMainMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:17:28.558Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsNewtransferForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsNewtransferForm.cs",
-              "RelativeDocumentMoniker": "Transfers\\clsNewtransferForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsNewtransferForm.cs [Design]",
-              "RelativeToolTip": "Transfers\\clsNewtransferForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:17:21.961Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DepositFrom.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\DepositFrom.cs",
-              "RelativeDocumentMoniker": "Transactions\\DepositFrom.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\DepositFrom.cs [Design]",
-              "RelativeToolTip": "Transactions\\DepositFrom.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:16:07.688Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-14T18:23:13.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,28 +59,78 @@
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs [Design]",
-              "RelativeToolTip": "MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\MainForm.cs [Design]*",
+              "RelativeToolTip": "MainForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:14:29.808Z",
+              "WhenOpened": "2024-09-14T14:31:34.557Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "clsTransactionsListForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\clsTransactionsListForm.cs",
-              "RelativeDocumentMoniker": "Transactions\\clsTransactionsListForm.cs",
-              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transactions\\clsTransactionsListForm.cs [Design]",
-              "RelativeToolTip": "Transactions\\clsTransactionsListForm.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "clsTransfersList.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransfersList.cs",
+              "RelativeDocumentMoniker": "Transfers\\clsTransfersList.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransfersList.cs",
+              "RelativeToolTip": "Transfers\\clsTransfersList.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAiwGgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T14:14:23.988Z",
+              "WhenOpened": "2024-09-14T17:54:24.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsTransfersList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransfersList.cs",
+              "RelativeDocumentMoniker": "Transfers\\clsTransfersList.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Transfers\\clsTransfersList.cs [Design]",
+              "RelativeToolTip": "Transfers\\clsTransfersList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T17:54:23.084Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransferLogRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\TransferLogRecord.cs",
+              "RelativeDocumentMoniker": "Controls\\TransferLogRecord.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\TransferLogRecord.cs [Design]",
+              "RelativeToolTip": "Controls\\TransferLogRecord.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T17:45:12.159Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransactionRecord.cs",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\TransactionRecord.cs",
+              "RelativeDocumentMoniker": "Controls\\TransactionRecord.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\TransactionRecord.cs",
+              "RelativeToolTip": "Controls\\TransactionRecord.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T17:28:33.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\TransactionRecord.cs",
+              "RelativeDocumentMoniker": "Controls\\TransactionRecord.cs",
+              "ToolTip": "C:\\Users\\mdelh\\OneDrive\\Desktop\\My-Full-Real-Projects\\C#-dotnet-winForms-SqlDB-RealProjects\\Bank-System-Csharp-dotnet-windows-Form\\BankSystem_Presentation_Tier\\Controls\\TransactionRecord.cs [Design]",
+              "RelativeToolTip": "Controls\\TransactionRecord.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T17:28:31.746Z",
               "EditorCaption": " [Design]"
             }
           ]
         },
         {
-          "DockedWidth": 243,
+          "DockedWidth": 625,
           "SelectedChildIndex": -1,
           "Children": [
             {

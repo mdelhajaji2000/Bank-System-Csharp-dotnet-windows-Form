@@ -30,6 +30,16 @@ namespace BankSystem_Presentation_Tier.Transfers
             InitializeComponent();
 
             this._Mode = enMode.GetAll;
+
+            switch (_Mode)
+            {
+                case enMode.GetAll:
+                    FillRecordsToTable_WithAllRecords();
+                    break;
+                case enMode.SerachForAClientRecords:
+                    FillWithRecordsForOnlyOneClient();
+                    break;
+            }
         }
 
         public clsTransfersList(int AccountNumber)
@@ -45,15 +55,7 @@ namespace BankSystem_Presentation_Tier.Transfers
 
         private void clsTransfersList_Load(object sender, EventArgs e)
         {
-            switch (_Mode)
-            {
-                case enMode.GetAll:
-                    FillRecordsToTable_WithAllRecords();
-                    break;
-                case enMode.SerachForAClientRecords:
-                    FillWithRecordsForOnlyOneClient();
-                    break;
-            }
+
         }
 
         private void FillWithRecordsForOnlyOneClient()
@@ -92,6 +94,15 @@ namespace BankSystem_Presentation_Tier.Transfers
 
                 TableBody.Controls.Add(record);
             }
+        }
+
+        public void ShowOnlyOneRecord(int transferID)
+        {
+            TableBody.Controls.Clear();
+
+            TransferLogRecord record = new TransferLogRecord(transferID);
+
+            TableBody.Controls.Add(record);
         }
 
         private void button13_Click(object sender, EventArgs e)

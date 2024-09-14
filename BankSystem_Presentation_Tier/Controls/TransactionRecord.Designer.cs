@@ -37,6 +37,8 @@
             this.DisplayFirstName = new System.Windows.Forms.Label();
             this.DisplayBalanceBefore = new System.Windows.Forms.Label();
             this.BTN_TransferDetails = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // DisplayBalanceNow
@@ -44,7 +46,7 @@
             this.DisplayBalanceNow.AutoSize = true;
             this.DisplayBalanceNow.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayBalanceNow.ForeColor = System.Drawing.Color.Lime;
-            this.DisplayBalanceNow.Location = new System.Drawing.Point(621, 24);
+            this.DisplayBalanceNow.Location = new System.Drawing.Point(615, 25);
             this.DisplayBalanceNow.Name = "DisplayBalanceNow";
             this.DisplayBalanceNow.Size = new System.Drawing.Size(162, 35);
             this.DisplayBalanceNow.TabIndex = 20;
@@ -56,7 +58,7 @@
             this.TransactionID.AutoSize = true;
             this.TransactionID.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TransactionID.ForeColor = System.Drawing.Color.Gold;
-            this.TransactionID.Location = new System.Drawing.Point(28, 25);
+            this.TransactionID.Location = new System.Drawing.Point(22, 26);
             this.TransactionID.Name = "TransactionID";
             this.TransactionID.Size = new System.Drawing.Size(105, 35);
             this.TransactionID.TabIndex = 19;
@@ -68,7 +70,7 @@
             this.DisplayTransactionType.AutoSize = true;
             this.DisplayTransactionType.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayTransactionType.ForeColor = System.Drawing.Color.Gold;
-            this.DisplayTransactionType.Location = new System.Drawing.Point(1172, 20);
+            this.DisplayTransactionType.Location = new System.Drawing.Point(1166, 21);
             this.DisplayTransactionType.Name = "DisplayTransactionType";
             this.DisplayTransactionType.Size = new System.Drawing.Size(107, 35);
             this.DisplayTransactionType.TabIndex = 18;
@@ -80,7 +82,7 @@
             this.DisplayMAount.AutoSize = true;
             this.DisplayMAount.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayMAount.ForeColor = System.Drawing.Color.Green;
-            this.DisplayMAount.Location = new System.Drawing.Point(971, 24);
+            this.DisplayMAount.Location = new System.Drawing.Point(965, 25);
             this.DisplayMAount.Name = "DisplayMAount";
             this.DisplayMAount.Size = new System.Drawing.Size(162, 35);
             this.DisplayMAount.TabIndex = 17;
@@ -92,7 +94,7 @@
             this.DisplayAccountNumber.AutoSize = true;
             this.DisplayAccountNumber.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayAccountNumber.ForeColor = System.Drawing.Color.Gold;
-            this.DisplayAccountNumber.Location = new System.Drawing.Point(490, 25);
+            this.DisplayAccountNumber.Location = new System.Drawing.Point(484, 26);
             this.DisplayAccountNumber.Name = "DisplayAccountNumber";
             this.DisplayAccountNumber.Size = new System.Drawing.Size(120, 35);
             this.DisplayAccountNumber.TabIndex = 16;
@@ -103,7 +105,7 @@
             // 
             this.DiplayLAstName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiplayLAstName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DiplayLAstName.Location = new System.Drawing.Point(330, 4);
+            this.DiplayLAstName.Location = new System.Drawing.Point(324, 5);
             this.DiplayLAstName.Name = "DiplayLAstName";
             this.DiplayLAstName.Size = new System.Drawing.Size(151, 75);
             this.DiplayLAstName.TabIndex = 15;
@@ -114,7 +116,7 @@
             // 
             this.DisplayFirstName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayFirstName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DisplayFirstName.Location = new System.Drawing.Point(175, 4);
+            this.DisplayFirstName.Location = new System.Drawing.Point(169, 5);
             this.DisplayFirstName.Name = "DisplayFirstName";
             this.DisplayFirstName.Size = new System.Drawing.Size(149, 75);
             this.DisplayFirstName.TabIndex = 14;
@@ -126,7 +128,7 @@
             this.DisplayBalanceBefore.AutoSize = true;
             this.DisplayBalanceBefore.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayBalanceBefore.ForeColor = System.Drawing.Color.Lime;
-            this.DisplayBalanceBefore.Location = new System.Drawing.Point(790, 24);
+            this.DisplayBalanceBefore.Location = new System.Drawing.Point(784, 25);
             this.DisplayBalanceBefore.Name = "DisplayBalanceBefore";
             this.DisplayBalanceBefore.Size = new System.Drawing.Size(162, 35);
             this.DisplayBalanceBefore.TabIndex = 23;
@@ -139,31 +141,41 @@
             this.BTN_TransferDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTN_TransferDetails.FlatAppearance.BorderSize = 0;
             this.BTN_TransferDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTN_TransferDetails.Location = new System.Drawing.Point(1350, 13);
+            this.BTN_TransferDetails.Location = new System.Drawing.Point(1344, 14);
             this.BTN_TransferDetails.Name = "BTN_TransferDetails";
             this.BTN_TransferDetails.Size = new System.Drawing.Size(55, 55);
             this.BTN_TransferDetails.TabIndex = 24;
             this.BTN_TransferDetails.UseVisualStyleBackColor = true;
             this.BTN_TransferDetails.Visible = false;
+            this.BTN_TransferDetails.Click += new System.EventHandler(this.BTN_TransferDetails_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.TransactionID);
+            this.panel1.Controls.Add(this.BTN_TransferDetails);
+            this.panel1.Controls.Add(this.DisplayFirstName);
+            this.panel1.Controls.Add(this.DisplayBalanceBefore);
+            this.panel1.Controls.Add(this.DiplayLAstName);
+            this.panel1.Controls.Add(this.DisplayBalanceNow);
+            this.panel1.Controls.Add(this.DisplayAccountNumber);
+            this.panel1.Controls.Add(this.DisplayMAount);
+            this.panel1.Controls.Add(this.DisplayTransactionType);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1436, 88);
+            this.panel1.TabIndex = 25;
             // 
             // TransactionRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.Controls.Add(this.BTN_TransferDetails);
-            this.Controls.Add(this.DisplayBalanceBefore);
-            this.Controls.Add(this.DisplayBalanceNow);
-            this.Controls.Add(this.TransactionID);
-            this.Controls.Add(this.DisplayTransactionType);
-            this.Controls.Add(this.DisplayMAount);
-            this.Controls.Add(this.DisplayAccountNumber);
-            this.Controls.Add(this.DiplayLAstName);
-            this.Controls.Add(this.DisplayFirstName);
+            this.Controls.Add(this.panel1);
             this.Name = "TransactionRecord";
-            this.Size = new System.Drawing.Size(1436, 88);
+            this.Size = new System.Drawing.Size(1436, 87);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -177,5 +189,6 @@
         private System.Windows.Forms.Label DisplayFirstName;
         private System.Windows.Forms.Label DisplayBalanceBefore;
         protected System.Windows.Forms.Button BTN_TransferDetails;
+        private System.Windows.Forms.Panel panel1;
     }
 }

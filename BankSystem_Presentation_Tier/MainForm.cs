@@ -414,5 +414,50 @@ namespace BankSystem_Presentation_Tier
         {
             this.Close();
         }
+
+        private bool MenuExpand = false;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (MenuExpand)
+            {
+
+                SideBar.Width += 10;
+                foreach (Control ctr in SideBar.Controls)
+                {
+                    ctr.Width += 10;
+                }
+                foreach (Control ctr in SideBar.Controls)
+                {
+                    ctr.Text = ctr.Tag.ToString();
+                }
+                if (SideBar.Width >= 311)
+                {
+                    timer1.Stop();
+                    MenuExpand = false;
+                }
+
+            }
+            else
+            {
+                SideBar.Width -= 10;
+                foreach (Control ctr in SideBar.Controls)
+                {
+                    ctr.Width -= 10;
+                    ctr.Text = "";
+                }
+                if (SideBar.Width <= 82)
+                {
+                    timer1.Stop();
+                    MenuExpand = true;
+
+
+                }
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }

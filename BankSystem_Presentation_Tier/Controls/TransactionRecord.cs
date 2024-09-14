@@ -1,4 +1,6 @@
 ﻿using BankSystem_Presentation_Tier.Libraries;
+using BankSystem_Presentation_Tier.Transactions;
+using BankSystem_Presentation_Tier.Transfers;
 using BusinessTier;
 using System;
 using System.Collections.Generic;
@@ -46,5 +48,14 @@ namespace BankSystem_Presentation_Tier.Controls
 
         }
 
+        private void BTN_TransferDetails_Click(object sender, EventArgs e)
+        {
+            clsTransfersList list = new clsTransfersList();
+
+
+            list.ShowOnlyOneRecord(Transactionrecord.TransferID);
+            list.Height = 271;
+            list.ShowDialog();
+        }
     }
 }
