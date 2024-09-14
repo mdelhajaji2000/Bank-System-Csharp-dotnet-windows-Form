@@ -33,14 +33,14 @@ namespace BusinessTier
         public static clsTransactions Find(int TransactionID)
         {
             int AccountNumber = -1;
-            int BalanceNow = -1;
-            int BalanceBefore = -1;
+            int BNow = -1;
+            int BBefore = -1;
             int Amount = -1;
             int TransferID = -1;
             string TransactionType = "";
 
-            if (clsTransactionsData.GetTransactionRecordById(TransactionID, ref AccountNumber, ref Amount, ref BalanceBefore, ref BalanceNow, ref TransferID, ref TransactionType))
-                return new clsTransactions(TransactionID, AccountNumber, BalanceNow, BalanceBefore, Amount, TransferID, TransactionType);
+            if (clsTransactionsData.GetTransactionRecordById(TransactionID, ref AccountNumber, ref Amount, ref BBefore, ref BNow, ref TransferID, ref TransactionType))
+                return new clsTransactions(TransactionID, AccountNumber, BNow, BBefore, Amount, TransferID, TransactionType);
             else
                 return null;
         }

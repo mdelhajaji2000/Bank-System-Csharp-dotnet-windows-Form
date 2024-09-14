@@ -108,6 +108,12 @@
     <Compile Include="Controls\PersonDataReader.Designer.cs">
       <DependentUpon>PersonDataReader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\TransactionRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TransactionRecord.Designer.cs">
+      <DependentUpon>TransactionRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\TransferLogRecord.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,12 @@
     <Compile Include="SplashScreen\SplashScreenForm.Designer.cs">
       <DependentUpon>SplashScreenForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transactions\clsTransactionsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions\clsTransactionsListForm.Designer.cs">
+      <DependentUpon>clsTransactionsListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transactions\DepositFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +260,9 @@
     <EmbeddedResource Include="Controls\PersonDataReader.resx">
       <DependentUpon>PersonDataReader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TransactionRecord.resx">
+      <DependentUpon>TransactionRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\TransferLogRecord.resx">
       <DependentUpon>TransferLogRecord.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +305,9 @@
     </Compile>
     <EmbeddedResource Include="SplashScreen\SplashScreenForm.resx">
       <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions\clsTransactionsListForm.resx">
+      <DependentUpon>clsTransactionsListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transactions\DepositFrom.resx">
       <DependentUpon>DepositFrom.cs</DependentUpon>

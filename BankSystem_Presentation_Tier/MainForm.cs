@@ -402,5 +402,12 @@ namespace BankSystem_Presentation_Tier
 
             frm.ShowDialog();
         }
+
+        private void BTN_TransactionsLog_Click(object sender, EventArgs e)
+        {
+            clsTransactionsListForm frm = new clsTransactionsListForm();
+
+            frm.ShowDialog();
+        }
     }
 }

@@ -77,14 +77,14 @@ namespace DataAccesstier
                     TransactionType = (string)reader["TransactionTypeName"];
 
                     if (reader["TransferID"] == System.DBNull.Value)
-                        BalanceNow = -1;
+                        TransferID = -1;
                     else
                         TransferID = (int)reader["TransferID"];
 
                     IsFound = true;
                 }
 
-                IsFound = false;
+             
             }
             catch (Exception ex)
             {
