@@ -6,7 +6,7 @@
 
 ### Progress
 <div align="Center">
-🔵🔵🔵🔵⚪⚪⚪⚪ 42%  [Not Completed...]
+🔵🔵🔵🔵🔵⚪⚪⚪ 60%  [Not Completed...]
 </div>
 
 ## Overview
