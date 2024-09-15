@@ -46,6 +46,7 @@
     <Compile Include="clsPermessions.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsShared.cs" />
+    <Compile Include="clsStatsManager.cs" />
     <Compile Include="clsTransactions.cs" />
     <Compile Include="clsTransfers.cs" />
     <Compile Include="clsUsers.cs" />

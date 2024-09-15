@@ -45,6 +45,7 @@
     <Compile Include="clsCountriesData.cs" />
     <Compile Include="clsDataAccessSettings.cs" />
     <Compile Include="clsPersonData.cs" />
+    <Compile Include="clsStatsData.cs" />
     <Compile Include="clsTransactionsData.cs" />
     <Compile Include="clsTransferData.cs" />
     <Compile Include="clsUsersData.cs" />

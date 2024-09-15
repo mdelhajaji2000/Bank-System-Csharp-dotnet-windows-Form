@@ -40,6 +40,7 @@
             this.CurrentUserLabel = new System.Windows.Forms.Label();
             this.SideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button14 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -101,12 +102,11 @@
             this.ScreenStatsPage = new System.Windows.Forms.Panel();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
+            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.Top_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SideBar.SuspendLayout();
@@ -265,6 +265,19 @@
             this.panel2.Size = new System.Drawing.Size(304, 205);
             this.panel2.TabIndex = 0;
             this.panel2.Tag = "lolo";
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.minimize__1_1;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(7, 2);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(43, 51);
+            this.button14.TabIndex = 11;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // label9
             // 
@@ -1160,6 +1173,14 @@
             this.MainMenuPanel.Size = new System.Drawing.Size(1807, 875);
             this.MainMenuPanel.TabIndex = 8;
             // 
+            // dashBorad1
+            // 
+            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
+            this.dashBorad1.Name = "dashBorad1";
+            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
+            this.dashBorad1.TabIndex = 16;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1196,31 +1217,10 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "V1.0.1";
             // 
-            // button14
-            // 
-            this.button14.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.minimize__1_1;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(7, 2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(43, 51);
-            this.button14.TabIndex = 11;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
             // timer1
             // 
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // dashBorad1
-            // 
-            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
-            this.dashBorad1.Name = "dashBorad1";
-            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
-            this.dashBorad1.TabIndex = 16;
             // 
             // MainForm
             // 
@@ -1228,12 +1228,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1807, 875);
+            this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.AcreenManagaeUsers);
             this.Controls.Add(this.ScreenManageClients);
             this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenLoanManagements);
             this.Controls.Add(this.ScreenATMService);
-            this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.SideBar);
