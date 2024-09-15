@@ -833,6 +833,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap microsoft {
+            get {
+                object obj = ResourceManager.GetObject("microsoft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minimize__1_ {
             get {
                 object obj = ResourceManager.GetObject("minimize (1)", resourceCulture);
@@ -866,6 +876,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_07_24_044534 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2024-07-24 044534", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sql_server {
+            get {
+                object obj = ResourceManager.GetObject("sql-server", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -156,6 +156,12 @@
     <Compile Include="Controls\UserInfoMiniCard.Designer.cs">
       <DependentUpon>UserInfoMiniCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DivContact\AboutProgrammerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivContact\AboutProgrammerForm.Designer.cs">
+      <DependentUpon>AboutProgrammerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Libraries\clsUtility.cs" />
     <Compile Include="LogInLog\LogInLogsrecords.cs">
       <SubType>Form</SubType>
@@ -283,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserInfoMiniCard.resx">
       <DependentUpon>UserInfoMiniCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivContact\AboutProgrammerForm.resx">
+      <DependentUpon>AboutProgrammerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInLog\LogInLogsrecords.resx">
       <DependentUpon>LogInLogsrecords.cs</DependentUpon>
@@ -614,6 +623,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\006-bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql-server.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
