@@ -597,5 +597,23 @@
   <ItemGroup>
     <None Include="Resources\001-transference1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-market-analysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-increase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-grow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-growth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-bar-chart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

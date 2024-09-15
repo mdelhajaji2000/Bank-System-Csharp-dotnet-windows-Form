@@ -1,6 +1,7 @@
 ﻿using BankSystem_Presentation_Tier.ClientsManagements.Forms;
 using BankSystem_Presentation_Tier.Controls;
 using BankSystem_Presentation_Tier.Global;
+using BankSystem_Presentation_Tier.Libraries;
 using BankSystem_Presentation_Tier.LogIn;
 using BankSystem_Presentation_Tier.LogInLog;
 using BankSystem_Presentation_Tier.Transactions;
@@ -37,6 +38,8 @@ namespace BankSystem_Presentation_Tier
         {
             InitializeComponent();
             this.Version.Text = clsGlobal.Version;
+
+            LoadStatsData();
         }
 
         #region Users management Screen
@@ -329,7 +332,8 @@ namespace BankSystem_Presentation_Tier
         {
             if ((clsGlobal.CurrentUser.Permessions & clsPermessions.StatsPage) == clsPermessions.StatsPage)
             {
-
+                ScreenStatsPage.BringToFront();
+                Pagetitle.Text = "Stats Page";
             }
             else
                 MessageBox.Show("Action Denied, Contact Your Admin...!");
@@ -421,10 +425,10 @@ namespace BankSystem_Presentation_Tier
             if (MenuExpand)
             {
 
-                SideBar.Width += 10;
+                SideBar.Width += 50;
                 foreach (Control ctr in SideBar.Controls)
                 {
-                    ctr.Width += 10;
+                    ctr.Width += 50;
                 }
                 foreach (Control ctr in SideBar.Controls)
                 {
@@ -439,10 +443,10 @@ namespace BankSystem_Presentation_Tier
             }
             else
             {
-                SideBar.Width -= 10;
+                SideBar.Width -= 50;
                 foreach (Control ctr in SideBar.Controls)
                 {
-                    ctr.Width -= 10;
+                    ctr.Width -= 50;
                     ctr.Text = "";
                 }
                 if (SideBar.Width <= 82)
@@ -459,5 +463,24 @@ namespace BankSystem_Presentation_Tier
         {
             timer1.Start();
         }
+
+        #region Stats
+
+        private void LoadStatsData()
+        {
+            Display_CountActifClients.Text = clsStatsManager.CallGetTotaleNumberOfAccounts().ToString();
+            Display_CountTransfers.Text = clsStatsManager.CallGetNumberOfTransfersTransactions().ToString();
+            Display_Count_Transactions.Text = (clsStatsManager.CallGetNumberOfDepositTransactions() + clsStatsManager.CallGetNumberOFWithDrawtransactions() + clsStatsManager.CallGetNumberOfTransfersTransactions()).ToString();
+            Display_TotaleAmounts.Text = clsUtility.FormatNumberWithPeriods(clsStatsManager.CallGetTotaleBalances().ToString());
+            Display_TotaleAmounts_Transactions.Text = clsUtility.FormatNumberWithPeriods(clsStatsManager.CallGetTotaleBalancesOfTransactions().ToString());
+            Display_totaleAmountTransfers.Text = clsUtility.FormatNumberWithPeriods(clsStatsManager.CallGetTotaleBalanceOfTransfers().ToString());
+        }
+
+        private void BTN_Refresh_Click(object sender, EventArgs e)
+        {
+            LoadStatsData();
+        }
+
+        #endregion
     }
 }

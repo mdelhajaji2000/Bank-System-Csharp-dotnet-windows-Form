@@ -161,7 +161,7 @@ namespace BusinessTier
             {
                 connection.Open();
 
-                object result = command.ExecuteNonQuery();
+                object result = command.ExecuteScalar();
 
                 if (result != null && int.TryParse(result.ToString(), out int intResult))
                 {
@@ -194,7 +194,7 @@ namespace BusinessTier
             {
                 connection.Open();
 
-                object result = command.ExecuteNonQuery();
+                object result = command.ExecuteScalar();
 
                 if (result != null && int.TryParse(result.ToString(), out int intResult))
                 {
@@ -227,7 +227,7 @@ namespace BusinessTier
             {
                 connection.Open();
 
-                object result = command.ExecuteNonQuery();
+                object result = command.ExecuteScalar();
 
                 if (result != null && int.TryParse(result.ToString(), out int intResult))
                 {
@@ -260,7 +260,7 @@ namespace BusinessTier
             {
                 connection.Open();
 
-                object result = command.ExecuteNonQuery();
+                object result = command.ExecuteScalar();
 
                 if (result != null && int.TryParse(result.ToString(), out int intResult))
                 {

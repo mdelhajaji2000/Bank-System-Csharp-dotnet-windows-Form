@@ -100,6 +100,8 @@
             this.BTN_WithDraw = new System.Windows.Forms.Button();
             this.BTN_Deposit = new System.Windows.Forms.Button();
             this.ScreenStatsPage = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
             this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
@@ -107,6 +109,38 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.Display_TotaleAmounts = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button16 = new System.Windows.Forms.Button();
+            this.Display_TotaleAmounts_Transactions = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button17 = new System.Windows.Forms.Button();
+            this.Display_totaleAmountTransfers = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.Display_Count_Transactions = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.Display_CountActifClients = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.Display_CountTransfers = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label31 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.BTN_Refresh = new System.Windows.Forms.Button();
             this.Top_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SideBar.SuspendLayout();
@@ -122,7 +156,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.ScreenTransaction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.ScreenStatsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel1.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // Top_Panel
@@ -1147,11 +1200,41 @@
             // 
             // ScreenStatsPage
             // 
+            this.ScreenStatsPage.Controls.Add(this.BTN_Refresh);
+            this.ScreenStatsPage.Controls.Add(this.panel14);
+            this.ScreenStatsPage.Controls.Add(this.panel8);
+            this.ScreenStatsPage.Controls.Add(this.panel10);
+            this.ScreenStatsPage.Controls.Add(this.panel16);
+            this.ScreenStatsPage.Controls.Add(this.panel12);
+            this.ScreenStatsPage.Controls.Add(this.panel1);
             this.ScreenStatsPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ScreenStatsPage.Location = new System.Drawing.Point(311, 164);
             this.ScreenStatsPage.Name = "ScreenStatsPage";
             this.ScreenStatsPage.Size = new System.Drawing.Size(1496, 639);
             this.ScreenStatsPage.TabIndex = 6;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox6.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_market_analysis;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(133, 227);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button15);
+            this.panel1.Controls.Add(this.Display_TotaleAmounts);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Location = new System.Drawing.Point(49, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(425, 229);
+            this.panel1.TabIndex = 0;
             // 
             // ScreenLoanManagements
             // 
@@ -1222,6 +1305,366 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label4.Location = new System.Drawing.Point(6, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 63);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Totale Amount of Balances";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(133, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(290, 83);
+            this.panel7.TabIndex = 3;
+            // 
+            // Display_TotaleAmounts
+            // 
+            this.Display_TotaleAmounts.AutoSize = true;
+            this.Display_TotaleAmounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Display_TotaleAmounts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Display_TotaleAmounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_TotaleAmounts.ForeColor = System.Drawing.Color.Chartreuse;
+            this.Display_TotaleAmounts.Location = new System.Drawing.Point(144, 114);
+            this.Display_TotaleAmounts.Name = "Display_TotaleAmounts";
+            this.Display_TotaleAmounts.Size = new System.Drawing.Size(208, 41);
+            this.Display_TotaleAmounts.TabIndex = 4;
+            this.Display_TotaleAmounts.Text = "000.000.000";
+            // 
+            // button15
+            // 
+            this.button15.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_dollar_sign;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(354, 114);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(51, 42);
+            this.button15.TabIndex = 11;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.button16);
+            this.panel8.Controls.Add(this.Display_TotaleAmounts_Transactions);
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.pictureBox7);
+            this.panel8.Location = new System.Drawing.Point(543, 26);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(425, 229);
+            this.panel8.TabIndex = 12;
+            // 
+            // button16
+            // 
+            this.button16.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_dollar_sign;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(355, 112);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(43, 44);
+            this.button16.TabIndex = 11;
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // Display_TotaleAmounts_Transactions
+            // 
+            this.Display_TotaleAmounts_Transactions.AutoSize = true;
+            this.Display_TotaleAmounts_Transactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Display_TotaleAmounts_Transactions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Display_TotaleAmounts_Transactions.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_TotaleAmounts_Transactions.ForeColor = System.Drawing.Color.Chartreuse;
+            this.Display_TotaleAmounts_Transactions.Location = new System.Drawing.Point(144, 114);
+            this.Display_TotaleAmounts_Transactions.Name = "Display_TotaleAmounts_Transactions";
+            this.Display_TotaleAmounts_Transactions.Size = new System.Drawing.Size(208, 41);
+            this.Display_TotaleAmounts_Transactions.TabIndex = 4;
+            this.Display_TotaleAmounts_Transactions.Text = "000.000.000";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label23);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(133, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(290, 83);
+            this.panel9.TabIndex = 3;
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label23.Location = new System.Drawing.Point(6, 10);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(220, 63);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "Totale Amounts of Transactions";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox7.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_increase;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(133, 227);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.button17);
+            this.panel10.Controls.Add(this.Display_totaleAmountTransfers);
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.pictureBox8);
+            this.panel10.Location = new System.Drawing.Point(1053, 26);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(425, 229);
+            this.panel10.TabIndex = 12;
+            // 
+            // button17
+            // 
+            this.button17.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_dollar_sign;
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(358, 115);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(40, 34);
+            this.button17.TabIndex = 11;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // Display_totaleAmountTransfers
+            // 
+            this.Display_totaleAmountTransfers.AutoSize = true;
+            this.Display_totaleAmountTransfers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Display_totaleAmountTransfers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Display_totaleAmountTransfers.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_totaleAmountTransfers.ForeColor = System.Drawing.Color.Chartreuse;
+            this.Display_totaleAmountTransfers.Location = new System.Drawing.Point(144, 114);
+            this.Display_totaleAmountTransfers.Name = "Display_totaleAmountTransfers";
+            this.Display_totaleAmountTransfers.Size = new System.Drawing.Size(208, 41);
+            this.Display_totaleAmountTransfers.TabIndex = 4;
+            this.Display_totaleAmountTransfers.Text = "000.000.000";
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label25);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(133, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(290, 83);
+            this.panel11.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label25.Location = new System.Drawing.Point(6, 10);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(220, 63);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Totale Amounts of Transafers";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox8.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_symbols;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(133, 227);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.Display_Count_Transactions);
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.pictureBox9);
+            this.panel12.Location = new System.Drawing.Point(543, 326);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(425, 229);
+            this.panel12.TabIndex = 12;
+            // 
+            // Display_Count_Transactions
+            // 
+            this.Display_Count_Transactions.AutoSize = true;
+            this.Display_Count_Transactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Display_Count_Transactions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Display_Count_Transactions.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_Count_Transactions.ForeColor = System.Drawing.Color.Gold;
+            this.Display_Count_Transactions.Location = new System.Drawing.Point(219, 113);
+            this.Display_Count_Transactions.Name = "Display_Count_Transactions";
+            this.Display_Count_Transactions.Size = new System.Drawing.Size(119, 65);
+            this.Display_Count_Transactions.TabIndex = 4;
+            this.Display_Count_Transactions.Text = "999";
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label27);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(133, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(290, 83);
+            this.panel13.TabIndex = 3;
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label27.Location = new System.Drawing.Point(6, 10);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(220, 63);
+            this.label27.TabIndex = 2;
+            this.label27.Text = "Transactions Count";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox9.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_transference1;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(133, 227);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.Display_CountActifClients);
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Controls.Add(this.pictureBox10);
+            this.panel14.Location = new System.Drawing.Point(50, 325);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(425, 229);
+            this.panel14.TabIndex = 13;
+            // 
+            // Display_CountActifClients
+            // 
+            this.Display_CountActifClients.AutoSize = true;
+            this.Display_CountActifClients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Display_CountActifClients.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Display_CountActifClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_CountActifClients.ForeColor = System.Drawing.Color.Gold;
+            this.Display_CountActifClients.Location = new System.Drawing.Point(204, 119);
+            this.Display_CountActifClients.Name = "Display_CountActifClients";
+            this.Display_CountActifClients.Size = new System.Drawing.Size(119, 65);
+            this.Display_CountActifClients.TabIndex = 4;
+            this.Display_CountActifClients.Text = "999";
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.label29);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(133, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(290, 83);
+            this.panel15.TabIndex = 3;
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label29.Location = new System.Drawing.Point(6, 10);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(220, 63);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "Totale Number of Actif Clients";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox10.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_group;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(133, 227);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.Display_CountTransfers);
+            this.panel16.Controls.Add(this.panel17);
+            this.panel16.Controls.Add(this.pictureBox11);
+            this.panel16.Location = new System.Drawing.Point(1055, 326);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(425, 229);
+            this.panel16.TabIndex = 14;
+            // 
+            // Display_CountTransfers
+            // 
+            this.Display_CountTransfers.AutoSize = true;
+            this.Display_CountTransfers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
+            this.Display_CountTransfers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Display_CountTransfers.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Display_CountTransfers.ForeColor = System.Drawing.Color.Gold;
+            this.Display_CountTransfers.Location = new System.Drawing.Point(218, 118);
+            this.Display_CountTransfers.Name = "Display_CountTransfers";
+            this.Display_CountTransfers.Size = new System.Drawing.Size(119, 65);
+            this.Display_CountTransfers.TabIndex = 4;
+            this.Display_CountTransfers.Text = "999";
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.label31);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel17.Location = new System.Drawing.Point(133, 0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(290, 83);
+            this.panel17.TabIndex = 3;
+            // 
+            // label31
+            // 
+            this.label31.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label31.Location = new System.Drawing.Point(6, 10);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(220, 63);
+            this.label31.TabIndex = 2;
+            this.label31.Text = "Transfers Count";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox11.Image = global::BankSystem_Presentation_Tier.Properties.Resources._002_transaction;
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(133, 227);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
+            // 
+            // BTN_Refresh
+            // 
+            this.BTN_Refresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BTN_Refresh.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources.loading_arrow;
+            this.BTN_Refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTN_Refresh.FlatAppearance.BorderSize = 0;
+            this.BTN_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Refresh.Location = new System.Drawing.Point(687, 574);
+            this.BTN_Refresh.Name = "BTN_Refresh";
+            this.BTN_Refresh.Size = new System.Drawing.Size(70, 45);
+            this.BTN_Refresh.TabIndex = 17;
+            this.BTN_Refresh.UseVisualStyleBackColor = true;
+            this.BTN_Refresh.Click += new System.EventHandler(this.BTN_Refresh_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1241,6 +1684,7 @@
             this.Controls.Add(this.MainMenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Top_Panel.ResumeLayout(false);
@@ -1265,8 +1709,33 @@
             this.ScreenTransaction.ResumeLayout(false);
             this.ScreenTransaction.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.ScreenStatsPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.MainMenuPanel.ResumeLayout(false);
             this.MainMenuPanel.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1350,6 +1819,40 @@
         protected System.Windows.Forms.Button button13;
         protected System.Windows.Forms.Button button14;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Display_TotaleAmounts;
+        private System.Windows.Forms.Panel panel7;
+        protected System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label Display_CountActifClients;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel panel8;
+        protected System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label Display_TotaleAmounts_Transactions;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label Display_CountTransfers;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel10;
+        protected System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label Display_totaleAmountTransfers;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label Display_Count_Transactions;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        protected System.Windows.Forms.Button BTN_Refresh;
     }
 }
 
