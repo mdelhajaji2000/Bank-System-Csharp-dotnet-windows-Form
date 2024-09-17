@@ -630,5 +630,17 @@
   <ItemGroup>
     <None Include="Resources\sql-server.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-feedback.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
