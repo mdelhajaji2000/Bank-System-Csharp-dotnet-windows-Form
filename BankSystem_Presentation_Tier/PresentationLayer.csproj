@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ATM_Service_Bussiness_Layer">
+      <HintPath>..\..\ATM-Service-Windows-Form\ATM_Service_Bussiness_Layer\bin\Debug\ATM_Service_Bussiness_Layer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
