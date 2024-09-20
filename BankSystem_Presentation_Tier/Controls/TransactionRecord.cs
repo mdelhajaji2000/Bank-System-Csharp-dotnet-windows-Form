@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Security.Policy;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,31 +21,55 @@ namespace BankSystem_Presentation_Tier.Controls
         private clsTransactions Transactionrecord;
         private clsClientAccount Account;
 
+        bool IsDeleted = false;
+
         public TransactionRecord(int TransactionID)
         {
             InitializeComponent();
 
             Transactionrecord = clsTransactions.Find(TransactionID);
-            Account = clsClientAccount.Find(Transactionrecord.AccountNumber);
+            if (clsClientAccount.IsclientExist(Transactionrecord.AccountNumber))
+            {
+                Account = clsClientAccount.Find(Transactionrecord.AccountNumber);
+                IsDeleted = false;
+            }
+            else
+            {
+                IsDeleted = true;
+            }
 
             FillData();
         }
 
         private void FillData()
         {
-            TransactionID.Text = Transactionrecord.TransactionID.ToString();
-            DisplayAccountNumber.Text = Account.AccountNumber.ToString();
-            DisplayBalanceBefore.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.BalanceBefore.ToString());
-            DisplayBalanceNow.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.BalanceNow.ToString());
-            DiplayLAstName.Text = Account.PersonInfo.LastName;
-            DisplayFirstName.Text = Account.PersonInfo.FirstName;
-            DisplayMAount.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.Amount.ToString());
-            DisplayTransactionType.Text = Transactionrecord.TransactionType;
+            if (!IsDeleted)
+            {
+                TransactionID.Text = Transactionrecord.TransactionID.ToString();
+                DisplayAccountNumber.Text = Account.AccountNumber.ToString();
+                DisplayBalanceBefore.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.BalanceBefore.ToString());
+                DisplayBalanceNow.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.BalanceNow.ToString());
+                DiplayLAstName.Text = Account.PersonInfo.LastName;
+                DisplayFirstName.Text = Account.PersonInfo.FirstName;
+                DisplayMAount.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.Amount.ToString());
+                DisplayTransactionType.Text = Transactionrecord.TransactionType;
 
-            if (Transactionrecord.TransferID != -1)
-                BTN_TransferDetails.Show();
+                if (Transactionrecord.TransferID != -1)
+                    BTN_TransferDetails.Show();
+                else
+                    BTN_TransferDetails.Hide();
+            }
             else
-                BTN_TransferDetails.Hide();
+            {
+                TransactionID.Text = Transactionrecord.TransactionID.ToString();
+                DisplayAccountNumber.Text = Transactionrecord.AccountNumber.ToString();
+                DisplayBalanceBefore.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.BalanceBefore.ToString());
+                DisplayBalanceNow.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.BalanceNow.ToString());
+                DiplayLAstName.Text = "Deleted Account..!";
+                DisplayFirstName.Text = "Deleted Account..!";
+                DisplayMAount.Text = clsUtility.FormatNumberWithPeriods(Transactionrecord.Amount.ToString());
+                DisplayTransactionType.Text = Transactionrecord.TransactionType;
+            }
 
         }
 

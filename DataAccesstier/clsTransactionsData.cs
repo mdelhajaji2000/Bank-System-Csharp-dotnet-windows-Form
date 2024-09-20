@@ -48,7 +48,7 @@ namespace DataAccesstier
             return dt; 
         }
 
-        public static bool GetTransactionRecordById(int TransactionID, ref int AccountNumber, ref int Amount, ref int BalanceBefore, ref int BalanceNow, ref int TransferID, ref string TransactionType)
+        public static bool GetTransactionRecordById(int TransactionID, ref int AccountNumber, ref int Amount, ref long BalanceBefore, ref long BalanceNow, ref int TransferID, ref string TransactionType)
         {
             bool IsFound = false;
 
@@ -72,8 +72,8 @@ namespace DataAccesstier
                 {
                     AccountNumber = (int)reader["AccountNumber"];
                     Amount = (int)reader["Amount"];
-                    BalanceBefore = (int)reader["BalanceBefore"];
-                    BalanceNow = (int)reader["BalanceNow"];
+                    BalanceBefore = (long)reader["BalanceBefore"];
+                    BalanceNow = (long)reader["BalanceNow"];
                     TransactionType = (string)reader["TransactionTypeName"];
 
                     if (reader["TransferID"] == System.DBNull.Value)

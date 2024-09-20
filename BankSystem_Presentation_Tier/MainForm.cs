@@ -299,12 +299,24 @@ namespace BankSystem_Presentation_Tier
 
             if (ReturnedData.PerformAction)
             {
-                FindClientForm frmFindForDeletefrom = new FindClientForm();
+                //FindClientForm frmFindForDeletefrom = new FindClientForm();
 
-                frmFindForDeletefrom.FillDataUsingParameter(ReturnedData.AccountNumber);
-                frmFindForDeletefrom.ShowForDelete();
+                //frmFindForDeletefrom.FillDataUsingParameter(ReturnedData.AccountNumber);
+                //frmFindForDeletefrom.ShowForDelete();
 
-                frmFindForDeletefrom.ShowDialog();
+                //frmFindForDeletefrom.ShowDialog();
+
+                ///Summary
+                /// I Change The Delete Function To Desactivate Cause The Transfers and transactions Tables
+                /// in The Data Base Got Fireign Key To The Account So its impossible To Delete The Client Without Deliting Transaction/Transfer Records
+
+                clsClientAccount account = clsClientAccount.Find(ReturnedData.AccountNumber);
+
+                if (account.DesactivateAccount())
+                    MessageBox.Show("Account Desactivated Successfuly...!");
+                else
+                    MessageBox.Show("Error : We Could Not Desactivate The Account...!");
+
             }
         }
 

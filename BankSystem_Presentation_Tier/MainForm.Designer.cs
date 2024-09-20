@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Top_Panel = new System.Windows.Forms.Panel();
+            this.button18 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Version = new System.Windows.Forms.Label();
@@ -136,12 +137,11 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
+            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button18 = new System.Windows.Forms.Button();
-            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.Top_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SideBar.SuspendLayout();
@@ -195,6 +195,16 @@
             this.Top_Panel.Name = "Top_Panel";
             this.Top_Panel.Size = new System.Drawing.Size(1807, 92);
             this.Top_Panel.TabIndex = 1;
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(371, 28);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 11;
+            this.button18.Text = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button13
             // 
@@ -618,9 +628,9 @@
             this.BT_InactiveClients.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.BT_InactiveClients.Image = global::BankSystem_Presentation_Tier.Properties.Resources._001_closure;
             this.BT_InactiveClients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_InactiveClients.Location = new System.Drawing.Point(929, 470);
+            this.BT_InactiveClients.Location = new System.Drawing.Point(902, 472);
             this.BT_InactiveClients.Name = "BT_InactiveClients";
-            this.BT_InactiveClients.Size = new System.Drawing.Size(523, 105);
+            this.BT_InactiveClients.Size = new System.Drawing.Size(568, 105);
             this.BT_InactiveClients.TabIndex = 17;
             this.BT_InactiveClients.Text = "InActive Clients";
             this.BT_InactiveClients.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -640,9 +650,9 @@
             this.BT_EditClient.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.BT_EditClient.Image = global::BankSystem_Presentation_Tier.Properties.Resources._004_resume;
             this.BT_EditClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_EditClient.Location = new System.Drawing.Point(929, 269);
+            this.BT_EditClient.Location = new System.Drawing.Point(902, 271);
             this.BT_EditClient.Name = "BT_EditClient";
-            this.BT_EditClient.Size = new System.Drawing.Size(523, 105);
+            this.BT_EditClient.Size = new System.Drawing.Size(568, 105);
             this.BT_EditClient.TabIndex = 16;
             this.BT_EditClient.Text = "      Edit Client info";
             this.BT_EditClient.UseVisualStyleBackColor = false;
@@ -661,9 +671,9 @@
             this.BT_AddClient.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.BT_AddClient.Image = global::BankSystem_Presentation_Tier.Properties.Resources._003_add_user;
             this.BT_AddClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_AddClient.Location = new System.Drawing.Point(926, 79);
+            this.BT_AddClient.Location = new System.Drawing.Point(899, 81);
             this.BT_AddClient.Name = "BT_AddClient";
-            this.BT_AddClient.Size = new System.Drawing.Size(523, 105);
+            this.BT_AddClient.Size = new System.Drawing.Size(568, 105);
             this.BT_AddClient.TabIndex = 15;
             this.BT_AddClient.Text = "Add Client";
             this.BT_AddClient.UseVisualStyleBackColor = false;
@@ -684,7 +694,7 @@
             this.BT_FindClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_FindClient.Location = new System.Drawing.Point(44, 470);
             this.BT_FindClient.Name = "BT_FindClient";
-            this.BT_FindClient.Size = new System.Drawing.Size(523, 105);
+            this.BT_FindClient.Size = new System.Drawing.Size(568, 105);
             this.BT_FindClient.TabIndex = 14;
             this.BT_FindClient.Text = "Find Client";
             this.BT_FindClient.UseVisualStyleBackColor = false;
@@ -705,9 +715,9 @@
             this.BT_deleteClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_deleteClient.Location = new System.Drawing.Point(44, 269);
             this.BT_deleteClient.Name = "BT_deleteClient";
-            this.BT_deleteClient.Size = new System.Drawing.Size(523, 105);
+            this.BT_deleteClient.Size = new System.Drawing.Size(568, 105);
             this.BT_deleteClient.TabIndex = 13;
-            this.BT_deleteClient.Text = "  Delete Client";
+            this.BT_deleteClient.Text = "     Desactivate Client ";
             this.BT_deleteClient.UseVisualStyleBackColor = false;
             this.BT_deleteClient.Click += new System.EventHandler(this.BT_deleteClient_Click);
             // 
@@ -726,7 +736,7 @@
             this.BT_ClientList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BT_ClientList.Location = new System.Drawing.Point(44, 79);
             this.BT_ClientList.Name = "BT_ClientList";
-            this.BT_ClientList.Size = new System.Drawing.Size(523, 105);
+            this.BT_ClientList.Size = new System.Drawing.Size(568, 105);
             this.BT_ClientList.TabIndex = 12;
             this.BT_ClientList.Text = "Clients List";
             this.BT_ClientList.UseVisualStyleBackColor = false;
@@ -1618,6 +1628,14 @@
             this.MainMenuPanel.Size = new System.Drawing.Size(1807, 875);
             this.MainMenuPanel.TabIndex = 8;
             // 
+            // dashBorad1
+            // 
+            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
+            this.dashBorad1.Name = "dashBorad1";
+            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
+            this.dashBorad1.TabIndex = 16;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1659,33 +1677,15 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(371, 28);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 11;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // dashBorad1
-            // 
-            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
-            this.dashBorad1.Name = "dashBorad1";
-            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
-            this.dashBorad1.TabIndex = 16;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1807, 875);
-            this.Controls.Add(this.ScreenStatsPage);
-            this.Controls.Add(this.AcreenManagaeUsers);
             this.Controls.Add(this.ScreenManageClients);
+            this.Controls.Add(this.AcreenManagaeUsers);
+            this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenLoanManagements);
             this.Controls.Add(this.ScreenATMService);

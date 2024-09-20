@@ -30,6 +30,7 @@
         {
             this.Pagetitle = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,10 +44,11 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.RecordsContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnLoadMore = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel7.SuspendLayout();
+            this.RecordsContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pagetitle
@@ -71,6 +73,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1466, 72);
             this.panel3.TabIndex = 21;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(1400, 1);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(63, 65);
+            this.button13.TabIndex = 11;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // pictureBox4
             // 
@@ -223,23 +238,21 @@
             // RecordsContainer
             // 
             this.RecordsContainer.AutoScroll = true;
+            this.RecordsContainer.Controls.Add(this.btnLoadMore);
             this.RecordsContainer.Location = new System.Drawing.Point(0, 141);
             this.RecordsContainer.Name = "RecordsContainer";
             this.RecordsContainer.Size = new System.Drawing.Size(1463, 485);
             this.RecordsContainer.TabIndex = 23;
             // 
-            // button13
+            // btnLoadMore
             // 
-            this.button13.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(1400, 1);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(63, 65);
-            this.button13.TabIndex = 11;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.btnLoadMore.Location = new System.Drawing.Point(3, 3);
+            this.btnLoadMore.Name = "btnLoadMore";
+            this.btnLoadMore.Size = new System.Drawing.Size(1436, 23);
+            this.btnLoadMore.TabIndex = 0;
+            this.btnLoadMore.Text = "button1";
+            this.btnLoadMore.UseVisualStyleBackColor = true;
+            this.btnLoadMore.Click += new System.EventHandler(this.btnLoadMore_Click);
             // 
             // clsTransactionsListForm
             // 
@@ -257,6 +270,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel7.ResumeLayout(false);
+            this.RecordsContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -279,5 +293,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.FlowLayoutPanel RecordsContainer;
         protected System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnLoadMore;
     }
 }

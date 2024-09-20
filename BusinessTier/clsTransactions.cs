@@ -13,13 +13,13 @@ namespace BusinessTier
     {
         public int TransactionID { get; set; }
         public int AccountNumber { get; set; }
-        public int BalanceNow { get; set; }
-        public int BalanceBefore { get; set; }
+        public long BalanceNow { get; set; }
+        public long BalanceBefore { get; set; }
         public int TransferID { get; set; }
         public int Amount { get; set; }
         public string TransactionType { get; set; }
 
-        private clsTransactions(int ID, int AccountNumber, int BalanceNow, int BalanceBefore, int Amount, int TransferID, string transactionType)
+        private clsTransactions(int ID, int AccountNumber, long BalanceNow, long BalanceBefore, int Amount, int TransferID, string transactionType)
         {
             this.TransactionID = ID;
             this.AccountNumber = AccountNumber;
@@ -33,8 +33,8 @@ namespace BusinessTier
         public static clsTransactions Find(int TransactionID)
         {
             int AccountNumber = -1;
-            int BNow = -1;
-            int BBefore = -1;
+            long BNow = -1;
+            long BBefore = -1;
             int Amount = -1;
             int TransferID = -1;
             string TransactionType = "";

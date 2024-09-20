@@ -150,6 +150,8 @@ namespace DataAccesstier
                 {
                     IsExist = intResult == 1;
                 }
+                else
+                    IsExist = false;
             }
             catch (Exception ex)
             {
