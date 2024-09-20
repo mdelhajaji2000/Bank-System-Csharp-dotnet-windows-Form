@@ -44,3 +44,5 @@ C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-R
 C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BankSystem_Presentation_Tier\obj\Debug\BankSystem_Presentation_Tier.DivContact.AboutProgrammerForm.resources
 C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BankSystem_Presentation_Tier\bin\Debug\ATM_Service_Bussiness_Layer.dll
 C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BankSystem_Presentation_Tier\bin\Debug\ATM_Service_Bussiness_Layer.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BankSystem_Presentation_Tier\bin\Debug\Bogus.dll
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BankSystem_Presentation_Tier\bin\Debug\Bogus.xml

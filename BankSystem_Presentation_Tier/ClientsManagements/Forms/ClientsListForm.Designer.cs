@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientsListForm));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Pagetitle = new System.Windows.Forms.Label();
             this.ClientsContainer = new System.Windows.Forms.FlowLayoutPanel();
@@ -53,7 +54,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button7 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -71,6 +72,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1466, 72);
             this.panel3.TabIndex = 4;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(1402, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(61, 63);
+            this.button7.TabIndex = 9;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox4
             // 
@@ -99,7 +113,7 @@
             this.ClientsContainer.ContextMenuStrip = this.contextMenuStrip1;
             this.ClientsContainer.Location = new System.Drawing.Point(0, 143);
             this.ClientsContainer.Name = "ClientsContainer";
-            this.ClientsContainer.Size = new System.Drawing.Size(1465, 509);
+            this.ClientsContainer.Size = new System.Drawing.Size(1465, 516);
             this.ClientsContainer.TabIndex = 5;
             // 
             // contextMenuStrip1
@@ -297,25 +311,28 @@
             this.imageList1.Images.SetKeyName(0, "001-toggle.png");
             this.imageList1.Images.SetKeyName(1, "002-switch.png");
             // 
-            // button7
+            // button1
             // 
-            this.button7.BackgroundImage = global::BankSystem_Presentation_Tier.Properties.Resources._001_close;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(1402, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(61, 63);
-            this.button7.TabIndex = 9;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Location = new System.Drawing.Point(0, 653);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(1463, 35);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Load More";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ClientsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(1466, 651);
+            this.ClientSize = new System.Drawing.Size(1466, 680);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.ClientsContainer);
             this.Controls.Add(this.panel3);
@@ -359,5 +376,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem activateDisactivateToolStripMenuItem;
         protected System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -7,3 +7,5 @@ C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-R
 C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\Business.EA331CBA.Up2Date
 C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\BusinessTier.dll
 C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\obj\Debug\BusinessTier.pdb
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\bin\Debug\Bogus.dll
+C:\Users\mdelh\OneDrive\Desktop\My-Full-Real-Projects\C#-dotnet-winForms-SqlDB-RealProjects\Bank-System-Csharp-dotnet-windows-Form\BusinessTier\bin\Debug\Bogus.xml

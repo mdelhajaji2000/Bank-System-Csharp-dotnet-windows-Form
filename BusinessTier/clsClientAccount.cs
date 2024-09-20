@@ -19,7 +19,7 @@ namespace BusinessTier
 
         private enMode _Mode = enMode.AddNew;
 
-        public int Balance { get; protected set; }
+        public long Balance { get; protected set; }
         public bool ActivationStatus { get; set; }
         public int PersonID { get; set; }
         public int AccountNumber { get; private set; }
@@ -27,7 +27,7 @@ namespace BusinessTier
 
         public clsPerson PersonInfo { get; set; }
 
-        private clsClientAccount(int AccountNumber, int Balance, bool ActivationStatus, DateTime CreationDate, int PersonID)
+        private clsClientAccount(int AccountNumber, long Balance, bool ActivationStatus, DateTime CreationDate, int PersonID)
         {
             PersonInfo = clsPerson.Find(PersonID);
 
@@ -53,7 +53,7 @@ namespace BusinessTier
 
         public static clsClientAccount Find(int AccountNumber)
         {
-            int Balance = 0;
+            long Balance = 0;
             bool ActivationStatus = true;
             int PersonId = 0;
             DateTime CreationDate = DateTime.Now;
@@ -76,7 +76,7 @@ namespace BusinessTier
 
         public static clsClientAccount FindByPersonId(int PersonId)
         {
-            int Balance = 0;
+            long Balance = 0;
             bool ActivationStatus = true;
             int AccountNumber = 0;
             DateTime CreationDate = DateTime.Now;

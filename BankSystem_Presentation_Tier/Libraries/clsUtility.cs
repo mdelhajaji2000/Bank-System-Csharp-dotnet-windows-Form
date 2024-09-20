@@ -22,5 +22,21 @@ namespace BankSystem_Presentation_Tier.Libraries
                    numberString.Substring(3, 3) + "." +
                    numberString.Substring(6, 3);
         }
+
+        public static string FormatLongNumberWithPeriods(string numberString)
+        {
+            if (numberString.Length < 12)
+            {
+                for (int i = numberString.Length; i < 12; i++)
+                {
+                    numberString = "0" + numberString;
+                }
+            }
+
+            return numberString.Substring(0, 3) + "." +
+                   numberString.Substring(3, 3) + "." +
+                   numberString.Substring(6, 3) + "." +
+                   numberString.Substring(9, 3);
+        }
     }
 }

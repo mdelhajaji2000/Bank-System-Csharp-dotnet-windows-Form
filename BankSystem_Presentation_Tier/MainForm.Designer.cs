@@ -136,11 +136,12 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.ScreenLoanManagements = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
-            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button18 = new System.Windows.Forms.Button();
+            this.dashBorad1 = new BankSystem_Presentation_Tier.Controls.DashBorad();
             this.Top_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SideBar.SuspendLayout();
@@ -182,6 +183,7 @@
             // 
             this.Top_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.Top_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Top_Panel.Controls.Add(this.button18);
             this.Top_Panel.Controls.Add(this.button13);
             this.Top_Panel.Controls.Add(this.label1);
             this.Top_Panel.Controls.Add(this.Version);
@@ -1289,7 +1291,7 @@
             this.panel8.Controls.Add(this.Display_TotaleAmounts_Transactions);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Location = new System.Drawing.Point(543, 26);
+            this.panel8.Location = new System.Drawing.Point(557, 25);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(425, 229);
             this.panel8.TabIndex = 12;
@@ -1300,7 +1302,7 @@
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(355, 112);
+            this.button16.Location = new System.Drawing.Point(268, 166);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(43, 44);
             this.button16.TabIndex = 11;
@@ -1313,11 +1315,11 @@
             this.Display_TotaleAmounts_Transactions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Display_TotaleAmounts_Transactions.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display_TotaleAmounts_Transactions.ForeColor = System.Drawing.Color.Chartreuse;
-            this.Display_TotaleAmounts_Transactions.Location = new System.Drawing.Point(144, 114);
+            this.Display_TotaleAmounts_Transactions.Location = new System.Drawing.Point(139, 116);
             this.Display_TotaleAmounts_Transactions.Name = "Display_TotaleAmounts_Transactions";
-            this.Display_TotaleAmounts_Transactions.Size = new System.Drawing.Size(208, 41);
+            this.Display_TotaleAmounts_Transactions.Size = new System.Drawing.Size(274, 41);
             this.Display_TotaleAmounts_Transactions.TabIndex = 4;
-            this.Display_TotaleAmounts_Transactions.Text = "000.000.000";
+            this.Display_TotaleAmounts_Transactions.Text = "000.000.000.000";
             // 
             // panel9
             // 
@@ -1368,7 +1370,7 @@
             this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(358, 115);
+            this.button17.Location = new System.Drawing.Point(270, 176);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 34);
             this.button17.TabIndex = 11;
@@ -1381,11 +1383,11 @@
             this.Display_totaleAmountTransfers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Display_totaleAmountTransfers.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display_totaleAmountTransfers.ForeColor = System.Drawing.Color.Chartreuse;
-            this.Display_totaleAmountTransfers.Location = new System.Drawing.Point(144, 114);
+            this.Display_totaleAmountTransfers.Location = new System.Drawing.Point(139, 116);
             this.Display_totaleAmountTransfers.Name = "Display_totaleAmountTransfers";
-            this.Display_totaleAmountTransfers.Size = new System.Drawing.Size(208, 41);
+            this.Display_totaleAmountTransfers.Size = new System.Drawing.Size(274, 41);
             this.Display_totaleAmountTransfers.TabIndex = 4;
-            this.Display_totaleAmountTransfers.Text = "000.000.000";
+            this.Display_totaleAmountTransfers.Text = "000.000.000.000";
             // 
             // panel11
             // 
@@ -1479,7 +1481,7 @@
             this.panel12.Controls.Add(this.Display_Count_Transactions);
             this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.pictureBox9);
-            this.panel12.Location = new System.Drawing.Point(543, 326);
+            this.panel12.Location = new System.Drawing.Point(557, 325);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(425, 229);
             this.panel12.TabIndex = 12;
@@ -1546,7 +1548,7 @@
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(354, 114);
+            this.button15.Location = new System.Drawing.Point(237, 168);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(51, 42);
             this.button15.TabIndex = 11;
@@ -1559,11 +1561,11 @@
             this.Display_TotaleAmounts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Display_TotaleAmounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Display_TotaleAmounts.ForeColor = System.Drawing.Color.Chartreuse;
-            this.Display_TotaleAmounts.Location = new System.Drawing.Point(144, 114);
+            this.Display_TotaleAmounts.Location = new System.Drawing.Point(139, 116);
             this.Display_TotaleAmounts.Name = "Display_TotaleAmounts";
-            this.Display_TotaleAmounts.Size = new System.Drawing.Size(208, 41);
+            this.Display_TotaleAmounts.Size = new System.Drawing.Size(274, 41);
             this.Display_TotaleAmounts.TabIndex = 4;
-            this.Display_TotaleAmounts.Text = "000.000.000";
+            this.Display_TotaleAmounts.Text = "000.000.000.000";
             // 
             // panel7
             // 
@@ -1616,14 +1618,6 @@
             this.MainMenuPanel.Size = new System.Drawing.Size(1807, 875);
             this.MainMenuPanel.TabIndex = 8;
             // 
-            // dashBorad1
-            // 
-            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
-            this.dashBorad1.Name = "dashBorad1";
-            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
-            this.dashBorad1.TabIndex = 16;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1664,6 +1658,24 @@
             // 
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(371, 28);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 11;
+            this.button18.Text = "button18";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // dashBorad1
+            // 
+            this.dashBorad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.dashBorad1.Location = new System.Drawing.Point(213, 8);
+            this.dashBorad1.Name = "dashBorad1";
+            this.dashBorad1.Size = new System.Drawing.Size(1080, 588);
+            this.dashBorad1.TabIndex = 16;
             // 
             // MainForm
             // 
@@ -1853,6 +1865,7 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox9;
         protected System.Windows.Forms.Button BTN_Refresh;
+        private System.Windows.Forms.Button button18;
     }
 }
 

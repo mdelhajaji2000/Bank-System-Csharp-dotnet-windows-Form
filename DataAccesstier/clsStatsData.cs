@@ -47,13 +47,13 @@ namespace BusinessTier
             return AccountsCount;
         }
 
-        public static int GetTotaleBalances()
+        public static long GetTotaleBalances()
         {
-            int stat = 0;
+            long stat = 0;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "Select Sum(Balance) From Accounts";
+            string Query = "Select Sum(cast(Balance as BIGINT)) From Accounts";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
@@ -63,7 +63,7 @@ namespace BusinessTier
 
                 object result = command.ExecuteScalar();
 
-                if (result != null && int.TryParse(result.ToString(), out int intResult))
+                if (result != null && long.TryParse(result.ToString(), out long intResult))
                 {
                     stat = intResult;
                 }
@@ -80,13 +80,13 @@ namespace BusinessTier
             return stat;
         }
 
-        public static int GetTotaleBalanceOfTransfers()
+        public static long GetTotaleBalanceOfTransfers()
         {
-            int stat = 0;
+            long stat = 0;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "SELECT Sum(Amount) From Transfers";
+            string Query = "SELECT Sum(cast(Amount as BIGINT)) From Transfers";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
@@ -96,7 +96,7 @@ namespace BusinessTier
 
                 object result = command.ExecuteScalar();
 
-                if (result != null && int.TryParse(result.ToString(), out int intResult))
+                if (result != null && long.TryParse(result.ToString(), out long intResult))
                 {
                     stat = intResult;
                 }
@@ -114,13 +114,13 @@ namespace BusinessTier
         }
 
         //Include Transfers
-        public static int GetTotaleBalancesOfTransactions()
+        public static long GetTotaleBalancesOfTransactions()
         {
-            int stat = 0;
+            long stat = 0;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "SELECT sum(Amount) from transactions";
+            string Query = "SELECT sum(cast(Amount as BIGINT)) from transactions";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
@@ -130,7 +130,7 @@ namespace BusinessTier
 
                 object result = command.ExecuteScalar();
 
-                if (result != null && int.TryParse(result.ToString(), out int intResult))
+                if (result != null && long.TryParse(result.ToString(), out long intResult))
                 {
                     stat = intResult;
                 }
@@ -246,13 +246,13 @@ namespace BusinessTier
             return stat;
         }
 
-        public static int GetTotaleDepositAmount()
+        public static long GetTotaleDepositAmount()
         {
-            int stat = 0;
+            long stat = 0;
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            string Query = "Select SUM(Amount) from transactions where transactionType = 1";
+            string Query = "Select SUM(CAST(Amount AS BIGINT)) from transactions where transactionType = 1";
 
             SqlCommand command = new SqlCommand(Query, connection);
 
@@ -262,7 +262,7 @@ namespace BusinessTier
 
                 object result = command.ExecuteScalar();
 
-                if (result != null && int.TryParse(result.ToString(), out int intResult))
+                if (result != null && long.TryParse(result.ToString(), out long intResult))
                 {
                     stat = intResult;
                 }

@@ -127,7 +127,7 @@ namespace DataAccesstier
             return (AffectedRows > 0);
         }
 
-        public static int AddNewRecord(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow, int TransferID, int TransactionType)
+        public static int AddNewRecord(int AccountNumber, int Amount, long BalanceBefore, long BalanceNow, int TransferID, int TransactionType)
         {
             int RecordID = -1;
 
@@ -166,7 +166,7 @@ namespace DataAccesstier
             return RecordID;
         }
 
-        public static void InsertDeposit(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow)
+        public static void InsertDeposit(int AccountNumber, long Amount, long BalanceBefore, long BalanceNow)
         {
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
@@ -198,7 +198,7 @@ namespace DataAccesstier
             }
         }
 
-        public static void InsertWithDraw(int AccountNumber, int Amount, int BalanceBefore, int BalanceNow)
+        public static void InsertWithDraw(int AccountNumber, int Amount, long BalanceBefore, long BalanceNow)
         {
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 

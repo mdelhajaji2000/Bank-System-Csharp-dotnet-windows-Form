@@ -10,7 +10,7 @@ namespace DataAccesstier
 {
     public static class ClientAccountData
     {
-        public static bool GetClientAccountByAccountNumber(int AccountNumber, ref int Balance, ref DateTime CreationDate, ref bool IsActive, ref int PersonID)
+        public static bool GetClientAccountByAccountNumber(int AccountNumber, ref long Balance, ref DateTime CreationDate, ref bool IsActive, ref int PersonID)
         {
             bool IsFound = false;
 
@@ -30,7 +30,7 @@ namespace DataAccesstier
 
                 if (reader.Read())
                 {
-                    Balance = (int)reader["Balance"];
+                    Balance = (long)reader["Balance"];
                     CreationDate = (DateTime)reader["CreationDate"];
                     IsActive = reader.GetBoolean(reader.GetOrdinal("ActiveStatus"));
                     PersonID = (int)reader["PersonID"];
@@ -52,7 +52,7 @@ namespace DataAccesstier
             return IsFound;
         }
 
-        public static bool GetAccountByPersonID(int PersonID, ref int AccountNumber, ref int Balance, ref DateTime CreationDate, ref bool IsActive)
+        public static bool GetAccountByPersonID(int PersonID, ref int AccountNumber, ref long Balance, ref DateTime CreationDate, ref bool IsActive)
         {
             bool IsFound = false;
 
@@ -72,7 +72,7 @@ namespace DataAccesstier
 
                 if (reader.Read())
                 {
-                    Balance = (int)reader["Balance"];
+                    Balance = (long)reader["Balance"];
                     CreationDate = (DateTime)reader["CreationDate"];
                     IsActive = reader.GetBoolean(reader.GetOrdinal("ActiveStatus"));
                     AccountNumber = (int)reader["AccountNumber"];
@@ -241,7 +241,7 @@ namespace DataAccesstier
             return NewClientID;
         }
 
-        public static bool UpdateClient(int AccountNumber, int Balance, bool ActiveStatus)
+        public static bool UpdateClient(int AccountNumber, long Balance, bool ActiveStatus)
         {
             int AffectedRows = 0;
 
@@ -279,7 +279,7 @@ namespace DataAccesstier
             return AffectedRows > 0;
         }
 
-        public static bool UpdateBalance(int AccountNumber, int Balance)
+        public static bool UpdateBalance(int AccountNumber, long Balance)
         {
             int AffectedRows = 0;
 

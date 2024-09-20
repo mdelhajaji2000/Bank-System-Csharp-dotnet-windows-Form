@@ -14,17 +14,17 @@ namespace BusinessTier
             return clsStatsData.GetTotaleNumberOfAccounts();
         }
 
-        public static int CallGetTotaleBalances()
+        public static long CallGetTotaleBalances()
         {
             return clsStatsData.GetTotaleBalances();
         }
 
-        public static int CallGetTotaleBalanceOfTransfers()
+        public static long CallGetTotaleBalanceOfTransfers()
         {
             return clsStatsData.GetTotaleBalanceOfTransfers();
         }
 
-        public static int CallGetTotaleBalancesOfTransactions()
+        public static long CallGetTotaleBalancesOfTransactions()
         {
             return clsStatsData.GetTotaleBalancesOfTransactions();
         }
@@ -45,9 +45,9 @@ namespace BusinessTier
             return result;
         }
 
-        public static int CallGetTotaleDepositAmount()
+        public static long CallGetTotaleDepositAmount()
         {
-            int result = clsStatsData.GetTotaleDepositAmount();
+            long result = clsStatsData.GetTotaleDepositAmount();
             return result;
         }
     }

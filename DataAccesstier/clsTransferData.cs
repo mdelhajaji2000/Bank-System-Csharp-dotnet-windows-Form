@@ -49,8 +49,8 @@ namespace DataAccesstier
             return dt;
         }
 
-        public static bool InsertTransferRecord(int AccountNumberFrom, int AccountNumberTo, int Amount, int AccFrom_BalanceBefore, int AccFrom_BalanceNow
-           , int AccTo_BalanceBefore, int Acc_ToBalanceNow )
+        public static bool InsertTransferRecord(int AccountNumberFrom, int AccountNumberTo, int Amount, long AccFrom_BalanceBefore, long AccFrom_BalanceNow
+           , long AccTo_BalanceBefore, long Acc_ToBalanceNow )
         {
             bool IsPereformed = false;
 

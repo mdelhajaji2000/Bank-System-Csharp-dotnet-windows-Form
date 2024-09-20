@@ -471,9 +471,9 @@ namespace BankSystem_Presentation_Tier
             Display_CountActifClients.Text = clsStatsManager.CallGetTotaleNumberOfAccounts().ToString();
             Display_CountTransfers.Text = clsStatsManager.CallGetNumberOfTransfersTransactions().ToString();
             Display_Count_Transactions.Text = (clsStatsManager.CallGetNumberOfDepositTransactions() + clsStatsManager.CallGetNumberOFWithDrawtransactions() + clsStatsManager.CallGetNumberOfTransfersTransactions()).ToString();
-            Display_TotaleAmounts.Text = clsUtility.FormatNumberWithPeriods(clsStatsManager.CallGetTotaleBalances().ToString());
-            Display_TotaleAmounts_Transactions.Text = clsUtility.FormatNumberWithPeriods(clsStatsManager.CallGetTotaleBalancesOfTransactions().ToString());
-            Display_totaleAmountTransfers.Text = clsUtility.FormatNumberWithPeriods(clsStatsManager.CallGetTotaleBalanceOfTransfers().ToString());
+            Display_TotaleAmounts.Text = clsUtility.FormatLongNumberWithPeriods(clsStatsManager.CallGetTotaleBalances().ToString());
+            Display_TotaleAmounts_Transactions.Text = clsUtility.FormatLongNumberWithPeriods(clsStatsManager.CallGetTotaleBalancesOfTransactions().ToString());
+            Display_totaleAmountTransfers.Text = clsUtility.FormatLongNumberWithPeriods(clsStatsManager.CallGetTotaleBalanceOfTransfers().ToString());
         }
 
         private void BTN_Refresh_Click(object sender, EventArgs e)
@@ -483,5 +483,9 @@ namespace BankSystem_Presentation_Tier
 
         #endregion
 
+        private void button18_Click(object sender, EventArgs e)
+        {
+            clsDataGeneratorBogus.GenerateClientsAccounts();
+        }
     }
 }

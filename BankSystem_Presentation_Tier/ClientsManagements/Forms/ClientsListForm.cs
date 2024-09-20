@@ -28,23 +28,57 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         private Color color2 = Color.FromArgb(27, 31, 43);
 
         static int colorChanger = 0;
+
+        private int LastGetedClientRow = 0;
         private void FillClientsContainer(DataTable dtClientsAccounts)
         {
 
-            foreach(DataRow row in dtClientsAccounts.Rows)
+            if (dtClientsAccounts.Rows.Count > 30)
             {
-                ClientCard clientcard = new ClientCard((int)row["AccountNumber"]);
-                clientcard.onClientselected += getSelectedClient;
-                clientcard.onDetailsbuttonClicked += DetailsButtonClicked;
-                ClientsContainer.Controls.Add(clientcard);
+                int LastShowedClientRows = 0;
+                for (int i = LastGetedClientRow; i < LastGetedClientRow + 30; i++)
+                {
+                    if (LastGetedClientRow == dtClientsAccounts.Rows.Count)
+                        break;
 
-                if (colorChanger % 2 == 0)
-                    clientcard.BackColor = color1;
-                else
-                    clientcard.BackColor = color2;
+                    ClientCard clientcard = new ClientCard((int)dtClientsAccounts.Rows[i]["AccountNumber"]);
+                    clientcard.onClientselected += getSelectedClient;
+                    clientcard.onDetailsbuttonClicked += DetailsButtonClicked;
+                    ClientsContainer.Controls.Add(clientcard);
 
-                colorChanger++;
+                    if (colorChanger % 2 == 0)
+                        clientcard.BackColor = color1;
+                    else
+                        clientcard.BackColor = color2;
+
+                    colorChanger++;
+
+                    LastShowedClientRows = i;
+                }
+                LastGetedClientRow = LastShowedClientRows;
+
+                button1.Show();
             }
+            else
+            {
+                foreach(DataRow row in dtClientsAccounts.Rows)
+                {
+                    ClientCard clientcard = new ClientCard((int)row["AccountNumber"]);
+                    clientcard.onClientselected += getSelectedClient;
+                    clientcard.onDetailsbuttonClicked += DetailsButtonClicked;
+                    ClientsContainer.Controls.Add(clientcard);
+
+                    if (colorChanger % 2 == 0)
+                        clientcard.BackColor = color1;
+                    else
+                        clientcard.BackColor = color2;
+
+                    colorChanger++;
+                }
+            }
+
+
+
         }
 
         private void getSelectedClient(int AccountNumber)
@@ -127,7 +161,6 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         {
             DialogResult result = MessageBox.Show("Are You Sure You Want To Delete This Account ? (" + SelectedClientAccount.AccountNumber + ") ?", "Perform Action", MessageBoxButtons.OKCancel);
 
-            Exception ex = new Exception("Fuck You Muther Fucker");
 
             if (result == DialogResult.Yes)
             {
@@ -166,6 +199,11 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FillClientsContainer(clsClientAccount.GetAllClientsAccounts());
         }
     }
 }

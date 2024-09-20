@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bogus">
+      <HintPath>..\BankSystem_Presentation_Tier\packages\Bogus.35.6.1\lib\net40\Bogus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,7 @@
   <ItemGroup>
     <Compile Include="clsClientAccount.cs" />
     <Compile Include="clsCountries.cs" />
+    <Compile Include="clsDataGeneratorBogus.cs" />
     <Compile Include="clsPermessions.cs" />
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsShared.cs" />
