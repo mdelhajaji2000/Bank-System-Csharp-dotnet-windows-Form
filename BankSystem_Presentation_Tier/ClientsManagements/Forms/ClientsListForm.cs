@@ -7,9 +7,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
 {
@@ -18,6 +20,10 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         public ClientsListForm()
         {
             InitializeComponent();
+
+            progressBar1.Value = 0;
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 30;
         }
 
         public bool IsOnlyForInactiveAccounts = false;
@@ -30,12 +36,20 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
         static int colorChanger = 0;
 
         private int LastGetedClientRow = 0;
+
         private void FillClientsContainer(DataTable dtClientsAccounts)
         {
 
             if (dtClientsAccounts.Rows.Count > 30)
             {
+                ClientsContainer.Hide();
+
+                progressBar1.Value = 0;
+                ProgressPanel.Show();
+                this.button1.Show();
+
                 int LastShowedClientRows = 0;
+
                 for (int i = LastGetedClientRow; i < LastGetedClientRow + 30; i++)
                 {
                     if (LastGetedClientRow == dtClientsAccounts.Rows.Count)
@@ -54,13 +68,18 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
                     colorChanger++;
 
                     LastShowedClientRows = i;
+                    progressBar1.Value++;
                 }
                 LastGetedClientRow = LastShowedClientRows;
 
-                button1.Show();
+                ProgressPanel.Hide();
+                ClientsContainer.Show();
             }
             else
             {
+                this.button1.Hide();
+                this.Height -= button1.Height;
+
                 foreach(DataRow row in dtClientsAccounts.Rows)
                 {
                     ClientCard clientcard = new ClientCard((int)row["AccountNumber"]);
@@ -75,6 +94,7 @@ namespace BankSystem_Presentation_Tier.ClientsManagements.Forms
 
                     colorChanger++;
                 }
+
             }
 
 

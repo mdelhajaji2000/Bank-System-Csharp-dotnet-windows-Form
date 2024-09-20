@@ -55,10 +55,13 @@
             this.label16 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.ProgressPanel = new System.Windows.Forms.Panel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.ProgressPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -113,7 +116,7 @@
             this.ClientsContainer.ContextMenuStrip = this.contextMenuStrip1;
             this.ClientsContainer.Location = new System.Drawing.Point(0, 143);
             this.ClientsContainer.Name = "ClientsContainer";
-            this.ClientsContainer.Size = new System.Drawing.Size(1465, 516);
+            this.ClientsContainer.Size = new System.Drawing.Size(1465, 527);
             this.ClientsContainer.TabIndex = 5;
             // 
             // contextMenuStrip1
@@ -317,21 +320,39 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(0, 653);
+            this.button1.Location = new System.Drawing.Point(0, 676);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1463, 35);
+            this.button1.Size = new System.Drawing.Size(1463, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "Load More";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ProgressPanel
+            // 
+            this.ProgressPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ProgressPanel.Controls.Add(this.progressBar1);
+            this.ProgressPanel.Location = new System.Drawing.Point(351, 370);
+            this.ProgressPanel.Name = "ProgressPanel";
+            this.ProgressPanel.Size = new System.Drawing.Size(783, 31);
+            this.ProgressPanel.TabIndex = 10;
+            this.ProgressPanel.Visible = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(3, 3);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(776, 23);
+            this.progressBar1.TabIndex = 1;
+            // 
             // ClientsListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(1466, 680);
+            this.ClientSize = new System.Drawing.Size(1466, 710);
+            this.Controls.Add(this.ProgressPanel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.ClientsContainer);
@@ -346,6 +367,7 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.ProgressPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -377,5 +399,7 @@
         private System.Windows.Forms.ToolStripMenuItem activateDisactivateToolStripMenuItem;
         protected System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel ProgressPanel;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

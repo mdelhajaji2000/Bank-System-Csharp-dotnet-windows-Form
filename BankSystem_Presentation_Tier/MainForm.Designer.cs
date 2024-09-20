@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Top_Panel = new System.Windows.Forms.Panel();
-            this.button18 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Version = new System.Windows.Forms.Label();
@@ -183,7 +182,6 @@
             // 
             this.Top_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(21)))), ((int)(((byte)(30)))));
             this.Top_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Top_Panel.Controls.Add(this.button18);
             this.Top_Panel.Controls.Add(this.button13);
             this.Top_Panel.Controls.Add(this.label1);
             this.Top_Panel.Controls.Add(this.Version);
@@ -195,16 +193,6 @@
             this.Top_Panel.Name = "Top_Panel";
             this.Top_Panel.Size = new System.Drawing.Size(1807, 92);
             this.Top_Panel.TabIndex = 1;
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(371, 28);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 11;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button13
             // 
@@ -1865,7 +1853,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.PictureBox pictureBox9;
         protected System.Windows.Forms.Button BTN_Refresh;
-        private System.Windows.Forms.Button button18;
     }
 }
 
