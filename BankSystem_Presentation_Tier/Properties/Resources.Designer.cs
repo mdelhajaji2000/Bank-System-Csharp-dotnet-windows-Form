@@ -83,6 +83,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _001_atm_card {
+            get {
+                object obj = ResourceManager.GetObject("001-atm-card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _001_cash_withdrawal {
             get {
                 object obj = ResourceManager.GetObject("001-cash-withdrawal", resourceCulture);
@@ -116,6 +126,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         internal static System.Drawing.Bitmap _001_closure {
             get {
                 object obj = ResourceManager.GetObject("001-closure", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _001_credit_card {
+            get {
+                object obj = ResourceManager.GetObject("001-credit-card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         internal static System.Drawing.Bitmap _001_people {
             get {
                 object obj = ResourceManager.GetObject("001-people", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _001_power_button {
+            get {
+                object obj = ResourceManager.GetObject("001-power-button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +373,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _002_bank_card {
+            get {
+                object obj = ResourceManager.GetObject("002-bank-card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _002_bar_graph {
             get {
                 object obj = ResourceManager.GetObject("002-bar-graph", resourceCulture);
@@ -453,6 +493,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _002_power_on {
+            get {
+                object obj = ResourceManager.GetObject("002-power-on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _002_recruitment {
             get {
                 object obj = ResourceManager.GetObject("002-recruitment", resourceCulture);
@@ -486,6 +536,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         internal static System.Drawing.Bitmap _003_add_user {
             get {
                 object obj = ResourceManager.GetObject("003-add-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _003_credit_card {
+            get {
+                object obj = ResourceManager.GetObject("003-credit-card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -573,6 +633,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _004_atm_card_1 {
+            get {
+                object obj = ResourceManager.GetObject("004-atm-card-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _004_credit_card {
             get {
                 object obj = ResourceManager.GetObject("004-credit-card", resourceCulture);
@@ -616,6 +686,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         internal static System.Drawing.Bitmap _004_transaction {
             get {
                 object obj = ResourceManager.GetObject("004-transaction", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _005_credit_card_1 {
+            get {
+                object obj = ResourceManager.GetObject("005-credit-card-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -776,6 +856,16 @@ namespace BankSystem_Presentation_Tier.Properties {
         internal static System.Drawing.Bitmap _148544460_f498bb8d_fe7e_41ad_aa8d_66541661eb7a {
             get {
                 object obj = ResourceManager.GetObject("148544460-f498bb8d-fe7e-41ad-aa8d-66541661eb7a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap atm_machine {
+            get {
+                object obj = ResourceManager.GetObject("atm-machine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

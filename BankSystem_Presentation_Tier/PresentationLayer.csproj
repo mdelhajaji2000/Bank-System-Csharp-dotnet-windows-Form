@@ -646,5 +646,32 @@
   <ItemGroup>
     <None Include="Resources\003-feedback.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atm-machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-atm-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-bank-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-atm-card-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-credit-card-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-power-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-power-on.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -202,7 +202,8 @@ namespace BankSystem_Presentation_Tier
         {
             if ((clsGlobal.CurrentUser.Permessions & clsPermessions.ATNService) == clsPermessions.ATNService)
             {
-
+                ScreenATMService.BringToFront();
+                Pagetitle.Text = "ATM Service - Control Panel";
             }
             else
                 MessageBox.Show("Action Denied, Contact Your Admin...!");
