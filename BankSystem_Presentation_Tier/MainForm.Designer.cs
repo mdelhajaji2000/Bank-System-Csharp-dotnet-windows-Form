@@ -1671,9 +1671,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(1807, 875);
+            this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.ScreenManageClients);
             this.Controls.Add(this.AcreenManagaeUsers);
-            this.Controls.Add(this.ScreenStatsPage);
             this.Controls.Add(this.ScreenTransaction);
             this.Controls.Add(this.ScreenLoanManagements);
             this.Controls.Add(this.ScreenATMService);
