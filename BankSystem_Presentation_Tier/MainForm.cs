@@ -209,7 +209,7 @@ namespace BankSystem_Presentation_Tier
                 MessageBox.Show("Action Denied, Contact Your Admin...!");
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)  
         {
             Global.clsGlobal.CurrentUser = null;
             this.Hide();
