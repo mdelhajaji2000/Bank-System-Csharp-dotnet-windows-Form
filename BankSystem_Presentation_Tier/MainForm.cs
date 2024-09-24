@@ -500,5 +500,12 @@ namespace BankSystem_Presentation_Tier
         {
             clsDataGeneratorBogus.GenerateClientsAccounts();
         }
+
+        private void button18_Click_1(object sender, EventArgs e)
+        {
+            ATM_Service_Control_Panel.clsCreateNewCardForm frm = new ATM_Service_Control_Panel.clsCreateNewCardForm();
+
+            frm.ShowDialog();
+        }
     }
 }

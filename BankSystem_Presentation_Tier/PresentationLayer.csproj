@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ATM Service Control Panel\clsCreateNewCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATM Service Control Panel\clsCreateNewCardForm.Designer.cs">
+      <DependentUpon>clsCreateNewCardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BankDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -242,6 +248,9 @@
     <Compile Include="UsersManagement\EditAddnEwUserForm.Designer.cs">
       <DependentUpon>EditAddnEwUserForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ATM Service Control Panel\clsCreateNewCardForm.resx">
+      <DependentUpon>clsCreateNewCardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientsManagements\Forms\AddNewUpdateClientAccount.resx">
       <DependentUpon>AddNewUpdateClientAccount.cs</DependentUpon>
     </EmbeddedResource>
